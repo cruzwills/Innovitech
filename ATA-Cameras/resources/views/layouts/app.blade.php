@@ -25,7 +25,7 @@
           </div>
         <!-- preloader -->
 
-        @include('patials.header')
+        @include('partials.header')
 
         @yield('content')
 

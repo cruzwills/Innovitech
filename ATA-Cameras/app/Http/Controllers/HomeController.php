@@ -10,11 +10,7 @@ class HomeController extends Controller
     {
         return view('layouts.app'); // This returns the home.blade.php view
     }
-
-    public function header()
-    {
-        return view('partials.header'); // This returns the home.blade.php view
-    }
+  
    
 }
 
