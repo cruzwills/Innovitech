@@ -1,0 +1,620 @@
+@extends('layouts.app')
+@section('content')
+    page title
+    =========================== -->
+    <section class="page-title-layout1 page-title-light bg-overlay text-center">
+        <div class="bg-img"><img src="assets/images/page-titles/6.jpg" alt="background"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="pagetitle__heading mb-0">Packages</h1>
+                </div><!-- /.col-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.page-title -->
+    <div class="breadcrumb-area border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav>
+                        <ol class="breadcrumb justify-content-center mb-0">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="about-us.html">Company</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Packages</li>
+                        </ol>
+                    </nav>
+                </div><!-- /.col-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /.breadcrumb-area -->
+
+    <!-- =========================
+      Pricing
+      =========================== -->
+    <section class="pricing-layout1 pb-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+                    <div class="heading text-center mb-40">
+                        <h2 class="heading__subtitle">Customized Cleaning Plans</h2>
+                        <h3 class="heading__title">Quality Leader Among Cleaning Companies In The Industry!</h3>
+                    </div><!-- /.heading -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+            <div class="row row-gutter-0 packages-wrapper">
+                <!-- pricing item #1-->
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="pricing-package">
+                        <div class="package__body">
+                            <h4 class="package__title">Starter Plan</h4>
+                            <p class="package__desc">Our highly trained technicians will set-up your security system so you
+                                don’t
+                                have to. They show you how to work your equipment.</p>
+                            <div class="d-flex mb-40">
+                                <div class="package__icon">
+                                    <i class="icon-burglar"></i>
+                                </div><!-- /.package__icon -->
+                                <div class="package__icon">
+                                    <i class="icon-intrusion"></i>
+                                </div><!-- /.package__icon -->
+                                <div class="package__icon">
+                                    <i class="icon-door-lock"></i>
+                                </div><!-- /.package__icon -->
+                            </div>
+                            <ul class="package__list list-items-layout4 list-unstyled">
+                                <li class="list__item">Enterprise Network Video Recorders</li>
+                                <li class="list__item">Streaming video network or Internet</li>
+                            </ul>
+                        </div><!-- /.package__body -->
+                        <div class="package__footer">
+                            <div class="package__price">
+                                <span class="package__currency">$</span><span>59</span><span
+                                    class="package__period">/Month</span>
+                            </div>
+                            <a href="#" class="btn btn__secondary btn__xl">
+                                <span>Get Started Now</span>
+                                <i class="icon-arrow-right"></i>
+                            </a>
+                        </div><!-- /.package__footer -->
+                    </div><!-- /.pricing-package -->
+                </div><!-- /.col-lg-4 -->
+                <!-- pricing item #2-->
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="pricing-package">
+                        <div class="package__body">
+                            <h4 class="package__title">Professional Plan</h4>
+                            <p class="package__desc">Our highly trained technicians will set-up your security system so you
+                                don’t
+                                have to. They show you how to work your equipment.</p>
+                            <div class="d-flex mb-40">
+                                <div class="package__icon">
+                                    <i class="icon-home-automation"></i>
+                                </div><!-- /.package__icon -->
+                                <div class="package__icon">
+                                    <i class="icon-detector"></i>
+                                </div><!-- /.package__icon -->
+                                <div class="package__icon">
+                                    <i class="icon-surveillance"></i>
+                                </div><!-- /.package__icon -->
+                            </div>
+                            <ul class="package__list list-items-layout4 list-unstyled">
+                                <li class="list__item">Enterprise Network Video Recorders</li>
+                                <li class="list__item">Streaming video network or Internet</li>
+                                <li class="list__item">Intelligent video technology storage</li>
+                            </ul>
+                        </div><!-- /.package__body -->
+                        <div class="package__footer">
+                            <div class="package__price">
+                                <span class="package__currency">$</span><span>159</span><span
+                                    class="package__period">/Month</span>
+                            </div>
+                            <a href="#" class="btn btn__primary btn__xl">
+                                <span>Get Started Now</span>
+                                <i class="icon-arrow-right"></i>
+                            </a>
+                        </div><!-- /.package__footer -->
+                    </div><!-- /.pricing-package -->
+                </div><!-- /.col-lg-4 -->
+                <!-- pricing item #3-->
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="pricing-package">
+                        <div class="package__body">
+                            <h4 class="package__title">Business Plan</h4>
+                            <p class="package__desc">Our highly trained technicians will set-up your security system so you
+                                don’t
+                                have to. They show you how to work your equipment.</p>
+                            <div class="d-flex mb-40">
+                                <div class="package__icon">
+                                    <i class="icon-notification"></i>
+                                </div><!-- /.package__icon -->
+                                <div class="package__icon">
+                                    <i class="icon-surveillance2"></i>
+                                </div><!-- /.package__icon -->
+                                <div class="package__icon">
+                                    <i class="icon-smart-control"></i>
+                                </div><!-- /.package__icon -->
+                            </div>
+                            <ul class="package__list list-items-layout4 list-unstyled">
+                                <li class="list__item">Enterprise Network Video Recorders</li>
+                                <li class="list__item">Streaming video network or Internet</li>
+                                <li class="list__item">Intelligent video technology storage</li>
+                                <li class="list__item">Networked with distributed video</li>
+                                <li class="list__item">Advanced management software</li>
+                            </ul>
+                        </div><!-- /.package__body -->
+                        <div class="package__footer">
+                            <div class="package__price">
+                                <span class="package__currency">$</span><span>259</span><span
+                                    class="package__period">/Month</span>
+                            </div>
+                            <a href="#" class="btn btn__secondary btn__xl">
+                                <span>Get Started Now</span>
+                                <i class="icon-arrow-right"></i>
+                            </a>
+                        </div><!-- /.package__footer -->
+                    </div><!-- /.pricing-package -->
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3 text-center">
+                    <p class="text__link mb-0">Our team can also provide security integration services for highly complex
+                        facilities and offer preventative maintenance plans.
+                        <a href="services.html" class="color-primary text-underlined mx-1">
+                            Contact Us Now!
+                        </a>
+                    </p>
+                </div><!-- /.col-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.pricing  -->
+
+    <!-- ========================
+     Banner Layout 2
+    =========================== -->
+    <section class="banner-layout2 py-0">
+        <div class="container-fluid px-0">
+            <div class="row row-gutter-0">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="video-banner-layout3 h-100">
+                        <div class="bg-img"><img src="assets/images/banners/6.jpg" alt="video img"></div>
+                        <a class="video__btn video__btn-white video__btn-lg popup-video"
+                            href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+                            <div class="video__player">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </a>
+                    </div><!-- /.video-banner -->
+                </div><!-- /.col-lg-6 -->
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="inner-padding">
+                        <div class="heading-layout2 mb-60">
+                            <h2 class="heading__subtitle">Find peace of mind with 24/7 monitoring</h2>
+                            <h3 class="heading__title">Protection Against Fires, Intruders, Water & More For Every Window
+                                And Door.
+                            </h3>
+                            <p class="heading__desc mb-30">Our experts have undertaken system projects of all sizes scopes,
+                                whether
+                                you need security system integration for your corporate office or retail store, an
+                                enterprise solution
+                                for multiple manufacturing buildings, or a complex integration for a stadium, university,
+                                hospital, or
+                                corporate campus.
+                            </p>
+                        </div>
+                        <div class="accordion" id="accordion1">
+                            <div class="accordion-item opened">
+                                <div class="accordion-item__header" data-toggle="collapse" data-target="#collapse1">
+                                    <a class="accordion-item__title" href="#">Which Plan Is Right For Me?</a>
+                                </div><!-- /.accordion-item-header -->
+                                <div id="collapse1" class="collapse show" data-parent="#accordion1">
+                                    <div class="accordion-item__body">
+                                        <p>With any financial product that you buy, it is important that you know you are
+                                            getting the best
+                                            advice from a reputable company as often</p>
+                                    </div><!-- /.accordion-item-body -->
+                                </div>
+                            </div><!-- /.accordion-item -->
+                            <div class="accordion-item">
+                                <div class="accordion-item__header" data-toggle="collapse" data-target="#collapse2">
+                                    <a class="accordion-item__title" href="#">Do I have to commit to a contract?</a>
+                                </div><!-- /.accordion-item-header -->
+                                <div id="collapse2" class="collapse" data-parent="#accordion1">
+                                    <div class="accordion-item__body">
+                                        <p>With any financial product that you buy, it is important that you know you are
+                                            getting the best
+                                            advice from a reputable company as often</p>
+                                    </div><!-- /.accordion-item-body -->
+                                </div>
+                            </div><!-- /.accordion-item -->
+                            <div class="accordion-item">
+                                <div class="accordion-item__header" data-toggle="collapse" data-target="#collapse3">
+                                    <a class="accordion-item__title" href="#">What Payment Methods Are
+                                        Available?</a>
+                                </div><!-- /.accordion-item-header -->
+                                <div id="collapse3" class="collapse" data-parent="#accordion1">
+                                    <div class="accordion-item__body">
+                                        <p>With any financial product that you buy, it is important that you know you are
+                                            getting the best
+                                            advice from a reputable company as often</p>
+                                    </div><!-- /.accordion-item-body -->
+                                </div>
+                            </div><!-- /.accordion-item -->
+                        </div><!-- /.accordion -->
+                    </div><!-- /.banner-text -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.Banner Layout 2 -->
+
+    <!-- ========================
+    features-table
+    ========================== -->
+    <section class="features-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading mb-50">
+                        <h3 class="heading__title text-center">Our Commitment!</h3>
+                    </div><!-- /heading -->
+                </div><!-- /.col-lg-8 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr class="custom-tr">
+                                    <th>Premium Home Security <br> For Everyone!</th>
+                                    <th><span>Our Security <br> System</span></th>
+                                    <th><span>Traditional <br> Systems</span></th>
+                                    <th><span>Other DIY <br> Systems</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="custom-tr">
+                                    <td>
+                                        <span>Integrated Security Solutions that Reduce Cost &amp; Increase
+                                            Efficiency</span>
+                                    </td>
+                                    <td><span><i class="icon-check color-success"></i></span></td>
+                                    <td><span><i class="icon-check color-success"></i></span></td>
+                                    <td><span><i class="icon-check color-success"></i></span></td>
+                                </tr>
+                                <tr class="custom-tr">
+                                    <td>
+                                        <span>Industry Best Practices for Standardizing Security Protocols &amp;
+                                            Procedures</span>
+                                    </td>
+                                    <td><span><i class="icon-check color-success"></i></span></td>
+                                    <td><span><i class="icon-close color-red"></i></span></td>
+                                    <td><span><i class="icon-close color-red"></i></span></td>
+                                </tr>
+                                <tr class="custom-tr">
+                                    <td>
+                                        <span>Comprehensive Analytics that Give Meaning To Your Security Data</span>
+                                    </td>
+                                    <td><span><i class="icon-check color-success"></i></span></td>
+                                    <td><span><i class="icon-check color-success"></i></span></td>
+                                    <td><span><i class="icon-close color-red"></i></span></td>
+                                </tr>
+                                <tr class="custom-tr">
+                                    <td>
+                                        <span>Tailored Solutions for Your Security Priorities</span>
+                                    </td>
+                                    <td><span><i class="icon-check color-success"></i></span></td>
+                                    <td><span><i class="icon-check color-success"></i></span></td>
+                                    <td><span><i class="icon-close color-red"></i></span></td>
+                                </tr>
+                                <tr class="custom-tr">
+                                    <td>
+                                        <span>Convenient System Access by Phone or Tablet</span>
+                                    </td>
+                                    <td><span><i class="icon-check color-success"></i></span></td>
+                                    <td><span><i class="icon-close color-red"></i></span></td>
+                                    <td><span><i class="icon-check color-success"></i></span></td>
+                                </tr>
+                                <tr class="custom-tr">
+                                    <td>
+                                        <span>Total Control Over Securing Your Business</span>
+                                    </td>
+                                    <td><span><i class="icon-check color-success"></i></span></td>
+                                    <td><span><i class="icon-close color-red"></i></span></td>
+                                    <td><span><i class="icon-close color-red"></i></span></td>
+                                </tr>
+                                <tr class="custom-tr">
+                                    <td><span>Average install time</span></td>
+                                    <td><span>27 min</span></td>
+                                    <td><span>Pro required</span></td>
+                                    <td><span>+ 4 hours</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!-- /.col-12 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3 text-center">
+                    <p class="font-weight-bold mt-40 px-lg-5">
+                        As the leader in home security, we can help you customize a home security system to meet your safety
+                        needs.
+                        <a href="#" class="text-underlined">Schedule A Visit</a>
+                    </p>
+                    <a href="services.html" class="btn btn__primary btn__xl">See What it Costs</a>
+                </div><!-- /.col-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.features-table -->
+
+    <!-- ==========================
+        contact layout 2
+    =========================== -->
+    <section class="contact-layout2 bg-overlay bg-overlay-primary bg-overlay-primary-gradient">
+        <div class="bg-img"><img src="assets/images/banners/5.jpg" alt="banner"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-5 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="heading-layout2 heading-light mb-40">
+                            <h3 class="heading__title">From Door And Window Sensors To Mobile Apps And Cameras System!</h3>
+                            <p class="heading__desc">Our security camera system installation department is just passionate
+                                about
+                                security installation and software, providing the best security system services and
+                                everything related
+                                to security .
+                            </p>
+                        </div><!-- /.heading -->
+                        <div class="d-flex flex-wrap mb-40">
+                            <a href="shop.html" class="btn btn__white btn__xl mr-30">
+                                <span>Our Products</span>
+                                <i class="icon-arrow-right"></i>
+                            </a>
+                            <a href="awards.html" class="btn btn__white btn__outlined btn__xl">Our Key Features</a>
+                        </div>
+                    </div>
+                    <div class="fancyboxs-layout2 fancybox-light">
+                        <div class="fancybox-item d-flex flex-wrap">
+                            <div class="fancybox__icon">
+                                <i class="icon-check"></i>
+                            </div><!-- /.fancybox__icon -->
+                            <div class="fancybox__body">
+                                <h4 class="fancybox__title">Increase Security Scope </h4>
+                                <p class="fancybox__desc">Combining surveillance camera installation with guards lets each
+                                    guard view
+                                    many areas of your business at once.
+                                </p>
+                            </div><!-- /.feature__body -->
+                        </div><!-- /.feature-item -->
+                        <div class="fancybox-item d-flex flex-wrap">
+                            <div class="fancybox__icon">
+                                <i class="icon-check"></i>
+                            </div><!-- /.fancybox__icon -->
+                            <div class="fancybox__body">
+                                <h4 class="fancybox__title">Reduce Business Liability</h4>
+                                <p class="fancybox__desc">Professionally installed security camera systems keep an eye on
+                                    activity and
+                                    eliminate downtime due to improper installation.
+                                </p>
+                            </div><!-- /.feature__body -->
+                        </div><!-- /.feature-item -->
+                    </div>
+                </div><!-- /.col-lg-5 -->
+                <div class="col-sm-12 col-md-12 col-lg-7">
+                    <div class="contact-panel">
+                        <form class="contact-panel__form" method="post"
+                            action="https://7oroof.com/demos/sekure/assets/php/contact.php" id="contactForm">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h4 class="contact-panel__title">Request A Quote</h4>
+                                    <p class="contact-panel__desc mb-30">Please complete the form below, to request a
+                                        quote, and we’ll
+                                        be in touch. Or you can call us <strong
+                                            class="color-secondary">01061245741</strong> and our
+                                        specialists will provide the
+                                        necessary help!
+                                    </p>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="form-group float-label">
+                                        <label for="homeBussiness">Home Or Business?</label>
+                                        <select id="homeBussiness" class="form-control">
+                                            <option>For Home</option>
+                                            <option>For Business</option>
+                                        </select>
+                                    </div>
+                                </div><!-- /.col-lg-6 -->
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="form-group float-label">
+                                        <label for="Industry">Industry:</label>
+                                        <select id="Industry" class="form-control">
+                                            <option>Commercial Buildings</option>
+                                            <option>Commercial Buildings</option>
+                                        </select>
+                                    </div>
+                                </div><!-- /.col-lg-6 -->
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="form-group float-label">
+                                        <label for="size">System Size:</label>
+                                        <select id="size" class="form-control">
+                                            <option>Small (1-5 locations)</option>
+                                            <option>large (6-10 locations)</option>
+                                        </select>
+                                    </div>
+                                </div><!-- /.col-lg-6 -->
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="form-group float-label">
+                                        <label for="own">Own Or Rent?</label>
+                                        <select id="own" class="form-control">
+                                            <option>I'm representing occupant</option>
+                                            <option>other</option>
+                                        </select>
+                                    </div>
+                                </div><!-- /.col-lg-6 -->
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div><!-- /.col-lg-4 -->
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div><!-- /.col-lg-4 -->
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email Address">
+                                    </div>
+                                </div><!-- /.col-lg-4 -->
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div><!-- /.col-lg-4 -->
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>System Of Interest:</label>
+                                        <div>
+                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                                                <input type="checkbox" class="custom-control-input" id="Intrusion">
+                                                <label class="custom-control-label" for="Intrusion">Intrusion
+                                                    Detection</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                                                <input type="checkbox" class="custom-control-input" id="Surveillance">
+                                                <label class="custom-control-label" for="Surveillance">Video
+                                                    Surveillance</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                                                <input type="checkbox" class="custom-control-input" id="Integration">
+                                                <label class="custom-control-label" for="Integration">System
+                                                    Integration</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                                                <input type="checkbox" class="custom-control-input" id="Monitoring">
+                                                <label class="custom-control-label" for="Monitoring">Monitoring</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                                                <input type="checkbox" class="custom-control-input" id="fire">
+                                                <label class="custom-control-label" for="fire">Fire Detection</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                                                <input type="checkbox" class="custom-control-input" id="Control">
+                                                <label class="custom-control-label" for="Control">Access Control</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                                                <input type="checkbox" class="custom-control-input" id="Other">
+                                                <label class="custom-control-label" for="Other">Other</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn__secondary btn__xl">
+                                        <i class="icon-arrow-right icon-filled"></i> <span>Submit Request</span>
+                                    </button>
+                                    <div class="contact-result"></div>
+                                </div><!-- /.col-lg-12 -->
+                            </div><!-- /.row -->
+                        </form>
+                    </div>
+                </div><!-- /.col-lg-7 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.contact layout 2 -->
+
+    <!-- ======================
+      features layout1
+    ========================= -->
+    <section class="features-layout1 pt-120 pb-90">
+        <div class="container">
+            <div class="row heading mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-7">
+                    <h3 class="heading__title">Keep An Eye On Everything <br> With Our Video Security!</h3>
+                    <p class="heading__desc font-weight-bold mb-30">Not only will this reduce the probability of crime
+                        happening
+                        on your
+                        property, it will reduce or eliminate any liability that falls on you if you can show you have
+                        solid,
+                        well-designed commercial building security systems in place.
+                    </p>
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+            <div class="row row-gutter-15 list-items-layout3">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Alarm Monitoring 24/7
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Security Monitoring Equipment
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Fire Monitor And Detection
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Remote Arm And Disarm
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Smart Home Controls
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Live Stream From Any Mobile
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Alerts, Schedules & Automations
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Record And Save Video Clips
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Lifetime Rate Lock Guarantee
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Lifetime Equipment Warranty
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Easy And Fair Cancellation
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="list__item">
+                        Professional Grade Protection
+                    </div><!-- /.list__item -->
+                </div><!-- /.col-lg-3 -->
+            </div><!-- /.row -->
+            <div class="row align-items-center mt-60">
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-7">
+                    <p class="fz-15 font-weight-bold my-3">
+                        For the Security and IT directors ensuring our places of work and leisure are safe. For the Chief
+                        Technology Officers shaping the smart businesses of tomorrow. We delivers powerful and insightful
+                        security
+                        solutions that enable protectors to drive forward. As the leader in home security, we can help you
+                        customize a home security system to meet your safety needs.
+                        <a href="#" class="text-underlined">Schedule A Visit</a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-5 d-flex justify-content-lg-end">
+                    <a href="about-us.html" class="btn btn__secondary btn__outlined btn__xl">
+                        Get A Free Quote
+                    </a>
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.features layout1 -->
+@endsection

@@ -10,52 +10,38 @@
             </button>
             <div class="collapse navbar-collapse" id="mainNavigation">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav__item has-dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Home</a>
-                        <ul class="dropdown-menu">
-                            <li class="nav__item">
-                                <a href="index.html" class="nav__item-link">Home Modern</a>
-                            </li><!-- /.nav-item -->
-                            <li class="nav__item">
-                                <a href="home-classic.html" class="nav__item-link">Home Classic</a>
-                            </li><!-- /.nav-item -->
-                            <li class="nav__item">
-                                <a href="home-shop.html" class="nav__item-link">Home Product</a>
-                            </li><!-- /.nav-item -->
-                        </ul><!-- /.dropdown-menu -->
+                    <li class="nav__item ">
+                        <a href="#" data-toggle="" class=" nav__item-link active">Home</a>
                     </li><!-- /.nav-item -->
                     <li class="nav__item has-dropdown">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Company</a>
                         <ul class="dropdown-menu">
                             <li class="nav__item">
-                                <a href="about-us.html" class="nav__item-link">About Us</a>
+                                <a href="{{ route('about')}}" class="nav__item-link">About Us</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
-                                <a href="how-it-works.html" class="nav__item-link">How It Works</a>
+                                <a href="{{ route('howitworks')}}" class="nav__item-link">How It Works</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
-                                <a href="team.html" class="nav__item-link">Leadership Team</a>
+                                <a href="{{route('awards')}}" class="nav__item-link">Awards & Recognition</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
-                                <a href="awards.html" class="nav__item-link">Awards & Recognition</a>
+                                <a href="{{route('review')}}" class="nav__item-link">Customers’ Reviews</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
-                                <a href="reviews.html" class="nav__item-link">Customers’ Reviews</a>
+                                <a href="{{route('pricing')}}" class="nav__item-link">Packages & Pricing</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
-                                <a href="pricing.html" class="nav__item-link">Packages & Pricing</a>
+                                <a href="{{route('location')}}" class="nav__item-link">Our Locations</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
-                                <a href="locations.html" class="nav__item-link">Our Locations</a>
-                            </li><!-- /.nav-item -->
-                            <li class="nav__item">
-                                <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
+                                <a href="{{route('faq')}}" class="nav__item-link">Help & FAQs</a>
                             </li> <!-- /.nav-item -->
                             <li class="nav__item">
-                                <a href="gallery.html" class="nav__item-link">Our Gallery</a>
+                                <a href="{{route('gallery')}}" class="nav__item-link">Our Gallery</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
-                                <a href="contact-us.html" class="nav__item-link">contact us</a>
+                                <a href="{{route('contact')}}" class="nav__item-link">contact us</a>
                             </li><!-- /.nav-item -->
                             <li class="nav__item">
                                 <a href="careers.html" class="nav__item-link">Careers</a>
