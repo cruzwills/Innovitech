@@ -14,6 +14,14 @@ class HomeController extends Controller
     {
         return view('pages.about');
     }
+    public function services()
+    {
+        return view('pages.services');
+    }
+    public function index()
+    {
+        return view('pages.index');
+    }
     public function howitworks()
     {
         return view('pages.how-it-works');
@@ -46,6 +54,19 @@ class HomeController extends Controller
     {
         return view('pages.contact');
     }
+    public function industries()
+    {
+        return view('pages.industries');
+    }
+    public function industriessingle()
+    {
+        return view('pages.industriessingle');
+    }
+    public function servicessingle()
+    {
+        return view('pages.servicessingle');
+    }
+  
   
   
    

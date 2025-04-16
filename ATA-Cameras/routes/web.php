@@ -10,7 +10,9 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
-
+Route::get('/index', function () {
+    return view('pages.index');
+})->name('index');
 Route::get('/howitworks', function () {
     return view('pages.how-it-works');
 })->name('howitworks');
@@ -42,3 +44,15 @@ Route::get('/gallery', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
+Route::get('/services', function () {
+    return view('pages.services');
+})->name('services');
+Route::get('/industries', function () {
+    return view('pages.industries');
+})->name('industries');
+Route::get('/industriessingle', function () {
+    return view('pages.industriessingle');
+})->name('industriessingle');
+Route::get('/servicessingle', function () {
+    return view('pages.servicessingle');
+})->name('servicessingle');

@@ -11,10 +11,10 @@
             <div class="collapse navbar-collapse" id="mainNavigation">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav__item ">
-                        <a href="#" data-toggle="" class=" nav__item-link active">Home</a>
+                        <a href="{{route('index')}}" data-toggle="" class=" nav__item-link active">Home</a>
                     </li><!-- /.nav-item -->
                     <li class="nav__item has-dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Company</a>
+                        <a href="{{route('index')}}" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Company</a>
                         <ul class="dropdown-menu">
                             <li class="nav__item">
                                 <a href="{{ route('about')}}" class="nav__item-link">About Us</a>
@@ -43,9 +43,7 @@
                             <li class="nav__item">
                                 <a href="{{route('contact')}}" class="nav__item-link">contact us</a>
                             </li><!-- /.nav-item -->
-                            <li class="nav__item">
-                                <a href="careers.html" class="nav__item-link">Careers</a>
-                            </li><!-- /.nav-item -->
+                            <!-- /.nav-item -->
                         </ul><!-- /.dropdown-menu -->
                     </li><!-- /.nav-item -->
                     <li class="nav__item has-dropdown">
@@ -55,55 +53,55 @@
                             <li class="nav__item">
                                 <div class="row mx-0">
                                     <div class="col-sm-6 dropdown-menu-col">
-                                        <a href="services.html" class="nav__item-link dropdown-menu-title">Services</a>
+                                        <a href="{{route('services')}}" class="nav__item-link dropdown-menu-title">Services</a>
                                         <ul class="nav flex-column">
                                             <li class="nav__item">
                                                 <a class="nav__item-link" href="services-single.html">Business
                                                     Security</a>
                                             </li> <!-- /.nav-item -->
                                             <li class="nav__item">
-                                                <a class="nav__item-link" href="services-single.html">Fire Detection</a>
+                                                <a class="nav__item-link" href="{{route('servicessingle')}}">Fire Detection</a>
                                             </li> <!-- /.nav-item -->
                                             <li class="nav__item">
-                                                <a class="nav__item-link" href="services-single.html">Access control</a>
+                                                <a class="nav__item-link" href="{{route('servicessingle')}}">Access control</a>
                                             </li> <!-- /.nav-item -->
                                             <li class="nav__item">
-                                                <a class="nav__item-link" href="services-single.html">Alarm Systems</a>
+                                                <a class="nav__item-link" href="{{route('servicessingle')}}">Alarm Systems</a>
                                             </li> <!-- /.nav-item -->
                                             <li class="nav__item">
-                                                <a class="nav__item-link" href="services-single.html">CCTV & Video</a>
+                                                <a class="nav__item-link" href="{{route('servicessingle')}}">CCTV & Video</a>
                                             </li> <!-- /.nav-item -->
                                             <li class="nav__item">
-                                                <a class="nav__item-link" href="services-single.html">Smart Home</a>
+                                                <a class="nav__item-link" href="{{route('servicessingle')}}">Smart Home</a>
                                             </li> <!-- /.nav-item -->
                                         </ul>
                                     </div><!-- /.col-sm-6 -->
                                     <div class="col-sm-6 dropdown-menu-col">
-                                        <a href="industries.html"
+                                        <a href="{{route('industries')}}"
                                             class="nav__item-link dropdown-menu-title">Industries</a>
                                         <ul class="nav flex-column">
                                             <li class="nav__item">
-                                                <a class="nav__item-link" href="industries-single.html">Pharmaceutic &
+                                                <a class="nav__item-link" href="{{route('industriessingle')}}">Pharmaceutic &
                                                     Biotech</a>
                                             </li> <!-- /.nav-item -->
                                             <li class="nav__item">
-                                                <a class="nav__item-link" href="industries-single.html">Manufacturing
+                                                <a class="nav__item-link" href="{{route('industriessingle')}}">Manufacturing
                                                     & Logistics</a>
                                             </li> <!-- /.nav-item -->
                                             <li class="nav__item">
-                                                <a class="nav__item-link" href="industries-single.html">Healthcare
+                                                <a class="nav__item-link" href="{{route('industriessingle')}}">Healthcare
                                                     Buildings</a>
                                             </li> <!-- /.nav-item -->
                                             <li class="nav__item">
-                                                <a class="nav__item-link" href="industries-single.html">Commercial
+                                                <a class="nav__item-link" href="{{route('industriessingle')}}">Commercial
                                                     Buildings</a>
                                             </li> <!-- /.nav-item -->
                                             <li class="nav__item">
-                                                <a class="nav__item-link" href="industries-single.html"> Finance &
+                                                <a class="nav__item-link" href="{{route('industriessingle')}}"> Finance &
                                                     Banking</a>
                                             </li> <!-- /.nav-item -->
                                             <li class="nav__item">
-                                                <a class="nav__item-link" href="industries-single.html">Office
+                                                <a class="nav__item-link" href="{{route('industriessingle')}}">Office
                                                     Buildings</a>
                                             </li> <!-- /.nav-item -->
                                             <!-- /.nav-item -->
