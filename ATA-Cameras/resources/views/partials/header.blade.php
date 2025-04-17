@@ -2,8 +2,8 @@
     <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
-                <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+                <img src="assets/images/logo/ata1.png" class="logo-light" alt="logo">
+                <img src="assets/images/logo/light.png" class="logo-dark" alt="logo">
             </a>
             <button class="navbar-toggler" type="button">
                 <span class="menu-lines"><span></span></span>
@@ -190,11 +190,11 @@
                             <i class="icon-phone"></i>
                         </div>
                         <div>
-                            <a class="phone__link d-block" href="tel:00201061245741">02 01061245741</a>
+                            <a class="phone__link d-block" href="tel:00201061245741">+263773625107</a>
                             <a class="email__link d-block"
                                 href="https://7oroof.com/cdn-cgi/l/email-protection#d281b7b9a7a0b792e5bda0bdbdb4fcb1bdbf"><span
                                     class="__cf_email__"
-                                    data-cfemail="2675434d535443661149544949400845494b">[email&#160;protected]</span></a>
+                                    data-cfemail="2675434d535443661149544949400845494b">ATA@gmail.com</span></a>
                         </div>
                     </div>
                 </li>

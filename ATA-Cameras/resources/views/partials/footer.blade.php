@@ -11,12 +11,12 @@
                                 <a
                                     href="https://7oroof.com/cdn-cgi/l/email-protection#2a794f415f584f6a1d455845454c04494547">
                                     <i class="contact__icon icon-email"></i> <span><span class="__cf_email__"
-                                            data-cfemail="3b685e504e495e7b0c544954545d15585456">[email&#160;protected]</span></span>
+                                            data-cfemail="3b685e504e495e7b0c544954545d15585456">ATA@gmail.com</span></span>
                                 </a>
                             </li>
                             <li>
                                 <a href="tel:00201061245741">
-                                    <i class="contact__icon icon-phone"></i> <span>(002) 01061245741</span>
+                                    <i class="contact__icon icon-phone"></i> <span>(+263) 773625107</span>
                                 </a>
                             </li>
                         </ul>
@@ -95,8 +95,8 @@
                 <div
                     class="col-sm-12 col-md-8 col-lg-12 col-xl-8 offset-xl-2 d-flex flex-wrap justify-content-between align-items-center">
                     <div class="footer__copyrights">
-                        <span class="fz-14">&copy; 2022 Sekure, All Rights Reserved. With Love by </span>
-                        <a class="fz-14 color-primary" href="http://themeforest.net/user/7oroof">7oroof.com</a>
+                        <span class="fz-14">&copy; 2025 ATA, All Rights Reserved. With Love by </span>
+                        <a class="fz-14 color-primary" href="http://themeforest.net/user/7oroof">ALL Tech Alliance</a>
                     </div>
                     <nav>
                         <ul class="list-unstyled footer__copyright-links d-flex flex-wrap mb-0">

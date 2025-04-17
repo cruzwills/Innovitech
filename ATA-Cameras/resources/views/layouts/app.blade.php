@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Sekure - Security Systems HTML5 Template">
     <link href="assets/images/favicon/favicon.png" rel="icon">
-    <title>Sekure - Security Systems HTML5 Template</title>
+    <title>ATA - Security Systems </title>
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;family=Roboto:wght@400;700&amp;display=swap">
