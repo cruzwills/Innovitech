@@ -2,7 +2,7 @@
 @section('content')
     <section class="slider">
         <div class="slick-carousel carousel-arrows-light carousel-dots-light m-slides-0"
-            data-slick='{"slidesToShow": 1, "arrows": true, "dots": true, "speed": 700, "fade": true, "cssEase": "linear", "autoplay": true, "autoplaySpeed": 4000, "pauseOnHover": false, "pauseOnFocus": false, "infinite": true}'>
+            data-slick='{"slidesToShow": 1, "arrows": true, "dots": true, "speed": 1500, "fade": true, "cssEase": "ease-in-out", "autoplay": true, "autoplaySpeed": 4000, "pauseOnHover": false, "pauseOnFocus": false, "infinite": true}'>
             <div class="slide-item bg-overlay align-v-h">
                 <div class="bg-img"><img src="assets/images/sliders/1.jpg" alt="slide img"></div>
                 <div class="container">
