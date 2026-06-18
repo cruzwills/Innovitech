@@ -9,19 +9,18 @@
                     <div class="row align-items-center">
                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
                             <div class="slide__content">
-                                <span class="slide__subtitle">Home Security Products Everyone Can Install, Afford, And
-                                    Use!</span>
-                                <h2 class="slide__title">Smart Security Systems For The Modern World</h2>
-                                <p class="slide__desc">We provide security requirements of residential, commercial and other
-                                    clients,
-                                    with the largest assortment of security cameras and alarm systems installation.
+                                <span class="slide__subtitle">Your Complete IT Solutions Partner in Zimbabwe</span>
+                                <h2 class="slide__title">Comprehensive IT Services For Homes & Businesses</h2>
+                                <p class="slide__desc">From Starlink installation and CCTV surveillance to computer repairs,
+                                    networking, and office equipment maintenance — ATA delivers end-to-end technology solutions
+                                    you can rely on.
                                 </p>
                                 <div class="d-flex flex-wrap align-items-center">
-                                    <a href="services.html" class="btn btn__primary btn__xl mr-30">
+                                    <a href="{{route('services')}}" class="btn btn__primary btn__xl mr-30">
                                         <span>Explore Our Services</span>
                                         <i class="icon-arrow-right"></i>
                                     </a>
-                                    <a href="services.html" class="btn btn__white btn__xl">
+                                    <a href="{{route('about')}}" class="btn btn__white btn__xl">
                                         More About Us!
                                     </a>
                                 </div>
@@ -29,15 +28,14 @@
                         </div><!-- /.col-xl-7 -->
                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 offset-xl-2 d-none d-xl-block">
                             <div class="cta-banner">
-                                <h4 class="cta__title">Custom Alerts For Friends And Family</h4>
+                                <h4 class="cta__title">Need IT Support Right Now?</h4>
                                 <img src="assets/images/cta/1.jpg" alt="cta__img" class="cta__img">
-                                <p class="cta__desc">Door, window, and Glass Break Detectors designed to monitor and protect
-                                    home and
-                                    family.
+                                <p class="cta__desc">Same-day support available for computer repairs, printer faults,
+                                    networking issues and more.
                                 </p>
-                                <a href="services.html" class="btn btn__primary btn__link">
+                                <a href="{{route('contact')}}" class="btn btn__primary btn__link">
                                     <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Protect Your Home</span>
+                                    <span>Contact Us Today</span>
                                 </a>
                             </div>
                         </div><!-- /.col-xl-2 -->
@@ -50,35 +48,33 @@
                     <div class="row align-items-center">
                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
                             <div class="slide__content">
-                                <span class="slide__subtitle">Home Security Products Everyone Can Install, Afford, And
-                                    Use!</span>
-                                <h2 class="slide__title">Best Practices <br> For All Business Security Systems</h2>
-                                <p class="slide__desc">We provide security requirements of residential, commercial and other
-                                    clients,
-                                    with the largest assortment of security cameras and alarm systems installation.
+                                <span class="slide__subtitle">Security, Connectivity & Technology — All Under One Roof</span>
+                                <h2 class="slide__title">Advanced Security & Surveillance Solutions For Every Environment</h2>
+                                <p class="slide__desc">We supply and install CCTVs, access control systems, alarms, vehicle
+                                    security, drones, and all safety &amp; surveillance products for homes, offices, and
+                                    commercial properties.
                                 </p>
                                 <div class="d-flex flex-wrap align-items-center">
-                                    <a href="services.html" class="btn btn__primary btn__xl mr-30">
+                                    <a href="{{route('services')}}" class="btn btn__primary btn__xl mr-30">
                                         <span>Explore Our Services</span>
                                         <i class="icon-arrow-right"></i>
                                     </a>
-                                    <a href="services.html" class="btn btn__white btn__xl">
-                                        More About Us!
+                                    <a href="{{route('contact')}}" class="btn btn__white btn__xl">
+                                        Get A Free Quote
                                     </a>
                                 </div>
                             </div><!-- /.slide-content -->
                         </div><!-- /.col-xl-7 -->
                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 offset-xl-2 d-none d-xl-block">
                             <div class="cta-banner">
-                                <h4 class="cta__title">Custom Alerts For Friends And Family</h4>
+                                <h4 class="cta__title">Protect What Matters Most</h4>
                                 <img src="assets/images/cta/1.jpg" alt="cta__img" class="cta__img">
-                                <p class="cta__desc">Door, window, and Glass Break Detectors designed to monitor and protect
-                                    home and
-                                    family.
+                                <p class="cta__desc">CCTV, alarms, access control and drone security — professionally
+                                    installed and monitored.
                                 </p>
-                                <a href="services.html" class="btn btn__primary btn__link">
+                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
                                     <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Protect Your Home</span>
+                                    <span>View Security Solutions</span>
                                 </a>
                             </div>
                         </div><!-- /.col-xl-2 -->
@@ -96,44 +92,39 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
                     <div class="heading-layout2">
-                        <h3 class="heading__title mb-50">Protection Against Intruders, Fires, Water & More For Every Window,
-                            Room
-                            And Door.</h3>
+                        <h3 class="heading__title mb-50">Your One-Stop IT Solutions Provider — From Security &amp; Connectivity to Computers &amp; Office Equipment.</h3>
                     </div><!-- /heading -->
                     <div class="about__Text">
-                        <p class="heading__desc mb-20">Helping families live intelligently means we’re always working to
-                            bring our
-                            customers the
-                            latest technology. As one of the premier providers of smart home technology, we are recognized
-                            throughout the industry for our products, innovation & customer satisfaction.</p>
-                        <p class="heading__desc mb-40">Don’t worry about any thing, our security experts will install your
-                            new
-                            system, activate
-                            it, and show
-                            you how to use it.</p>
-                        <strong>More Protection With Monitoring:</strong>
+                        <p class="heading__desc mb-20">All Tech Alliance (ATA) is Zimbabwe's trusted technology partner,
+                            delivering a full spectrum of IT services and products to residential, commercial, and corporate
+                            clients. We combine technical expertise with outstanding customer service to keep your business
+                            running smoothly and securely.</p>
+                        <p class="heading__desc mb-40">Whether you need Starlink internet installed, CCTV cameras set up,
+                            a network built from scratch, or your printers and computers repaired — our certified technicians
+                            are on hand to get the job done right.</p>
+                        <strong>What We Offer:</strong>
                         <div class="row mt-20">
                             <div class="col-sm-12 col-md-6">
                                 <ul class="list-items-layout1 list-unstyled">
-                                    <li class="list__item">Smart Home Security</li>
-                                    <li class="list__item">Professional Installation</li>
-                                    <li class="list__item">In Home Consultation</li>
+                                    <li class="list__item">Starlink Internet Installation</li>
+                                    <li class="list__item">CCTV &amp; Surveillance Systems</li>
+                                    <li class="list__item">Access Control &amp; Alarms</li>
                                 </ul>
                             </div><!-- /.col-md-6 -->
                             <div class="col-sm-12 col-md-6">
                                 <ul class="list-items-layout1 list-unstyled">
-                                    <li class="list__item">Doorbell Video Cameras</li>
-                                    <li class="list__item">Burglary Sensor Detection</li>
-                                    <li class="list__item">24/7 Alarm Monitoring</li>
+                                    <li class="list__item">Networking &amp; Wi-Fi Installation</li>
+                                    <li class="list__item">Computer &amp; Printer Repairs</li>
+                                    <li class="list__item">Office Equipment Maintenance</li>
                                 </ul>
                             </div><!-- /.col-md-6 -->
                         </div><!-- /.row -->
                         <div class="d-flex align-items-center flex-wrap mt-10 mb-40">
-                            <a href="services.html" class="btn btn__primary btn__xl my-1 mr-30">
-                                <span>Products And Solutions</span>
+                            <a href="{{route('services')}}" class="btn btn__primary btn__xl my-1 mr-30">
+                                <span>All Services &amp; Products</span>
                                 <i class="icon-arrow-right"></i>
                             </a>
-                            <a href="contact-us.html" class="btn btn__secondary btn__xl my-1"> Contact Us</a>
+                            <a href="{{route('contact')}}" class="btn btn__secondary btn__xl my-1">Contact Us</a>
                         </div>
                     </div>
                 </div><!-- /.col-xl-6 -->
@@ -162,11 +153,10 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <div class="heading-layout2 heading-light mb-140">
-                        <h3 class="heading__title">Protect What Matters Most!</h3>
-                        <p class="heading__desc">Not only will this reduce the probability of crime happening on your
-                            property,
-                            it will reduce or eliminate any liability that falls on you if you can show you have solid,
-                            well-designed commercial building security systems in place.
+                        <h3 class="heading__title">Serving Every Sector With Complete IT Solutions!</h3>
+                        <p class="heading__desc">From corporate offices and retail stores to schools, hospitals, and
+                            homes — ATA provides tailored technology services that keep every environment secure,
+                            connected, and productive.
                         </p>
                     </div><!-- /heading -->
                 </div><!-- /.col-lg-6 -->
@@ -175,78 +165,71 @@
                 <div class="col-12">
                     <div class="slick-carousel"
                         data-slick='{"slidesToShow": 5, "arrows": true, "dots": false, "autoplay": false,  "infinite": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 3}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
-                        <!-- feature item #1 -->
                         <div class="feature-item">
                             <h3 class="feature__number">01</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Pharmaceutic & Biotech</h4>
-                                <a href="#" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Corporate &amp; Office</h4>
+                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
                                     <span>Get Started</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
-                        <!-- feature item #2 -->
                         <div class="feature-item">
                             <h3 class="feature__number">02</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Manufacturing & Logistics </h4>
-                                <a href="#" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Retail &amp; Commercial</h4>
+                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
                                     <span>Get Started</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
-                        <!-- feature item #3 -->
                         <div class="feature-item">
                             <h3 class="feature__number">03</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Commercial Buildings</h4>
-                                <a href="#" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Healthcare &amp; Medical</h4>
+                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
                                     <span>Get Started</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
-                        <!-- feature item #4 -->
                         <div class="feature-item">
                             <h3 class="feature__number">04</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Educational Buildings</h4>
-                                <a href="#" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Education &amp; Schools</h4>
+                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
                                     <span>Get Started</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
-                        <!-- feature item #5 -->
                         <div class="feature-item">
                             <h3 class="feature__number">05</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Healthcare Buildings</h4>
-                                <a href="#" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Manufacturing &amp; Logistics</h4>
+                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
                                     <span>Get Started</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
-                        <!-- feature item #6 -->
                         <div class="feature-item">
                             <h3 class="feature__number">06</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Finance & Banking</h4>
-                                <a href="#" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Finance &amp; Banking</h4>
+                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
                                     <span>Get Started</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
-                        <!-- feature item #7 -->
                         <div class="feature-item">
                             <h3 class="feature__number">07</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">office Buildings</h4>
-                                <a href="#" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Residential &amp; Homes</h4>
+                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
                                     <span>Get Started</span>
                                 </a>
@@ -259,8 +242,8 @@
                 <div class="col-12 d-flex justify-content-end">
                     <button class="btn__download d-flex align-items-center">
                         <span class="text-right mx-2">
-                            <span class="color-body d-block">Just everything you need</span>
-                            <strong class="color-white d-block fz-15">Download 2022 Brochure</strong>
+                            <span class="color-body d-block">Everything you need in one place</span>
+                            <strong class="color-white d-block fz-15">Download Our Services Brochure</strong>
                         </span>
                         <span class="download__icon">
                             <i class="icon-download"></i>
@@ -278,27 +261,23 @@
         <div class="container">
             <div class="row heading mb-70">
                 <div class="col-12">
-                    <h2 class="heading__subtitle">Find peace of mind with 24/7 monitoring</h2>
+                    <h2 class="heading__subtitle">Complete IT services tailored to your needs</h2>
                 </div><!-- /.col-12 -->
                 <div class="col-sm-12 col-md-12 col-lg-5">
-                    <h3 class="heading__title">Smart Security Systems That Fits Your Business!</h3>
+                    <h3 class="heading__title">Technology Solutions That Keep Your Business Moving!</h3>
                 </div><!-- /.col-lg-5 -->
                 <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
-                    <p class="heading__desc">Because a commercial security camera system has to produce results, we offer
-                        what
-                        most security camera companies can’t. For CCTV installation companies, it’s important to treat cctv
-                        camera
-                        installation with a modern approach. Our security camera system installation department is just
-                        passionate
-                        about security installation</p>
+                    <p class="heading__desc">ATA provides a complete range of IT services — from security and surveillance
+                        to internet connectivity, computer support, and office equipment maintenance. Our certified
+                        technicians deliver fast, reliable service so your operations never miss a beat.</p>
                     <div class="d-flex flex-wrap align-items-center mt-30">
-                        <a href="how-it-works.html" class="btn btn__secondary btn__xl my-1 mr-30">
-                            <span>How Does It Work? </span>
+                        <a href="{{route('howitworks')}}" class="btn btn__secondary btn__xl my-1 mr-30">
+                            <span>How Does It Work?</span>
                             <i class="icon-arrow-right"></i>
                         </a>
-                        <a href="services.html" class="btn btn__secondary btn__link my-1">
+                        <a href="{{route('services')}}" class="btn btn__secondary btn__link my-1">
                             <i class="icon-arrow-right icon-outlined"></i>
-                            <span>Check All Services </span>
+                            <span>Check All Services</span>
                         </a>
                     </div>
                 </div><!-- /.col-lg-6 -->
@@ -312,37 +291,35 @@
                                 <div class="service__icon">
                                     <i class="icon-cctv-camera2"></i>
                                 </div><!-- /.service__icon -->
-                                <h4 class="service__title">Smarter Business Security </h4>
-                                <p class="service__desc">Clever security system connects your security, CCTV, lights, locks
-                                    and more,
-                                    for true seamless automation and control.
+                                <h4 class="service__title">CCTV &amp; Surveillance</h4>
+                                <p class="service__desc">Supply, installation and maintenance of CCTV cameras, DVRs, NVRs,
+                                    and complete video surveillance systems for homes and businesses.
                                 </p>
-                                <a href="services-single.html" class="btn btn__primary  btn__link">
+                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
                                     <i class="icon-arrow-right icon-filled"></i>
                                     <span>Read More</span>
                                 </a>
                             </div><!-- /.service__body -->
                         </div><!-- /.service-item -->
-                    </div><!-- /.col-lg-4 -->
+                    </div><!-- /.col-lg-3 -->
                     <!-- service item #2 -->
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="service-item">
                             <div class="service__body">
                                 <div class="service__icon">
-                                    <i class="icon-fire-alarm"></i>
+                                    <i class="icon-smart-control"></i>
                                 </div><!-- /.service__icon -->
-                                <h4 class="service__title">Fire Detection & <br> Life Safety</h4>
-                                <p class="service__desc">We're industry leaders in the design, installation of quality fire
-                                    alarm and
-                                    provide systems enhance security and ensure...
+                                <h4 class="service__title">Access Control &amp; Alarms</h4>
+                                <p class="service__desc">Biometric access systems, electric gates, alarm systems, vehicle
+                                    security, and drone security — keeping people and property safe.
                                 </p>
-                                <a href="services-single.html" class="btn btn__primary btn__link">
+                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
                                     <i class="icon-arrow-right icon-filled"></i>
                                     <span>Read More</span>
                                 </a>
                             </div><!-- /.service__body -->
                         </div><!-- /.service-item -->
-                    </div><!-- /.col-lg-4 -->
+                    </div><!-- /.col-lg-3 -->
                     <!-- service item #3 -->
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="service-item">
@@ -350,31 +327,29 @@
                                 <div class="service__icon">
                                     <i class="icon-home-automation"></i>
                                 </div><!-- /.service__icon -->
-                                <h4 class="service__title">Smart Home Systems</h4>
-                                <p class="service__desc">Whether you’re home or away, we make smart simple, have a remote
-                                    access and
-                                    control everything from lights, locks,...
+                                <h4 class="service__title">Starlink Installation</h4>
+                                <p class="service__desc">Professional Starlink satellite internet installation for homes,
+                                    farms, businesses, and remote locations across Zimbabwe.
                                 </p>
-                                <a href="services-single.html" class="btn btn__primary  btn__link">
+                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
                                     <i class="icon-arrow-right icon-filled"></i>
                                     <span>Read More</span>
                                 </a>
                             </div><!-- /.service__body -->
                         </div><!-- /.service-item -->
-                    </div><!-- /.col-lg-4 -->
+                    </div><!-- /.col-lg-3 -->
                     <!-- service item #4 -->
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="service-item">
                             <div class="service__body">
                                 <div class="service__icon">
-                                    <i class="icon-smart-control"></i>
+                                    <i class="icon-intrusion"></i>
                                 </div><!-- /.service__icon -->
-                                <h4 class="service__title">Access Control Installation</h4>
-                                <p class="service__desc">Effective and simple-to-use door access control systems, we offer
-                                    a decade of
-                                    experience in planning, customizing...
+                                <h4 class="service__title">Networking Installation</h4>
+                                <p class="service__desc">Structured cabling, Wi-Fi setup, LAN/WAN configuration, router
+                                    and switch installation for offices and commercial buildings.
                                 </p>
-                                <a href="services-single.html" class="btn btn__primary  btn__link">
+                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
                                     <i class="icon-arrow-right icon-filled"></i>
                                     <span>Read More</span>
                                 </a>
@@ -382,18 +357,94 @@
                         </div><!-- /.service-item -->
                     </div><!-- /.col-lg-3 -->
                 </div><!-- /.row -->
+
+                <!-- Second row of services -->
+                <div class="row row-gutter-0">
+                    <!-- service item #5 -->
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="service-item">
+                            <div class="service__body">
+                                <div class="service__icon">
+                                    <i class="icon-detector"></i>
+                                </div><!-- /.service__icon -->
+                                <h4 class="service__title">Computer &amp; IT Support</h4>
+                                <p class="service__desc">Laptop and desktop repairs, virus removal, software installation,
+                                    data recovery, and on-site IT support for businesses of all sizes.
+                                </p>
+                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
+                                    <i class="icon-arrow-right icon-filled"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div><!-- /.service__body -->
+                        </div><!-- /.service-item -->
+                    </div><!-- /.col-lg-3 -->
+                    <!-- service item #6 -->
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="service-item">
+                            <div class="service__body">
+                                <div class="service__icon">
+                                    <i class="icon-surveillance"></i>
+                                </div><!-- /.service__icon -->
+                                <h4 class="service__title">Printers &amp; Photocopiers</h4>
+                                <p class="service__desc">Supply, installation, and maintenance of printers, photocopiers,
+                                    scanners, and all printing consumables and accessories.
+                                </p>
+                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
+                                    <i class="icon-arrow-right icon-filled"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div><!-- /.service__body -->
+                        </div><!-- /.service-item -->
+                    </div><!-- /.col-lg-3 -->
+                    <!-- service item #7 -->
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="service-item">
+                            <div class="service__body">
+                                <div class="service__icon">
+                                    <i class="icon-notification"></i>
+                                </div><!-- /.service__icon -->
+                                <h4 class="service__title">Office Equipment Maintenance</h4>
+                                <p class="service__desc">General maintenance and repair of all office equipment including
+                                    computers, printers, photocopiers, and networking devices.
+                                </p>
+                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
+                                    <i class="icon-arrow-right icon-filled"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div><!-- /.service__body -->
+                        </div><!-- /.service-item -->
+                    </div><!-- /.col-lg-3 -->
+                    <!-- service item #8 -->
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="service-item">
+                            <div class="service__body">
+                                <div class="service__icon">
+                                    <i class="icon-burglar"></i>
+                                </div><!-- /.service__icon -->
+                                <h4 class="service__title">Security Products &amp; Accessories</h4>
+                                <p class="service__desc">Supply of CCTVs, alarms, vehicle trackers, drones, networking
+                                    equipment, computers, and all IT accessories and peripherals.
+                                </p>
+                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
+                                    <i class="icon-arrow-right icon-filled"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div><!-- /.service__body -->
+                        </div><!-- /.service-item -->
+                    </div><!-- /.col-lg-3 -->
+                </div><!-- /.row -->
+
                 <div class="row">
                     <div class="col-12">
                         <div class="cta-layout3 bg-white d-flex flex-wrap align-items-center justify-content-between p-40">
                             <div class="d-flex align-items-center">
                                 <div class="cta__icon"><i class="icon-alert"></i></div>
-                                <p class="cta__desc font-weight-bold my-2">As the leader in home security, we can help you
-                                    customize a
-                                    home security system to meet your safety needs.
-                                    <a href="contact-us.html" class="text-underlined">Schedule A Visit</a>
+                                <p class="cta__desc font-weight-bold my-2">Zimbabwe's trusted IT partner — we bring fast,
+                                    reliable technology solutions directly to your door.
+                                    <a href="{{route('contact')}}" class="text-underlined">Schedule A Visit</a>
                                 </p>
                             </div>
-                            <a href="get-quote.html" class="btn btn__secondary btn__outlined btn__xl">
+                            <a href="{{route('contact')}}" class="btn btn__secondary btn__outlined btn__xl">
                                 <span>Get A Free Quote</span>
                                 <i class="icon-arrow-right"></i>
                             </a>
@@ -412,8 +463,8 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
                     <div class="heading-layout2 heading-light text-center mb-90">
-                        <h2 class="heading__subtitle">Find Peace Of Mind With Smart Home Security System </h2>
-                        <h3 class="heading__title">Integrated Security Solutions & Remote Monitoring 24/7</h3>
+                        <h2 class="heading__subtitle">Security, Connectivity &amp; Technology — All In One Place</h2>
+                        <h3 class="heading__title">Integrated IT Solutions &amp; Professional Support 24/7</h3>
                     </div><!-- /.heading -->
                 </div><!-- /.col-lg-6 -->
             </div><!-- /.row -->
@@ -421,23 +472,20 @@
                 <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
                     <div class="about__text">
                         <div class="heading-layout1 heading-light mb-50">
-                            <h2 class="heading__subtitle color-primary">Total Control Over Securing Your Business</h2>
-                            <h3 class=" heading__title mb-40">Providing The Best Practices for Industry Security Protocols
-                                &
-                                Standardizing Procedures.</h3>
-                            <p class="heading__desc">We can partner with you to design and implement a scalable integrated
-                                security solution that addresses your toughest security challenges, while gaining
-                                efficiencies across
-                                your systems and teams by standardizing platforms and implementing event-driving system
-                                automation and
-                                powerful solutions help</p>
+                            <h2 class="heading__subtitle color-primary">Complete Technology Control For Your Business</h2>
+                            <h3 class=" heading__title mb-40">The Right IT Infrastructure That Protects, Connects &amp;
+                                Empowers Your Organisation.</h3>
+                            <p class="heading__desc">We partner with businesses of all sizes to design, install, and maintain
+                                scalable IT solutions — from enterprise surveillance and access control systems to high-speed
+                                Starlink connectivity, robust networking infrastructure, and fully managed office equipment
+                                support.</p>
                         </div><!-- /heading -->
                         <ul class="list-items-layout5 list-items-light list-unstyled mb-40">
-                            <li class="list__item">Access control systems - Fire detection alarms</li>
-                            <li class="list__item">Critical equipment condition monitoring systems</li>
-                            <li class="list__item">Video surveillance systems - Carbon sensors</li>
+                            <li class="list__item">CCTV, alarms &amp; access control systems</li>
+                            <li class="list__item">Starlink &amp; networking installation</li>
+                            <li class="list__item">Computers, printers &amp; office equipment repairs</li>
                         </ul>
-                        <a href="#" class="btn btn__primary btn__primary-style2 btn__xl mb-40">
+                        <a href="{{route('about')}}" class="btn btn__primary btn__primary-style2 btn__xl mb-40">
                             <span>Meet Our Experts</span>
                             <i class=" icon-arrow-right"></i>
                         </a>
@@ -447,12 +495,12 @@
                     <div class="about__img">
                         <img src="assets/images/about/4.jpg" alt="about">
                         <div class="cta-banner">
-                            <h3 class="cta__subtitle">Protect Your Home!</h3>
-                            <h4 class="cta__title">All The Essentials To Help Give You Peace Of Mind.</h4>
+                            <h3 class="cta__subtitle">Power Your Business With ATA!</h3>
+                            <h4 class="cta__title">All The IT Essentials To Keep Your Operations Running.</h4>
                             <ul class="list-items-layout5 list-unstyled mb-0">
-                                <li class="list__item">Easy to setup and use</li>
-                                <li class="list__item">Environmental Sensors</li>
-                                <li class="list__item">Touch Screen Panel</li>
+                                <li class="list__item">Fast Starlink connectivity</li>
+                                <li class="list__item">Reliable security systems</li>
+                                <li class="list__item">Expert equipment support</li>
                             </ul>
                         </div>
                     </div><!-- /.about__img -->
@@ -471,12 +519,12 @@
                     <div class="about__img">
                         <img src="assets/images/about/5.jpg" alt="about">
                         <div class="cta-banner cta-banner-primary">
-                            <h3 class="cta__subtitle">Just Don’t Worry.</h3>
-                            <h4 class="cta__title">We Take Care Of Everything For Your Home!</h4>
+                            <h3 class="cta__subtitle">Leave The Tech To Us.</h3>
+                            <h4 class="cta__title">We Handle Everything — So You Can Focus On Your Business!</h4>
                             <ul class="list-items-layout5 list-unstyled mb-0">
-                                <li class="list__item">Easy to setup and use</li>
-                                <li class="list__item">Environmental Sensors</li>
-                                <li class="list__item">Touch Screen Panel</li>
+                                <li class="list__item">On-site technician support</li>
+                                <li class="list__item">Same-day response available</li>
+                                <li class="list__item">Preventive maintenance plans</li>
                             </ul>
                         </div>
                     </div><!-- /.about__img -->
@@ -484,24 +532,18 @@
                 <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6 offset-xl-1">
                     <div class="about__text">
                         <div class="heading-layout1 heading-light mb-60">
-                            <h2 class="heading__subtitle color-primary">Convenient System Access By Phone Or Tablet</h2>
-                            <h3 class=" heading__title mb-40">Trusted Analytics that Give Meaning To Security Data.</h3>
-                            <p class="heading__desc mb-30">Our experts have undertaken system projects of all sizes and
-                                scopes,
-                                whether
-                                you need security system integration for your corporate office or retail store, an
-                                enterprise solution
-                                for multiple manufacturing buildings, or a complex integration for a stadium, university,
-                                hospital, or
-                                corporate campus.</p>
-                            <p class="heading__desc mb-30">With over 60 offices across the World, we are leading the
-                                security system
-                                integrators with a global reach and local touch. </p>
+                            <h2 class="heading__subtitle color-primary">Products &amp; Equipment Supplied Nationwide</h2>
+                            <h3 class=" heading__title mb-40">Trusted Technology Products That Deliver Real Results.</h3>
+                            <p class="heading__desc mb-30">We supply and install a comprehensive range of IT products
+                                including computers, laptops, printers, photocopiers, networking equipment, Starlink kits,
+                                CCTV systems, access control hardware, alarms, vehicle security devices, drones, and all
+                                associated accessories.</p>
+                            <p class="heading__desc mb-30">Our team of certified engineers handles projects of all sizes —
+                                from a single office setup to multi-site enterprise deployments across Zimbabwe.</p>
                         </div><!-- /heading -->
                         <blockquote class="blockquote mb-0">
-                            <h3 class="quote__title color-white">The peace of mind I have now is so comforting, knowing
-                                when I leave
-                                home I can still check in on my husband to make sure all is well.
+                            <h3 class="quote__title color-white">ATA transformed our office network and security
+                                infrastructure in under a week. Excellent service from a truly professional team.
                             </h3>
                             <div class="d-flex align-items-center">
                                 <div class="quote__rate mr-20">
@@ -511,7 +553,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <strong class="quote__author color-white">Martin Qube Jr</strong>
+                                <strong class="quote__author color-white">Business Client, Harare</strong>
                             </div>
                         </blockquote>
                     </div>
@@ -529,35 +571,33 @@
                 <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
                     <div class="about__text">
                         <div class="heading-layout1 heading-light mb-50">
-                            <h2 class="heading__subtitle color-primary">Tailored Solutions For Your Security Priorities
+                            <h2 class="heading__subtitle color-primary">Tailored IT Solutions For Every Budget
                             </h2>
-                            <h3 class=" heading__title mb-40">Solutions That Reduce Cost & Increase Business Efficiency.
+                            <h3 class=" heading__title mb-40">Solutions That Reduce Cost &amp; Increase Business Efficiency.
                             </h3>
-                            <p class="heading__desc">We will design, install, maintain and upgrade solutions to meet
-                                businesses'
-                                specific needs and budgets, from large enterprises to local business security platforms,
-                                from simple
-                                camera solutions for small offices to complex enterprise-class video surveillance systems
-                                for large
-                                campuses.
+                            <p class="heading__desc">We design, install, and maintain technology solutions built around your
+                                specific needs and budget. Whether you're a small startup needing reliable internet and a
+                                few workstations, or a large enterprise requiring full security surveillance, access control,
+                                and a managed IT infrastructure — ATA has you covered.
                             </p>
                         </div><!-- /heading -->
                         <div class="widget-categories p-0 mb-60">
                             <div class="widget-content">
                                 <ul class="list-unstyled d-flex flex-wrap mb-0">
-                                    <li><a href="#">Security Systems</a></li>
+                                    <li><a href="#">CCTV Systems</a></li>
                                     <li><a href="#">Access Control</a></li>
-                                    <li><a href="#">Monitoring</a></li>
-                                    <li><a href="#">Fire Alarms</a></li>
-                                    <li><a href="#">CCTV Video</a></li>
-                                    <li><a href="#">Global Services</a></li>
+                                    <li><a href="#">Starlink</a></li>
+                                    <li><a href="#">Networking</a></li>
+                                    <li><a href="#">Computers</a></li>
+                                    <li><a href="#">Printers</a></li>
+                                    <li><a href="#">Photocopiers</a></li>
+                                    <li><a href="#">IT Maintenance</a></li>
                                 </ul>
                             </div><!-- /.widget-content -->
                         </div><!-- /.widget-categories -->
                         <p class="font-weight-bold color-white">
-                            Our team can also provide security integration services for highly complex facilities and offer
-                            preventative maintenance plans.
-                            <a href="#" class="text-underlined color-primary">Contact Us Now!</a>
+                            Our team delivers expert installation and ongoing support for every technology solution we provide.
+                            <a href="{{route('contact')}}" class="text-underlined color-primary">Contact Us Now!</a>
                         </p>
                     </div>
                 </div><!-- /.col-xl-6 -->
@@ -575,6 +615,7 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /.About Layout 5 -->
+
     <!-- ======================
         Portfolio
       ========================= -->
@@ -582,15 +623,14 @@
         <div class="container">
             <div class="row heading mb-20">
                 <div class="col-sm-12 col-md-12 col-lg-5">
-                    <h3 class="heading__title">Explore Our Case Studies & Latest Sucess Stories.</h3>
+                    <h3 class="heading__title">Explore Our Case Studies &amp; Latest Success Stories.</h3>
                 </div><!-- /.col-lg-5 -->
                 <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
-                    <p class="heading__desc mb-30">For the Security and IT directors ensuring our places of
-                        work and leisure are safe. For the Chief Technology Officers shaping the smart businesses of
-                        tomorrow. We
-                        delivers powerful and insightful security solutions that enable protectors to drive forward.</p>
-                    <p class="heading__desc mb-30">We understand that in a complex world, it is not enough to solve the
-                        challenges of today, we need to be ready for the opportunities of tomorrow. </p>
+                    <p class="heading__desc mb-30">From securing a hospital's entire campus with CCTV and access control,
+                        to deploying Starlink for remote farms and building enterprise networks for growing businesses —
+                        ATA delivers results that matter.</p>
+                    <p class="heading__desc mb-30">We understand that technology must work reliably, every single day.
+                        That's why our solutions are built to last, backed by expert support whenever you need it.</p>
                 </div><!-- /.col-lg-6 -->
             </div><!-- /.row -->
             <div class="row">
@@ -598,191 +638,150 @@
                     <div class="carousel-container">
                         <div class="slick-carousel"
                             data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "autoplay": false, "arrows": true, "dots": true, "responsive": [{"breakpoint": 1300, "settings": {"slidesToShow": 3,"slidesToScroll": 3}}, {"breakpoint": 992, "settings": {"slidesToShow": 2,"slidesToScroll": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1,"slidesToScroll": 1}}, {"breakpoint": 480, "settings": {"slidesToShow": 1,"slidesToScroll": 1}}]}'>
-                            <!-- portfolio Item #1 -->
                             <div class="portfolio-item">
                                 <div class="portfolio__img">
                                     <img src="assets/images/portfolio/grid/1.jpg" alt="portfolio img">
-                                </div><!-- /.portfolio-img -->
+                                </div>
                                 <div class="portfolio__body">
                                     <div class="portfolio__cat">
-                                        <a href="#">Detection</a><a href="#">Fire Alarms</a>
-                                    </div><!-- /.portfolio-cat -->
+                                        <a href="#">CCTV</a><a href="#">Security</a>
+                                    </div>
                                     <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Getting The Right Fire Alarm
-                                                Detection System Online</a>
+                                        <h4 class="portfolio__title"><a href="#">Full CCTV &amp; Access Control
+                                                Deployment For A Corporate Campus</a>
                                         </h4>
-                                        <p class="portfolio__desc">The systems feature manual call and sounder devices
-                                            wirelessly linked
-                                            to
-                                            main
-                                            panel. Whilst wireless systems are more expensive than hard wired standard
-                                            versions, they negate
-                                            the...</p>
+                                        <p class="portfolio__desc">Complete surveillance system with 64 cameras, biometric
+                                            access control, and 24/7 monitoring integration installed across a multi-building
+                                            corporate site.</p>
                                     </div>
                                     <div class="d-flex justify-content-end">
-                                        <a href="projects-single-project.html" class="btn btn__secondary">
+                                        <a href="#" class="btn btn__secondary">
                                             <i class="icon-arrow-right"></i>
                                             <span>Explore More</span>
                                         </a>
                                     </div>
-                                </div><!-- /.portfolio__body -->
-                                <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                        class="icon-arrow-right"></i></a>
-                            </div><!-- /.portfolio-item -->
-                            <!-- portfolio Item #2 -->
+                                </div>
+                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
+                            </div>
                             <div class="portfolio-item">
                                 <div class="portfolio__img">
                                     <img src="assets/images/portfolio/grid/2.jpg" alt="portfolio img">
-                                </div><!-- /.portfolio-img -->
+                                </div>
                                 <div class="portfolio__body">
                                     <div class="portfolio__cat">
-                                        <a href="#">Security</a><a href="#">CCTV</a>
-                                    </div><!-- /.portfolio-cat -->
+                                        <a href="#">Starlink</a><a href="#">Connectivity</a>
+                                    </div>
                                     <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Helping Manufacturers With
-                                                Workplace Essential Safety</a>
+                                        <h4 class="portfolio__title"><a href="#">Starlink Internet Installation For
+                                                A Remote Farm &amp; Lodge</a>
                                         </h4>
-                                        <p class="portfolio__desc">The systems feature manual call and sounder devices
-                                            wirelessly linked
-                                            to
-                                            main
-                                            panel. Whilst wireless systems are more expensive than hard wired standard
-                                            versions, they negate
-                                            the...</p>
+                                        <p class="portfolio__desc">Delivered high-speed Starlink satellite internet to a
+                                            remote agricultural operation, enabling reliable connectivity for the first time.</p>
                                     </div>
                                     <div class="d-flex justify-content-end">
-                                        <a href="projects-single-project.html" class="btn btn__secondary">
+                                        <a href="#" class="btn btn__secondary">
                                             <i class="icon-arrow-right"></i>
                                             <span>Explore More</span>
                                         </a>
                                     </div>
-                                </div><!-- /.portfolio__body -->
-                                <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                        class="icon-arrow-right"></i></a>
-                            </div><!-- /.portfolio-item -->
-                            <!-- portfolio Item #3 -->
+                                </div>
+                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
+                            </div>
                             <div class="portfolio-item">
                                 <div class="portfolio__img">
                                     <img src="assets/images/portfolio/grid/3.jpg" alt="portfolio img">
-                                </div><!-- /.portfolio-img -->
+                                </div>
                                 <div class="portfolio__body">
                                     <div class="portfolio__cat">
-                                        <a href="#">Resources</a><a href="#">Security</a>
-                                    </div><!-- /.portfolio-cat -->
+                                        <a href="#">Networking</a><a href="#">IT</a>
+                                    </div>
                                     <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Vendors With Resources To Deliver
-                                                Safety & Security</a>
+                                        <h4 class="portfolio__title"><a href="#">Enterprise Network Build For A
+                                                Growing Retail Chain</a>
                                         </h4>
-                                        <p class="portfolio__desc">The systems feature manual call and sounder devices
-                                            wirelessly linked
-                                            to
-                                            main
-                                            panel. Whilst wireless systems are more expensive than hard wired standard
-                                            versions, they negate
-                                            the...</p>
+                                        <p class="portfolio__desc">Designed and installed a full LAN/WAN infrastructure
+                                            across 5 retail branches, including structured cabling and managed Wi-Fi.</p>
                                     </div>
                                     <div class="d-flex justify-content-end">
-                                        <a href="projects-single-project.html" class="btn btn__secondary">
+                                        <a href="#" class="btn btn__secondary">
                                             <i class="icon-arrow-right"></i>
                                             <span>Explore More</span>
                                         </a>
                                     </div>
-                                </div><!-- /.portfolio__body -->
-                                <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                        class="icon-arrow-right"></i></a>
-                            </div><!-- /.portfolio-item -->
-                            <!-- portfolio Item #4 -->
+                                </div>
+                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
+                            </div>
                             <div class="portfolio-item">
                                 <div class="portfolio__img">
                                     <img src="assets/images/portfolio/grid/4.jpg" alt="portfolio img">
-                                </div><!-- /.portfolio-img -->
+                                </div>
                                 <div class="portfolio__body">
                                     <div class="portfolio__cat">
-                                        <a href="#">Detection</a><a href="#">Fire Alarms</a>
-                                    </div><!-- /.portfolio-cat -->
+                                        <a href="#">Computers</a><a href="#">IT Support</a>
+                                    </div>
                                     <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Home Security For The Front And
-                                                Back Of Your House</a>
+                                        <h4 class="portfolio__title"><a href="#">Full IT Refresh For A Healthcare
+                                                Facility</a>
                                         </h4>
-                                        <p class="portfolio__desc">The systems feature manual call and sounder devices
-                                            wirelessly linked
-                                            to
-                                            main
-                                            panel. Whilst wireless systems are more expensive than hard wired standard
-                                            versions, they negate
-                                            the...</p>
+                                        <p class="portfolio__desc">Supplied, configured, and deployed 40 workstations,
+                                            printers, and a server room for a medical clinic — with ongoing support contract.</p>
                                     </div>
                                     <div class="d-flex justify-content-end">
-                                        <a href="projects-single-project.html" class="btn btn__secondary">
+                                        <a href="#" class="btn btn__secondary">
                                             <i class="icon-arrow-right"></i>
                                             <span>Explore More</span>
                                         </a>
                                     </div>
-                                </div><!-- /.portfolio__body -->
-                                <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                        class="icon-arrow-right"></i></a>
-                            </div><!-- /.portfolio-item -->
-                            <!-- portfolio Item #5 -->
+                                </div>
+                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
+                            </div>
                             <div class="portfolio-item">
                                 <div class="portfolio__img">
                                     <img src="assets/images/portfolio/grid/5.jpg" alt="portfolio img">
-                                </div><!-- /.portfolio-img -->
+                                </div>
                                 <div class="portfolio__body">
                                     <div class="portfolio__cat">
-                                        <a href="#">Detection</a><a href="#">Fire Alarms</a>
-                                    </div><!-- /.portfolio-cat -->
+                                        <a href="#">Printers</a><a href="#">Maintenance</a>
+                                    </div>
                                     <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Expert’s Guide To Security For
-                                                Rental Properties</a></h4>
-                                        <p class="portfolio__desc">The systems feature manual call and sounder devices
-                                            wirelessly linked
-                                            to
-                                            main
-                                            panel. Whilst wireless systems are more expensive than hard wired standard
-                                            versions, they negate
-                                            the...</p>
+                                        <h4 class="portfolio__title"><a href="#">Managed Print &amp; Equipment
+                                                Maintenance Contract For A Law Firm</a></h4>
+                                        <p class="portfolio__desc">Ongoing maintenance and support for all printers,
+                                            photocopiers, and office equipment across a busy legal firm's Harare office.</p>
                                     </div>
                                     <div class="d-flex justify-content-end">
-                                        <a href="projects-single-project.html" class="btn btn__secondary">
+                                        <a href="#" class="btn btn__secondary">
                                             <i class="icon-arrow-right"></i>
                                             <span>Explore More</span>
                                         </a>
                                     </div>
-                                </div><!-- /.portfolio__body -->
-                                <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                        class="icon-arrow-right"></i></a>
-                            </div><!-- /.portfolio-item -->
-                            <!-- portfolio Item #6 -->
+                                </div>
+                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
+                            </div>
                             <div class="portfolio-item">
                                 <div class="portfolio__img">
                                     <img src="assets/images/portfolio/grid/6.jpg" alt="portfolio img">
-                                </div><!-- /.portfolio-img -->
+                                </div>
                                 <div class="portfolio__body">
                                     <div class="portfolio__cat">
-                                        <a href="#">Resources</a><a href="#">Security</a>
-                                    </div><!-- /.portfolio-cat -->
+                                        <a href="#">Access Control</a><a href="#">Alarms</a>
+                                    </div>
                                     <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Getting The Right Fire Alarm
-                                                Detection System Online</a>
+                                        <h4 class="portfolio__title"><a href="#">Vehicle Security &amp; Alarm System
+                                                Installation For A Fleet Company</a>
                                         </h4>
-                                        <p class="portfolio__desc">The systems feature manual call and sounder devices
-                                            wirelessly linked
-                                            to
-                                            main
-                                            panel. Whilst wireless systems are more expensive than hard wired standard
-                                            versions, they negate
-                                            the...</p>
+                                        <p class="portfolio__desc">Installed GPS vehicle trackers, immobilizers, and
+                                            alarm systems across an entire commercial vehicle fleet for real-time security.</p>
                                     </div>
                                     <div class="d-flex justify-content-end">
-                                        <a href="projects-single-project.html" class="btn btn__secondary">
+                                        <a href="#" class="btn btn__secondary">
                                             <i class="icon-arrow-right"></i>
                                             <span>Explore More</span>
                                         </a>
                                     </div>
-                                </div><!-- /.portfolio__body -->
-                                <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                        class="icon-arrow-right"></i></a>
-                            </div><!-- /.portfolio-item -->
+                                </div>
+                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
+                            </div>
                         </div><!-- /.carousel -->
                     </div><!-- /.carousel-container -->
                 </div><!-- /.col-12 -->
@@ -798,8 +797,8 @@
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <p class="font-weight-bold my-3">
-                        Provide better security and control for residential and business customers.
-                        <a href="#" class="text-underlined">Compare Security Options!</a>
+                        Trusted by businesses, institutions, and homeowners across Zimbabwe.
+                        <a href="{{route('review')}}" class="text-underlined">Read Our Reviews!</a>
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-8">
@@ -807,21 +806,21 @@
                         data-slick='{"slidesToShow": 4, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 3}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
                         <div class="client">
                             <img src="assets/images/clients/8.png" alt="client">
-                        </div><!-- /.client -->
+                        </div>
                         <div class="client">
                             <img src="assets/images/clients/9.png" alt="client">
-                        </div><!-- /.client -->
+                        </div>
                         <div class="client">
                             <img src="assets/images/clients/10.png" alt="client">
-                        </div><!-- /.client -->
+                        </div>
                         <div class="client">
                             <img src="assets/images/clients/11.png" alt="client">
-                        </div><!-- /.client -->
+                        </div>
                         <div class="client">
                             <img src="assets/images/clients/9.png" alt="client">
-                        </div><!-- /.client -->
+                        </div>
                     </div><!-- /.carousel -->
-                </div><!-- /.col-lg-6 -->
+                </div><!-- /.col-lg-8 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /.Clients -->
@@ -835,105 +834,90 @@
             <div class="contact-panel p-0">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-7">
-                        <form class="contact-panel__form" method="post"
-                            action="https://7oroof.com/demos/sekure/assets/php/contact.php" id="contactForm">
+                        <form class="contact-panel__form" method="post" id="contactForm">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <h4 class="contact-panel__title">Request A Quote</h4>
-                                    <p class="contact-panel__desc mb-30">Please complete the form below, to request a
-                                        quote, and we’ll
-                                        be in touch. Or you can call us <strong
-                                            class="color-secondary">01061245741</strong> and our
-                                        specialists will provide the
-                                        necessary help!
+                                    <p class="contact-panel__desc mb-30">Complete the form below to request a quote and
+                                        we'll get back to you promptly. Or call us on
+                                        <strong class="color-secondary">+263 773 625 107</strong> and our specialists
+                                        will assist you right away!
                                     </p>
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group float-label">
-                                        <label for="homeBussiness">Home Or Business?</label>
-                                        <select id="homeBussiness" class="form-control">
+                                        <label for="clientType">Home Or Business?</label>
+                                        <select id="clientType" class="form-control">
                                             <option>For Home</option>
                                             <option>For Business</option>
                                         </select>
                                     </div>
-                                </div><!-- /.col-lg-6 -->
+                                </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group float-label">
                                         <label for="Industry">Industry:</label>
                                         <select id="Industry" class="form-control">
-                                            <option>Commercial Buildings</option>
-                                            <option>Commercial Buildings</option>
+                                            <option>Corporate &amp; Office</option>
+                                            <option>Retail &amp; Commercial</option>
+                                            <option>Healthcare &amp; Medical</option>
+                                            <option>Education &amp; Schools</option>
+                                            <option>Manufacturing &amp; Logistics</option>
+                                            <option>Residential</option>
+                                            <option>Other</option>
                                         </select>
                                     </div>
-                                </div><!-- /.col-lg-6 -->
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group float-label">
-                                        <label for="size">System Size:</label>
-                                        <select id="size" class="form-control">
-                                            <option>Small (1-5 locations)</option>
-                                            <option>large (6-10 locations)</option>
-                                        </select>
-                                    </div>
-                                </div><!-- /.col-lg-6 -->
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group float-label">
-                                        <label for="own">Own Or Rent?</label>
-                                        <select id="own" class="form-control">
-                                            <option>I'm representing occupant</option>
-                                            <option>other</option>
-                                        </select>
-                                    </div>
-                                </div><!-- /.col-lg-6 -->
+                                </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="First Name">
                                     </div>
-                                </div><!-- /.col-lg-4 -->
+                                </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Last Name">
                                     </div>
-                                </div><!-- /.col-lg-4 -->
+                                </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Email Address">
                                     </div>
-                                </div><!-- /.col-lg-4 -->
+                                </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Phone Number">
                                     </div>
-                                </div><!-- /.col-lg-4 -->
+                                </div>
                                 <div class="col-12">
                                     <div class="form-group mb-10">
-                                        <label>System Of Interest:</label>
+                                        <label>Service Of Interest:</label>
                                         <div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Intrusion">
-                                                <label class="custom-control-label" for="Intrusion">Intrusion
-                                                    Detection</label>
+                                                <input type="checkbox" class="custom-control-input" id="cctv">
+                                                <label class="custom-control-label" for="cctv">CCTV &amp; Surveillance</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Surveillance">
-                                                <label class="custom-control-label" for="Surveillance">Video
-                                                    Surveillance</label>
+                                                <input type="checkbox" class="custom-control-input" id="access">
+                                                <label class="custom-control-label" for="access">Access Control &amp; Alarms</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Integration">
-                                                <label class="custom-control-label" for="Integration">System
-                                                    Integration</label>
+                                                <input type="checkbox" class="custom-control-input" id="starlink">
+                                                <label class="custom-control-label" for="starlink">Starlink Installation</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Monitoring">
-                                                <label class="custom-control-label" for="Monitoring">Monitoring</label>
+                                                <input type="checkbox" class="custom-control-input" id="networking">
+                                                <label class="custom-control-label" for="networking">Networking</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="fire">
-                                                <label class="custom-control-label" for="fire">Fire Detection</label>
+                                                <input type="checkbox" class="custom-control-input" id="computers">
+                                                <label class="custom-control-label" for="computers">Computers &amp; IT Support</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Control">
-                                                <label class="custom-control-label" for="Control">Access Control</label>
+                                                <input type="checkbox" class="custom-control-input" id="printers">
+                                                <label class="custom-control-label" for="printers">Printers &amp; Photocopiers</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                                                <input type="checkbox" class="custom-control-input" id="maintenance">
+                                                <label class="custom-control-label" for="maintenance">Office Equipment Maintenance</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
                                                 <input type="checkbox" class="custom-control-input" id="Other">
@@ -957,125 +941,108 @@
                                 <div class="h-100">
                                     <div class="pricing-package">
                                         <div class="package__body">
-                                            <h4 class="package__title">Starter Plan</h4>
-                                            <p class="package__desc">Our highly trained technicians will set-up your
-                                                security system so you
-                                                don’t
-                                                have to. They show you how to work your equipment.</p>
+                                            <h4 class="package__title">Basic IT Package</h4>
+                                            <p class="package__desc">Perfect for small businesses and home offices needing
+                                                reliable connectivity, basic security, and equipment support.</p>
                                             <div class="d-flex mb-40">
                                                 <div class="package__icon">
-                                                    <i class="icon-burglar"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
                                                     <i class="icon-intrusion"></i>
-                                                </div><!-- /.package__icon -->
+                                                </div>
                                                 <div class="package__icon">
-                                                    <i class="icon-door-lock"></i>
-                                                </div><!-- /.package__icon -->
+                                                    <i class="icon-home-automation"></i>
+                                                </div>
+                                                <div class="package__icon">
+                                                    <i class="icon-detector"></i>
+                                                </div>
                                             </div>
                                             <ul class="package__list list-items-layout4 list-unstyled">
-                                                <li class="list__item">Enterprise Network Video Recorders</li>
-                                                <li class="list__item">Streaming video network or Internet</li>
+                                                <li class="list__item">Starlink or networking setup</li>
+                                                <li class="list__item">Basic CCTV installation (up to 4 cameras)</li>
+                                                <li class="list__item">Computer &amp; printer support</li>
                                             </ul>
-                                        </div><!-- /.package__body -->
+                                        </div>
                                         <div class="package__footer">
-                                            <div class="package__price">
-                                                <span class="package__currency">$</span><span>59</span><span
-                                                    class="package__period">/Month</span>
-                                            </div>
-                                            <a href="#" class="btn btn__secondary btn__xl">
-                                                <span>Get Started Now</span>
+                                            <a href="{{route('contact')}}" class="btn btn__secondary btn__xl">
+                                                <span>Get A Quote</span>
                                                 <i class="icon-arrow-right"></i>
                                             </a>
-                                        </div><!-- /.package__footer -->
-                                    </div><!-- /.pricing-package -->
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- pricing item #2-->
                                 <div class="h-100">
                                     <div class="pricing-package">
                                         <div class="package__body">
-                                            <h4 class="package__title">Professional Plan</h4>
-                                            <p class="package__desc">Our highly trained technicians will set-up your
-                                                security system so you
-                                                don’t
-                                                have to. They show you how to work your equipment.</p>
+                                            <h4 class="package__title">Business IT Package</h4>
+                                            <p class="package__desc">Ideal for growing businesses needing comprehensive IT
+                                                infrastructure, security, and reliable support coverage.</p>
                                             <div class="d-flex mb-40">
                                                 <div class="package__icon">
-                                                    <i class="icon-home-automation"></i>
-                                                </div><!-- /.package__icon -->
+                                                    <i class="icon-cctv-camera2"></i>
+                                                </div>
                                                 <div class="package__icon">
-                                                    <i class="icon-detector"></i>
-                                                </div><!-- /.package__icon -->
+                                                    <i class="icon-smart-control"></i>
+                                                </div>
                                                 <div class="package__icon">
                                                     <i class="icon-surveillance"></i>
-                                                </div><!-- /.package__icon -->
+                                                </div>
                                             </div>
                                             <ul class="package__list list-items-layout4 list-unstyled">
-                                                <li class="list__item">Enterprise Network Video Recorders</li>
-                                                <li class="list__item">Streaming video network or Internet</li>
-                                                <li class="list__item">Intelligent video technology storage</li>
+                                                <li class="list__item">Full CCTV &amp; access control system</li>
+                                                <li class="list__item">Enterprise networking setup</li>
+                                                <li class="list__item">Computer fleet support</li>
+                                                <li class="list__item">Printer &amp; equipment maintenance</li>
                                             </ul>
-                                        </div><!-- /.package__body -->
+                                        </div>
                                         <div class="package__footer">
-                                            <div class="package__price">
-                                                <span class="package__currency">$</span><span>159</span><span
-                                                    class="package__period">/Month</span>
-                                            </div>
-                                            <a href="#" class="btn btn__primary btn__xl">
-                                                <span>Get Started Now</span>
+                                            <a href="{{route('contact')}}" class="btn btn__primary btn__xl">
+                                                <span>Get A Quote</span>
                                                 <i class="icon-arrow-right"></i>
                                             </a>
-                                        </div><!-- /.package__footer -->
-                                    </div><!-- /.pricing-package -->
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- pricing item #3-->
                                 <div class="h-100">
                                     <div class="pricing-package">
                                         <div class="package__body">
-                                            <h4 class="package__title">Business Plan</h4>
-                                            <p class="package__desc">Our highly trained technicians will set-up your
-                                                security system so you
-                                                don’t
-                                                have to. They show you how to work your equipment.</p>
+                                            <h4 class="package__title">Enterprise IT Package</h4>
+                                            <p class="package__desc">Full-scope managed IT solutions for large organisations,
+                                                multi-site deployments, and enterprise-level security requirements.</p>
                                             <div class="d-flex mb-40">
                                                 <div class="package__icon">
                                                     <i class="icon-notification"></i>
-                                                </div><!-- /.package__icon -->
+                                                </div>
                                                 <div class="package__icon">
                                                     <i class="icon-surveillance2"></i>
-                                                </div><!-- /.package__icon -->
+                                                </div>
                                                 <div class="package__icon">
-                                                    <i class="icon-smart-control"></i>
-                                                </div><!-- /.package__icon -->
+                                                    <i class="icon-burglar"></i>
+                                                </div>
                                             </div>
                                             <ul class="package__list list-items-layout4 list-unstyled">
-                                                <li class="list__item">Enterprise Network Video Recorders</li>
-                                                <li class="list__item">Streaming video network or Internet</li>
-                                                <li class="list__item">Intelligent video technology storage</li>
-                                                <li class="list__item">Networked with distributed video</li>
-                                                <li class="list__item">Advanced management software</li>
+                                                <li class="list__item">Multi-site CCTV &amp; access control</li>
+                                                <li class="list__item">Starlink &amp; enterprise networking</li>
+                                                <li class="list__item">Full computer &amp; printer fleet management</li>
+                                                <li class="list__item">Dedicated support &amp; maintenance plan</li>
+                                                <li class="list__item">Vehicle &amp; drone security solutions</li>
                                             </ul>
-                                        </div><!-- /.package__body -->
+                                        </div>
                                         <div class="package__footer">
-                                            <div class="package__price">
-                                                <span class="package__currency">$</span><span>259</span><span
-                                                    class="package__period">/Month</span>
-                                            </div>
-                                            <a href="#" class="btn btn__secondary btn__xl">
-                                                <span>Get Started Now</span>
+                                            <a href="{{route('contact')}}" class="btn btn__secondary btn__xl">
+                                                <span>Get A Quote</span>
                                                 <i class="icon-arrow-right"></i>
                                             </a>
-                                        </div><!-- /.package__footer -->
-                                    </div><!-- /.pricing-package -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div><!-- /.carousel-->
-                        </div><!-- /.packages-rapper -->
+                        </div><!-- /.packages-wrapper -->
                     </div><!-- /.col-lg-5 -->
                 </div><!-- /.contact-panel -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /.contact layout 3 -->
-
 
     <!-- ======================
         Blog Grid
@@ -1085,118 +1052,106 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
                     <div class="heading text-center mb-40">
-                        <h2 class="heading__subtitle">Security Tips & Resources </h2>
+                        <h2 class="heading__subtitle">IT Tips, Guides &amp; Industry News</h2>
                         <h3 class="heading__title">Recent Articles</h3>
-                    </div><!-- /.heading -->
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <!-- Post Item #1 -->
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="post-item">
                         <div class="post__img">
-                            <a href="blog-single-post.html">
+                            <a href="#">
                                 <img src="assets/images/blog/grid/1.jpg" alt="post image" loading="lazy">
                             </a>
                             <div class="post__meta-cat">
-                                <a href="#">Home Security</a>
-                            </div><!-- /.blog-meta-cat -->
-                        </div><!-- /.post__img -->
+                                <a href="#">Starlink</a>
+                            </div>
+                        </div>
                         <div class="post__body">
                             <h4 class="post__title">
-                                <a href="blog-single-post.html">Three Important Things You Must Look For While Choosing
-                                    Home Security
-                                    System</a>
+                                <a href="#">Everything You Need To Know Before Getting Starlink Installed In Zimbabwe</a>
                             </h4>
                             <div class="post__meta d-flex">
-                                <span class="post__meta-date">Jan 30, 2022</span>
-                                <div class="post__meta-author"><a href="#">John Ezak</a></div>
+                                <span class="post__meta-date">Jan 30, 2025</span>
+                                <div class="post__meta-author"><a href="#">ATA Team</a></div>
                             </div>
-                            <p class="post__desc">It is natural if you feel the need for improvising on your home’s
-                                security system.
-                                Mostly, homes are unguarded or have security guards. Now, in the age of technology
-                                advancement...
+                            <p class="post__desc">Starlink is changing internet access across Zimbabwe. Here's what you need
+                                to know about costs, installation, speed expectations, and the best locations for your dish.
                             </p>
-                            <a href="blog-single-post.html" class="btn btn__secondary btn__outlined">
+                            <a href="#" class="btn btn__secondary btn__outlined">
                                 <i class="icon-arrow-right"></i>
                                 <span>Read More</span>
                             </a>
-                        </div><!-- /.post__body -->
-                    </div><!-- /.post-item -->
-                </div><!-- /.col-lg-4 -->
+                        </div>
+                    </div>
+                </div>
                 <!-- Post Item #2 -->
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="post-item">
                         <div class="post__img">
-                            <a href="blog-single-post.html">
+                            <a href="#">
                                 <img src="assets/images/blog/grid/2.jpg" alt="post image" loading="lazy">
                             </a>
                             <div class="post__meta-cat">
-                                <a href="#">Solutions</a>
-                                <a href="#">IT</a>
-                            </div><!-- /.blog-meta-cat -->
-                        </div><!-- /.post__img -->
+                                <a href="#">Security</a>
+                                <a href="#">CCTV</a>
+                            </div>
+                        </div>
                         <div class="post__body">
                             <h4 class="post__title">
-                                <a href="blog-single-post.html">How Non IT Roles Can Use Security Solutions to Solve All
-                                    Imerged
-                                    Business Problems!</a>
+                                <a href="#">How To Choose The Right CCTV System For Your Business Or Home</a>
                             </h4>
                             <div class="post__meta d-flex">
-                                <span class="post__meta-date">Jan 29, 2022</span>
-                                <div class="post__meta-author"><a href="#">Peter Allan</a></div>
+                                <span class="post__meta-date">Jan 22, 2025</span>
+                                <div class="post__meta-author"><a href="#">ATA Team</a></div>
                             </div>
-                            <p class="post__desc">It is natural if you feel the need for improvising on your home’s
-                                security system.
-                                Mostly, homes are unguarded or have security guards. Now, in the age of technology
-                                advancement...
+                            <p class="post__desc">With so many CCTV options on the market, knowing which system suits your
+                                environment and budget is crucial. Our experts break down what matters most.
                             </p>
-                            <a href="blog-single-post.html" class="btn btn__secondary btn__outlined">
+                            <a href="#" class="btn btn__secondary btn__outlined">
                                 <i class="icon-arrow-right"></i>
                                 <span>Read More</span>
                             </a>
-                        </div><!-- /.post__body -->
-                    </div><!-- /.post-item -->
-                </div><!-- /.col-lg-4 -->
+                        </div>
+                    </div>
+                </div>
                 <!-- Post Item #3 -->
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="post-item">
                         <div class="post__img">
-                            <a href="blog-single-post.html">
+                            <a href="#">
                                 <img src="assets/images/blog/grid/3.jpg" alt="post image" loading="lazy">
                             </a>
                             <div class="post__meta-cat">
-                                <a href="#">Solutions</a>
-                                <a href="#">IT</a>
-                            </div><!-- /.blog-meta-cat -->
-                        </div><!-- /.post__img -->
+                                <a href="#">IT Support</a>
+                                <a href="#">Maintenance</a>
+                            </div>
+                        </div>
                         <div class="post__body">
                             <h4 class="post__title">
-                                <a href="blog-single-post.html">Three Important Things You Must Look For While Choosing
-                                    Home Security
-                                    System</a>
+                                <a href="#">5 Signs Your Office Equipment Needs Professional Maintenance Right Now</a>
                             </h4>
                             <div class="post__meta d-flex">
-                                <span class="post__meta-date">Jan 28, 2022</span>
-                                <div class="post__meta-author"><a href="#">John Ezak</a></div>
+                                <span class="post__meta-date">Jan 15, 2025</span>
+                                <div class="post__meta-author"><a href="#">ATA Team</a></div>
                             </div>
-                            <p class="post__desc">It is natural if you feel the need for improvising on your home’s
-                                security system.
-                                Mostly, homes are unguarded or have security guards. Now, in the age of technology
-                                advancement...
+                            <p class="post__desc">Ignoring early warning signs from your printers, computers, and
+                                photocopiers can lead to costly breakdowns. Here's what to watch out for.
                             </p>
-                            <a href="blog-single-post.html" class="btn btn__secondary btn__outlined">
+                            <a href="#" class="btn btn__secondary btn__outlined">
                                 <i class="icon-arrow-right"></i>
                                 <span>Read More</span>
                             </a>
-                        </div><!-- /.post__body -->
-                    </div><!-- /.post-item -->
-                </div><!-- /.col-lg-4 -->
+                        </div>
+                    </div>
+                </div>
             </div><!-- /.row -->
             <div class="row">
                 <div class="col-12 text-center">
-                    <a href="services.html" class="btn btn__secondary btn__link">
-                        <span>Check All Blog Posts</span>
+                    <a href="{{route('services')}}" class="btn btn__secondary btn__link">
+                        <span>View All Our Services</span>
                         <i class="icon-arrow-right icon-outlined"></i>
                     </a>
                 </div>
