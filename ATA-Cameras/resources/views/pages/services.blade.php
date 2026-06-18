@@ -7,7 +7,7 @@
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
                     <h1 class="pagetitle__heading">Complete IT Services &amp; Technology Solutions</h1>
                     <p class="pagetitle__desc">From CCTV and access control to Starlink installation, networking, computer
-                        repairs, printers, and office equipment maintenance — ATA delivers every IT service your home or
+                        repairs, printers, and office equipment maintenance — Innovinetec Solutions delivers every IT service your home or
                         business needs.</p>
                     <div class="d-flex flex-wrap align-items-center">
                         <a href="{{route('pricing')}}" class="btn btn__white my-2 mr-30">
@@ -46,7 +46,7 @@
                 <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
                     <div class="heading text-center mb-60">
                         <h3 class="heading__title">Everything Your Business &amp; Home Needs — In One Place</h3>
-                        <p class="heading__desc">ATA delivers a full range of technology services covering security,
+                        <p class="heading__desc">Innovinetec Solutions delivers a full range of technology services covering security,
                             connectivity, computing, and office equipment — all installed and supported by our expert team.</p>
                     </div><!-- /.heading -->
                 </div><!-- /.col-lg-6 -->
@@ -61,10 +61,7 @@
                             <p class="service__desc">Supply, installation and maintenance of CCTV cameras, DVRs, NVRs and
                                 full video surveillance systems for homes, offices and commercial properties.
                             </p>
-                            <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                <i class="icon-arrow-right icon-filled"></i>
-                                <span>Read More</span>
-                            </a>
+                            
                         </div>
                         <div class="service__img"><img src="assets/images/services/1.jpg" alt="service"></div>
                     </div>
@@ -78,10 +75,7 @@
                             <p class="service__desc">Biometric access, electric gates, intruder alarms, vehicle security,
                                 drone surveillance and all safety &amp; detection systems professionally installed.
                             </p>
-                            <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                <i class="icon-arrow-right icon-filled"></i>
-                                <span>Read More</span>
-                            </a>
+                            
                         </div>
                         <div class="service__img"><img src="assets/images/services/2.jpg" alt="service"></div>
                     </div>
@@ -95,10 +89,7 @@
                             <p class="service__desc">Professional Starlink satellite internet installation for homes, farms,
                                 businesses and remote locations — fast, reliable connectivity anywhere in Zimbabwe.
                             </p>
-                            <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                <i class="icon-arrow-right icon-filled"></i>
-                                <span>Read More</span>
-                            </a>
+                            
                         </div>
                         <div class="service__img"><img src="assets/images/services/3.jpg" alt="service"></div>
                     </div>
@@ -112,10 +103,7 @@
                             <p class="service__desc">Structured cabling, LAN/WAN configuration, managed Wi-Fi, router and
                                 switch setup for offices, warehouses, schools and commercial buildings.
                             </p>
-                            <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                <i class="icon-arrow-right icon-filled"></i>
-                                <span>Read More</span>
-                            </a>
+                            
                         </div>
                         <div class="service__img"><img src="assets/images/services/4.jpg" alt="service"></div>
                     </div>
@@ -129,10 +117,7 @@
                             <p class="service__desc">Laptop and desktop repairs, virus removal, software installation, data
                                 recovery, OS upgrades and on-site IT support for businesses of all sizes.
                             </p>
-                            <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                <i class="icon-arrow-right icon-filled"></i>
-                                <span>Read More</span>
-                            </a>
+                            
                         </div>
                         <div class="service__img"><img src="assets/images/services/5.jpg" alt="service"></div>
                     </div>
@@ -146,10 +131,7 @@
                             <p class="service__desc">Supply, installation and full maintenance of printers, photocopiers,
                                 scanners and all office equipment — with consumables and accessories available.
                             </p>
-                            <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                <i class="icon-arrow-right icon-filled"></i>
-                                <span>Read More</span>
-                            </a>
+                            
                         </div>
                         <div class="service__img"><img src="assets/images/services/6.jpg" alt="service"></div>
                     </div>
@@ -172,7 +154,7 @@
                     <h3 class="heading__title">The Right IT Solution Delivered To Your Door &amp; Installed By Experts.</h3>
                 </div><!-- /.col-lg-5 -->
                 <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
-                    <p class="heading__desc mb-30">At ATA, our process is simple — we assess your needs, recommend the
+                    <p class="heading__desc mb-30">At Innovinetec Solutions, our process is simple — we assess your needs, recommend the
                         right solution, supply the equipment, and install everything professionally. Whether it's a
                         Starlink dish, a CCTV system, a network setup, or a printer fleet — we handle it all from
                         start to finish, and provide ongoing support so your technology keeps working.</p>
@@ -234,7 +216,7 @@
                                         <div class="process__text">
                                             <h4 class="process__title">We Supply &amp; Configure The Right Equipment —
                                                 Sourced From Leading Brands.</h4>
-                                            <p class="process__desc">ATA supplies a comprehensive range of IT products
+                                            <p class="process__desc">Innovinetec Solutions supplies a comprehensive range of IT products
                                                 including Starlink kits, CCTV systems, networking equipment, computers,
                                                 laptops, printers, photocopiers, and all accessories — fully configured
                                                 before installation.</p>
@@ -282,7 +264,7 @@
                                         <div class="process__text">
                                             <h4 class="process__title">We Provide Ongoing Support &amp; Maintenance So
                                                 Your Technology Keeps Running.</h4>
-                                            <p class="process__desc">ATA offers preventive maintenance contracts, on-call
+                                            <p class="process__desc">Innovinetec Solutions offers preventive maintenance contracts, on-call
                                                 support, and regular servicing for all equipment we install and supply.
                                                 One call and our team is on the way — keeping your business connected,
                                                 secure, and productive at all times.</p>
@@ -813,9 +795,9 @@
         <div class="container">
             <div class="row heading mb-30">
                 <div class="col-sm-12 col-md-12 col-lg-7">
-                    <h3 class="heading__title">Everything Included In Every ATA Service &amp; Maintenance Plan!</h3>
+                    <h3 class="heading__title">Everything Included In Every Innovinetec Solutions Service &amp; Maintenance Plan!</h3>
                     <p class="heading__desc font-weight-bold mb-30">Whether you're on a basic support package or a full
-                        enterprise IT contract, every ATA client gets the same commitment to quality, speed, and
+                        enterprise IT contract, every Innovinetec Solutions client gets the same commitment to quality, speed, and
                         professional service — no matter the size of the job.
                     </p>
                 </div><!-- /.col-lg-6 -->
@@ -861,7 +843,7 @@
             <div class="row align-items-center mt-60">
                 <div class="col-sm-12 col-md-12 col-lg-8 col-xl-7">
                     <p class="fz-15 font-weight-bold my-3">
-                        ATA is Zimbabwe's trusted IT partner — delivering comprehensive technology services for homes,
+                        Innovinetec Solutions is Zimbabwe's trusted IT partner — delivering comprehensive technology services for homes,
                         offices, and enterprises. From Starlink and networking to CCTV, computers, printers and office
                         equipment maintenance, we provide the full package with expert installation and dedicated support.
                         <a href="{{route('contact')}}" class="text-underlined">Schedule A Visit</a>

@@ -1,9 +1,9 @@
-<header class="header header-transparent header-layout1">
+﻿<header class="header header-transparent header-layout1">
     <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{route('index')}}">
-                <img src="assets/images/logo/ata-logo.png" class="logo-light ata-logo" alt="All Tech Alliance">
-                <img src="assets/images/logo/ata-logo.png" class="logo-dark ata-logo" alt="All Tech Alliance">
+                <img src="assets/images/logo/ata-logo.png" class="logo-light ata-logo" alt="Innovinetec Solutions">
+                <img src="assets/images/logo/ata-logo.png" class="logo-dark ata-logo" alt="Innovinetec Solutions">
             </a>
             <button class="navbar-toggler" type="button">
                 <span class="menu-lines"><span></span></span>

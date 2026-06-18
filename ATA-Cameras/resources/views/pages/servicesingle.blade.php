@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('content')
     <section class="page-title-layout2 page-title-light bg-overlay">
         <div class="bg-img"><img src="assets/images/page-titles/6.jpg" alt="background"></div>
@@ -108,12 +108,6 @@
 
                     <div class="video-banner-layout3 mb-50">
                         <img src="assets/images/banners/8.jpg" alt="banner">
-                        <a class="video__btn video__btn-white popup-video"
-                            href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                            <div class="video__player">
-                                <i class="fa fa-play"></i>
-                            </div>
-                        </a>
                     </div><!-- /.video-banner -->
 
                     <div class="text-block mb-40">
@@ -405,12 +399,6 @@
                 <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1">
                     <div class="video-banner-layout3 mb-50">
                         <img src="assets/images/about/6.jpg" alt="about">
-                        <a class="video__btn video__btn-white popup-video"
-                            href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                            <div class="video__player">
-                                <i class="fa fa-play"></i>
-                            </div>
-                        </a>
                     </div> <!-- /.video-banner -->
                 </div><!-- /.col-xl-5 -->
             </div><!-- /.row -->

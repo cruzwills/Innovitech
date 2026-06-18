@@ -1,8 +1,8 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('content')
     <section class="slider">
         <div class="slick-carousel carousel-arrows-light carousel-dots-light m-slides-0"
-            data-slick='{"slidesToShow": 1, "arrows": true, "dots": true, "speed": 700,"fade": true,"cssEase": "linear"}'>
+            data-slick='{"slidesToShow": 1, "arrows": true, "dots": true, "speed": 700, "fade": true, "cssEase": "linear", "autoplay": true, "autoplaySpeed": 4000, "pauseOnHover": false, "pauseOnFocus": false, "infinite": true}'>
             <div class="slide-item bg-overlay align-v-h">
                 <div class="bg-img"><img src="assets/images/sliders/1.jpg" alt="slide img"></div>
                 <div class="container">
@@ -12,7 +12,7 @@
                                 <span class="slide__subtitle">Your Complete IT Solutions Partner in Zimbabwe</span>
                                 <h2 class="slide__title">Comprehensive IT Services For Homes & Businesses</h2>
                                 <p class="slide__desc">From Starlink installation and CCTV surveillance to computer repairs,
-                                    networking, and office equipment maintenance — ATA delivers end-to-end technology solutions
+                                    networking, and office equipment maintenance — Innovinetec Solutions delivers end-to-end technology solutions
                                     you can rely on.
                                 </p>
                                 <div class="d-flex flex-wrap align-items-center">
@@ -43,20 +43,20 @@
                 </div><!-- /.container -->
             </div><!-- /.slide-item -->
             <div class="slide-item bg-overlay align-v-h">
-                <div class="bg-img"><img src="assets/images/sliders/2.jpg" alt="slide img"></div>
+                <div class="bg-img"><img src="assets/images/sliders/starlink.jpg" alt="slide img"></div>
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
                             <div class="slide__content">
-                                <span class="slide__subtitle">Security, Connectivity & Technology — All Under One Roof</span>
-                                <h2 class="slide__title">Advanced Security & Surveillance Solutions For Every Environment</h2>
-                                <p class="slide__desc">We supply and install CCTVs, access control systems, alarms, vehicle
-                                    security, drones, and all safety &amp; surveillance products for homes, offices, and
-                                    commercial properties.
+                                <span class="slide__subtitle">Zimbabwe's Trusted Starlink Installation Partner</span>
+                                <h2 class="slide__title">High-Speed Satellite Internet, Anywhere in Zimbabwe</h2>
+                                <p class="slide__desc">Get connected with Starlink — the world's leading low-orbit satellite
+                                    internet. Innovinetec Solutions handles full supply, installation, and configuration so you're online fast,
+                                    whether you're in the city or off the grid.
                                 </p>
                                 <div class="d-flex flex-wrap align-items-center">
-                                    <a href="{{route('services')}}" class="btn btn__primary btn__xl mr-30">
-                                        <span>Explore Our Services</span>
+                                    <a href="{{route('servicessingle')}}" class="btn btn__primary btn__xl mr-30">
+                                        <span>Starlink Installation</span>
                                         <i class="icon-arrow-right"></i>
                                     </a>
                                     <a href="{{route('contact')}}" class="btn btn__white btn__xl">
@@ -67,14 +67,92 @@
                         </div><!-- /.col-xl-7 -->
                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 offset-xl-2 d-none d-xl-block">
                             <div class="cta-banner">
-                                <h4 class="cta__title">Protect What Matters Most</h4>
+                                <h4 class="cta__title">Why Choose Starlink?</h4>
                                 <img src="assets/images/cta/1.jpg" alt="cta__img" class="cta__img">
-                                <p class="cta__desc">CCTV, alarms, access control and drone security — professionally
-                                    installed and monitored.
+                                <p class="cta__desc">Speeds up to 200 Mbps, low latency, and coverage everywhere —
+                                    ideal for homes, farms, schools and remote businesses.
                                 </p>
-                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
+                                <a href="{{route('contact')}}" class="btn btn__primary btn__link">
                                     <i class="icon-arrow-right icon-filled"></i>
-                                    <span>View Security Solutions</span>
+                                    <span>Book An Installation</span>
+                                </a>
+                            </div>
+                        </div><!-- /.col-xl-2 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.slide-item -->
+            <div class="slide-item bg-overlay align-v-h">
+                <div class="bg-img"><img src="assets/images/sliders/network.png" alt="slide img"></div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                            <div class="slide__content">
+                                <span class="slide__subtitle">Enterprise-Grade Networking For Homes & Businesses</span>
+                                <h2 class="slide__title">Fast, Reliable & Secure Network Installation</h2>
+                                <p class="slide__desc">From structured cabling and Wi-Fi setup to full LAN/WAN deployment —
+                                    Innovinetec Solutions' certified engineers design and install networks that keep your business connected
+                                    and performing at its best.
+                                </p>
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="{{route('services')}}" class="btn btn__primary btn__xl mr-30">
+                                        <span>Our Networking Services</span>
+                                        <i class="icon-arrow-right"></i>
+                                    </a>
+                                    <a href="{{route('contact')}}" class="btn btn__white btn__xl">
+                                        Get A Free Quote
+                                    </a>
+                                </div>
+                            </div><!-- /.slide-content -->
+                        </div><!-- /.col-xl-7 -->
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 offset-xl-2 d-none d-xl-block">
+                            <div class="cta-banner">
+                                <h4 class="cta__title">Network Setup & Support</h4>
+                                <img src="assets/images/cta/1.jpg" alt="cta__img" class="cta__img">
+                                <p class="cta__desc">Wi-Fi, LAN, VPN, structured cabling and more —
+                                    professionally installed and maintained by our team.
+                                </p>
+                                <a href="{{route('contact')}}" class="btn btn__primary btn__link">
+                                    <i class="icon-arrow-right icon-filled"></i>
+                                    <span>Book A Site Survey</span>
+                                </a>
+                            </div>
+                        </div><!-- /.col-xl-2 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.slide-item -->
+            <div class="slide-item bg-overlay align-v-h">
+                <div class="bg-img"><img src="assets/images/sliders/support.jpeg" alt="slide img"></div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                            <div class="slide__content">
+                                <span class="slide__subtitle">Dedicated IT Support For Businesses & Individuals</span>
+                                <h2 class="slide__title">Expert IT Support, When You Need It Most</h2>
+                                <p class="slide__desc">From remote troubleshooting to on-site repairs — our certified
+                                    technicians resolve computer issues, software faults, printer problems and more.
+                                    Same-day support available across the country.
+                                </p>
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="{{route('contact')}}" class="btn btn__primary btn__xl mr-30">
+                                        <span>Get Support Now</span>
+                                        <i class="icon-arrow-right"></i>
+                                    </a>
+                                    <a href="{{route('services')}}" class="btn btn__white btn__xl">
+                                        View All Services
+                                    </a>
+                                </div>
+                            </div><!-- /.slide-content -->
+                        </div><!-- /.col-xl-7 -->
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 offset-xl-2 d-none d-xl-block">
+                            <div class="cta-banner">
+                                <h4 class="cta__title">Same-Day IT Support</h4>
+                                <img src="assets/images/cta/1.jpg" alt="cta__img" class="cta__img">
+                                <p class="cta__desc">Hardware repairs, virus removal, data recovery, software setup
+                                    and network support — all under one team.
+                                </p>
+                                <a href="{{route('contact')}}" class="btn btn__primary btn__link">
+                                    <i class="icon-arrow-right icon-filled"></i>
+                                    <span>Book A Technician</span>
                                 </a>
                             </div>
                         </div><!-- /.col-xl-2 -->
@@ -95,31 +173,14 @@
                         <h3 class="heading__title mb-50">Your One-Stop IT Solutions Provider — From Security &amp; Connectivity to Computers &amp; Office Equipment.</h3>
                     </div><!-- /heading -->
                     <div class="about__Text">
-                        <p class="heading__desc mb-20">All Tech Alliance (ATA) is Zimbabwe's trusted technology partner,
+                        <p class="heading__desc mb-20">Innovinetec Solutions is Zimbabwe's trusted technology partner,
                             delivering a full spectrum of IT services and products to residential, commercial, and corporate
                             clients. We combine technical expertise with outstanding customer service to keep your business
                             running smoothly and securely.</p>
                         <p class="heading__desc mb-40">Whether you need Starlink internet installed, CCTV cameras set up,
                             a network built from scratch, or your printers and computers repaired — our certified technicians
                             are on hand to get the job done right.</p>
-                        <strong>What We Offer:</strong>
-                        <div class="row mt-20">
-                            <div class="col-sm-12 col-md-6">
-                                <ul class="list-items-layout1 list-unstyled">
-                                    <li class="list__item">Starlink Internet Installation</li>
-                                    <li class="list__item">CCTV &amp; Surveillance Systems</li>
-                                    <li class="list__item">Access Control &amp; Alarms</li>
-                                </ul>
-                            </div><!-- /.col-md-6 -->
-                            <div class="col-sm-12 col-md-6">
-                                <ul class="list-items-layout1 list-unstyled">
-                                    <li class="list__item">Networking &amp; Wi-Fi Installation</li>
-                                    <li class="list__item">Computer &amp; Printer Repairs</li>
-                                    <li class="list__item">Office Equipment Maintenance</li>
-                                </ul>
-                            </div><!-- /.col-md-6 -->
-                        </div><!-- /.row -->
-                        <div class="d-flex align-items-center flex-wrap mt-10 mb-40">
+                        <div class="d-flex align-items-center flex-wrap mt-40 mb-40">
                             <a href="{{route('services')}}" class="btn btn__primary btn__xl my-1 mr-30">
                                 <span>All Services &amp; Products</span>
                                 <i class="icon-arrow-right"></i>
@@ -128,17 +189,11 @@
                         </div>
                     </div>
                 </div><!-- /.col-xl-6 -->
-                <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1">
-                    <div class="video-banner-layout2 mb-50">
-                        <img src="assets/images/about/1.jpg" alt="about">
-                        <a class="video__btn video__btn-white popup-video"
-                            href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                            <div class="video__player">
-                                <i class="fa fa-play"></i>
-                            </div>
-                            <span class="video__title color-white">Watch Our Intro!</span>
-                        </a>
-                    </div><!-- /.video-banner -->
+                <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1 d-flex align-items-center">
+                    <div class="about-img-block w-100">
+                        <img src="assets/images/about/tech.png" alt="Innovinetec Solutions"
+                            style="width:100%;border-radius:16px;box-shadow:0 16px 48px rgba(46,48,143,0.18);display:block;">
+                    </div>
                 </div><!-- /.col-xl-5 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
@@ -155,7 +210,7 @@
                     <div class="heading-layout2 heading-light mb-140">
                         <h3 class="heading__title">Serving Every Sector With Complete IT Solutions!</h3>
                         <p class="heading__desc">From corporate offices and retail stores to schools, hospitals, and
-                            homes — ATA provides tailored technology services that keep every environment secure,
+                            homes — Innovinetec Solutions provides tailored technology services that keep every environment secure,
                             connected, and productive.
                         </p>
                     </div><!-- /heading -->
@@ -168,70 +223,60 @@
                         <div class="feature-item">
                             <h3 class="feature__number">01</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Corporate &amp; Office</h4>
-                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Starlink Internet Installation</h4>
+                                <a href="{{route('servicessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Get Started</span>
+                                    <span>Learn More</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
                         <div class="feature-item">
                             <h3 class="feature__number">02</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Retail &amp; Commercial</h4>
-                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
+                                <h4 class="feature__title">CCTV &amp; Surveillance Systems</h4>
+                                <a href="{{route('servicessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Get Started</span>
+                                    <span>Learn More</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
                         <div class="feature-item">
                             <h3 class="feature__number">03</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Healthcare &amp; Medical</h4>
-                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Access Control &amp; Alarms</h4>
+                                <a href="{{route('servicessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Get Started</span>
+                                    <span>Learn More</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
                         <div class="feature-item">
                             <h3 class="feature__number">04</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Education &amp; Schools</h4>
-                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Networking &amp; Wi-Fi Installation</h4>
+                                <a href="{{route('servicessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Get Started</span>
+                                    <span>Learn More</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
                         <div class="feature-item">
                             <h3 class="feature__number">05</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Manufacturing &amp; Logistics</h4>
-                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Computer &amp; Printer Repairs</h4>
+                                <a href="{{route('servicessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Get Started</span>
+                                    <span>Learn More</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
                         <div class="feature-item">
                             <h3 class="feature__number">06</h3>
                             <div class="feature__body">
-                                <h4 class="feature__title">Finance &amp; Banking</h4>
-                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
+                                <h4 class="feature__title">Office Equipment Maintenance</h4>
+                                <a href="{{route('servicessingle')}}" class="btn btn__link btn__white">
                                     <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Get Started</span>
-                                </a>
-                            </div><!-- /.feature__body -->
-                        </div><!-- /.feature-item -->
-                        <div class="feature-item">
-                            <h3 class="feature__number">07</h3>
-                            <div class="feature__body">
-                                <h4 class="feature__title">Residential &amp; Homes</h4>
-                                <a href="{{route('industriessingle')}}" class="btn btn__link btn__white">
-                                    <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Get Started</span>
+                                    <span>Learn More</span>
                                 </a>
                             </div><!-- /.feature__body -->
                         </div><!-- /.feature-item -->
@@ -267,7 +312,7 @@
                     <h3 class="heading__title">Technology Solutions That Keep Your Business Moving!</h3>
                 </div><!-- /.col-lg-5 -->
                 <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
-                    <p class="heading__desc">ATA provides a complete range of IT services — from security and surveillance
+                    <p class="heading__desc">Innovinetec Solutions provides a complete range of IT services — from security and surveillance
                         to internet connectivity, computer support, and office equipment maintenance. Our certified
                         technicians deliver fast, reliable service so your operations never miss a beat.</p>
                     <div class="d-flex flex-wrap align-items-center mt-30">
@@ -295,10 +340,7 @@
                                 <p class="service__desc">Supply, installation and maintenance of CCTV cameras, DVRs, NVRs,
                                     and complete video surveillance systems for homes and businesses.
                                 </p>
-                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                    <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Read More</span>
-                                </a>
+                                
                             </div><!-- /.service__body -->
                         </div><!-- /.service-item -->
                     </div><!-- /.col-lg-3 -->
@@ -313,10 +355,7 @@
                                 <p class="service__desc">Biometric access systems, electric gates, alarm systems, vehicle
                                     security, and drone security — keeping people and property safe.
                                 </p>
-                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                    <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Read More</span>
-                                </a>
+                                
                             </div><!-- /.service__body -->
                         </div><!-- /.service-item -->
                     </div><!-- /.col-lg-3 -->
@@ -331,10 +370,7 @@
                                 <p class="service__desc">Professional Starlink satellite internet installation for homes,
                                     farms, businesses, and remote locations across Zimbabwe.
                                 </p>
-                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                    <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Read More</span>
-                                </a>
+                                
                             </div><!-- /.service__body -->
                         </div><!-- /.service-item -->
                     </div><!-- /.col-lg-3 -->
@@ -349,10 +385,7 @@
                                 <p class="service__desc">Structured cabling, Wi-Fi setup, LAN/WAN configuration, router
                                     and switch installation for offices and commercial buildings.
                                 </p>
-                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                    <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Read More</span>
-                                </a>
+                                
                             </div><!-- /.service__body -->
                         </div><!-- /.service-item -->
                     </div><!-- /.col-lg-3 -->
@@ -371,10 +404,7 @@
                                 <p class="service__desc">Laptop and desktop repairs, virus removal, software installation,
                                     data recovery, and on-site IT support for businesses of all sizes.
                                 </p>
-                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                    <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Read More</span>
-                                </a>
+                                
                             </div><!-- /.service__body -->
                         </div><!-- /.service-item -->
                     </div><!-- /.col-lg-3 -->
@@ -389,10 +419,7 @@
                                 <p class="service__desc">Supply, installation, and maintenance of printers, photocopiers,
                                     scanners, and all printing consumables and accessories.
                                 </p>
-                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                    <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Read More</span>
-                                </a>
+                                
                             </div><!-- /.service__body -->
                         </div><!-- /.service-item -->
                     </div><!-- /.col-lg-3 -->
@@ -407,10 +434,7 @@
                                 <p class="service__desc">General maintenance and repair of all office equipment including
                                     computers, printers, photocopiers, and networking devices.
                                 </p>
-                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                    <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Read More</span>
-                                </a>
+                                
                             </div><!-- /.service__body -->
                         </div><!-- /.service-item -->
                     </div><!-- /.col-lg-3 -->
@@ -425,10 +449,7 @@
                                 <p class="service__desc">Supply of CCTVs, alarms, vehicle trackers, drones, networking
                                     equipment, computers, and all IT accessories and peripherals.
                                 </p>
-                                <a href="{{route('servicessingle')}}" class="btn btn__primary btn__link">
-                                    <i class="icon-arrow-right icon-filled"></i>
-                                    <span>Read More</span>
-                                </a>
+                                
                             </div><!-- /.service__body -->
                         </div><!-- /.service-item -->
                     </div><!-- /.col-lg-3 -->
@@ -495,7 +516,7 @@
                     <div class="about__img">
                         <img src="assets/images/about/4.jpg" alt="about">
                         <div class="cta-banner">
-                            <h3 class="cta__subtitle">Power Your Business With ATA!</h3>
+                            <h3 class="cta__subtitle">Power Your Business With Innovinetec Solutions!</h3>
                             <h4 class="cta__title">All The IT Essentials To Keep Your Operations Running.</h4>
                             <ul class="list-items-layout5 list-unstyled mb-0">
                                 <li class="list__item">Fast Starlink connectivity</li>
@@ -517,7 +538,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
                     <div class="about__img">
-                        <img src="assets/images/about/5.jpg" alt="about">
+                        <img src="assets/images/about/itperson.jpeg" alt="about">
                         <div class="cta-banner cta-banner-primary">
                             <h3 class="cta__subtitle">Leave The Tech To Us.</h3>
                             <h4 class="cta__title">We Handle Everything — So You Can Focus On Your Business!</h4>
@@ -542,7 +563,7 @@
                                 from a single office setup to multi-site enterprise deployments across Zimbabwe.</p>
                         </div><!-- /heading -->
                         <blockquote class="blockquote mb-0">
-                            <h3 class="quote__title color-white">ATA transformed our office network and security
+                            <h3 class="quote__title color-white">Innovinetec Solutions transformed our office network and security
                                 infrastructure in under a week. Excellent service from a truly professional team.
                             </h3>
                             <div class="d-flex align-items-center">
@@ -578,7 +599,7 @@
                             <p class="heading__desc">We design, install, and maintain technology solutions built around your
                                 specific needs and budget. Whether you're a small startup needing reliable internet and a
                                 few workstations, or a large enterprise requiring full security surveillance, access control,
-                                and a managed IT infrastructure — ATA has you covered.
+                                and a managed IT infrastructure — Innovinetec Solutions has you covered.
                             </p>
                         </div><!-- /heading -->
                         <div class="widget-categories p-0 mb-60">
@@ -604,190 +625,12 @@
                 <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1">
                     <div class="video-banner-layout3 mb-50">
                         <img src="assets/images/about/6.jpg" alt="about">
-                        <a class="video__btn video__btn-white popup-video"
-                            href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                            <div class="video__player">
-                                <i class="fa fa-play"></i>
-                            </div>
-                        </a>
                     </div> <!-- /.video-banner -->
                 </div><!-- /.col-xl-5 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /.About Layout 5 -->
 
-    <!-- ======================
-        Portfolio
-      ========================= -->
-    <section class="portfolio-carousel portfolio-layout2">
-        <div class="container">
-            <div class="row heading mb-20">
-                <div class="col-sm-12 col-md-12 col-lg-5">
-                    <h3 class="heading__title">Explore Our Case Studies &amp; Latest Success Stories.</h3>
-                </div><!-- /.col-lg-5 -->
-                <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
-                    <p class="heading__desc mb-30">From securing a hospital's entire campus with CCTV and access control,
-                        to deploying Starlink for remote farms and building enterprise networks for growing businesses —
-                        ATA delivers results that matter.</p>
-                    <p class="heading__desc mb-30">We understand that technology must work reliably, every single day.
-                        That's why our solutions are built to last, backed by expert support whenever you need it.</p>
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="carousel-container">
-                        <div class="slick-carousel"
-                            data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "autoplay": false, "arrows": true, "dots": true, "responsive": [{"breakpoint": 1300, "settings": {"slidesToShow": 3,"slidesToScroll": 3}}, {"breakpoint": 992, "settings": {"slidesToShow": 2,"slidesToScroll": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1,"slidesToScroll": 1}}, {"breakpoint": 480, "settings": {"slidesToShow": 1,"slidesToScroll": 1}}]}'>
-                            <div class="portfolio-item">
-                                <div class="portfolio__img">
-                                    <img src="assets/images/portfolio/grid/1.jpg" alt="portfolio img">
-                                </div>
-                                <div class="portfolio__body">
-                                    <div class="portfolio__cat">
-                                        <a href="#">CCTV</a><a href="#">Security</a>
-                                    </div>
-                                    <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Full CCTV &amp; Access Control
-                                                Deployment For A Corporate Campus</a>
-                                        </h4>
-                                        <p class="portfolio__desc">Complete surveillance system with 64 cameras, biometric
-                                            access control, and 24/7 monitoring integration installed across a multi-building
-                                            corporate site.</p>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="#" class="btn btn__secondary">
-                                            <i class="icon-arrow-right"></i>
-                                            <span>Explore More</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
-                            </div>
-                            <div class="portfolio-item">
-                                <div class="portfolio__img">
-                                    <img src="assets/images/portfolio/grid/2.jpg" alt="portfolio img">
-                                </div>
-                                <div class="portfolio__body">
-                                    <div class="portfolio__cat">
-                                        <a href="#">Starlink</a><a href="#">Connectivity</a>
-                                    </div>
-                                    <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Starlink Internet Installation For
-                                                A Remote Farm &amp; Lodge</a>
-                                        </h4>
-                                        <p class="portfolio__desc">Delivered high-speed Starlink satellite internet to a
-                                            remote agricultural operation, enabling reliable connectivity for the first time.</p>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="#" class="btn btn__secondary">
-                                            <i class="icon-arrow-right"></i>
-                                            <span>Explore More</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
-                            </div>
-                            <div class="portfolio-item">
-                                <div class="portfolio__img">
-                                    <img src="assets/images/portfolio/grid/3.jpg" alt="portfolio img">
-                                </div>
-                                <div class="portfolio__body">
-                                    <div class="portfolio__cat">
-                                        <a href="#">Networking</a><a href="#">IT</a>
-                                    </div>
-                                    <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Enterprise Network Build For A
-                                                Growing Retail Chain</a>
-                                        </h4>
-                                        <p class="portfolio__desc">Designed and installed a full LAN/WAN infrastructure
-                                            across 5 retail branches, including structured cabling and managed Wi-Fi.</p>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="#" class="btn btn__secondary">
-                                            <i class="icon-arrow-right"></i>
-                                            <span>Explore More</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
-                            </div>
-                            <div class="portfolio-item">
-                                <div class="portfolio__img">
-                                    <img src="assets/images/portfolio/grid/4.jpg" alt="portfolio img">
-                                </div>
-                                <div class="portfolio__body">
-                                    <div class="portfolio__cat">
-                                        <a href="#">Computers</a><a href="#">IT Support</a>
-                                    </div>
-                                    <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Full IT Refresh For A Healthcare
-                                                Facility</a>
-                                        </h4>
-                                        <p class="portfolio__desc">Supplied, configured, and deployed 40 workstations,
-                                            printers, and a server room for a medical clinic — with ongoing support contract.</p>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="#" class="btn btn__secondary">
-                                            <i class="icon-arrow-right"></i>
-                                            <span>Explore More</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
-                            </div>
-                            <div class="portfolio-item">
-                                <div class="portfolio__img">
-                                    <img src="assets/images/portfolio/grid/5.jpg" alt="portfolio img">
-                                </div>
-                                <div class="portfolio__body">
-                                    <div class="portfolio__cat">
-                                        <a href="#">Printers</a><a href="#">Maintenance</a>
-                                    </div>
-                                    <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Managed Print &amp; Equipment
-                                                Maintenance Contract For A Law Firm</a></h4>
-                                        <p class="portfolio__desc">Ongoing maintenance and support for all printers,
-                                            photocopiers, and office equipment across a busy legal firm's Harare office.</p>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="#" class="btn btn__secondary">
-                                            <i class="icon-arrow-right"></i>
-                                            <span>Explore More</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
-                            </div>
-                            <div class="portfolio-item">
-                                <div class="portfolio__img">
-                                    <img src="assets/images/portfolio/grid/6.jpg" alt="portfolio img">
-                                </div>
-                                <div class="portfolio__body">
-                                    <div class="portfolio__cat">
-                                        <a href="#">Access Control</a><a href="#">Alarms</a>
-                                    </div>
-                                    <div class="portfolio__info">
-                                        <h4 class="portfolio__title"><a href="#">Vehicle Security &amp; Alarm System
-                                                Installation For A Fleet Company</a>
-                                        </h4>
-                                        <p class="portfolio__desc">Installed GPS vehicle trackers, immobilizers, and
-                                            alarm systems across an entire commercial vehicle fleet for real-time security.</p>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="#" class="btn btn__secondary">
-                                            <i class="icon-arrow-right"></i>
-                                            <span>Explore More</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <a href="#" class="portfolio__readmore"><i class="icon-arrow-right"></i></a>
-                            </div>
-                        </div><!-- /.carousel -->
-                    </div><!-- /.carousel-container -->
-                </div><!-- /.col-12 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.portfolio -->
 
     <!-- ======================
        Clients
@@ -1063,7 +906,7 @@
                     <div class="post-item">
                         <div class="post__img">
                             <a href="#">
-                                <img src="assets/images/blog/grid/1.jpg" alt="post image" loading="lazy">
+                                <img src="assets/images/sliders/starlink.jpg" alt="post image" loading="lazy">
                             </a>
                             <div class="post__meta-cat">
                                 <a href="#">Starlink</a>
@@ -1075,15 +918,12 @@
                             </h4>
                             <div class="post__meta d-flex">
                                 <span class="post__meta-date">Jan 30, 2025</span>
-                                <div class="post__meta-author"><a href="#">ATA Team</a></div>
+                                <div class="post__meta-author"><a href="#">Innovinetec Solutions Team</a></div>
                             </div>
                             <p class="post__desc">Starlink is changing internet access across Zimbabwe. Here's what you need
                                 to know about costs, installation, speed expectations, and the best locations for your dish.
                             </p>
-                            <a href="#" class="btn btn__secondary btn__outlined">
-                                <i class="icon-arrow-right"></i>
-                                <span>Read More</span>
-                            </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -1092,7 +932,7 @@
                     <div class="post-item">
                         <div class="post__img">
                             <a href="#">
-                                <img src="assets/images/blog/grid/2.jpg" alt="post image" loading="lazy">
+                                <img src="assets/images/sliders/1.jpg" alt="post image" loading="lazy">
                             </a>
                             <div class="post__meta-cat">
                                 <a href="#">Security</a>
@@ -1105,15 +945,12 @@
                             </h4>
                             <div class="post__meta d-flex">
                                 <span class="post__meta-date">Jan 22, 2025</span>
-                                <div class="post__meta-author"><a href="#">ATA Team</a></div>
+                                <div class="post__meta-author"><a href="#">Innovinetec Solutions Team</a></div>
                             </div>
                             <p class="post__desc">With so many CCTV options on the market, knowing which system suits your
                                 environment and budget is crucial. Our experts break down what matters most.
                             </p>
-                            <a href="#" class="btn btn__secondary btn__outlined">
-                                <i class="icon-arrow-right"></i>
-                                <span>Read More</span>
-                            </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -1122,7 +959,7 @@
                     <div class="post-item">
                         <div class="post__img">
                             <a href="#">
-                                <img src="assets/images/blog/grid/3.jpg" alt="post image" loading="lazy">
+                                <img src="assets/images/sliders/support.jpeg" alt="post image" loading="lazy">
                             </a>
                             <div class="post__meta-cat">
                                 <a href="#">IT Support</a>
@@ -1135,15 +972,12 @@
                             </h4>
                             <div class="post__meta d-flex">
                                 <span class="post__meta-date">Jan 15, 2025</span>
-                                <div class="post__meta-author"><a href="#">ATA Team</a></div>
+                                <div class="post__meta-author"><a href="#">Innovinetec Solutions Team</a></div>
                             </div>
                             <p class="post__desc">Ignoring early warning signs from your printers, computers, and
                                 photocopiers can lead to costly breakdowns. Here's what to watch out for.
                             </p>
-                            <a href="#" class="btn btn__secondary btn__outlined">
-                                <i class="icon-arrow-right"></i>
-                                <span>Read More</span>
-                            </a>
+                            
                         </div>
                     </div>
                 </div>

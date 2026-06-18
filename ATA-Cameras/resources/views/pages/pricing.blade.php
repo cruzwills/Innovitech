@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('content')
     page title
     =========================== -->
@@ -177,12 +177,6 @@
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <div class="video-banner-layout3 h-100">
                         <div class="bg-img"><img src="assets/images/banners/6.jpg" alt="video img"></div>
-                        <a class="video__btn video__btn-white video__btn-lg popup-video"
-                            href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                            <div class="video__player">
-                                <i class="fa fa-play"></i>
-                            </div>
-                        </a>
                     </div><!-- /.video-banner -->
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-12 col-md-12 col-lg-6">

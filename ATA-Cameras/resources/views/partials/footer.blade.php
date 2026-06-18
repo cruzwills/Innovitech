@@ -1,11 +1,11 @@
-<footer class="footer">
+﻿<footer class="footer">
     <div class="footer-primary">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-3">
                     <div class="footer-widget-contact">
                         <a href="{{route('index')}}" class="footer-logo-link d-block mb-20">
-                            <img src="assets/images/logo/ata-logo.png" alt="All Tech Alliance" class="footer-logo">
+                            <img src="assets/images/logo/ata-logo.png" alt="Innovinetec Solutions" class="footer-logo">
                         </a>
                         <h6 class="footer-widget__title">Quick Contacts</h6>
                         <p>If you have any questions or need help, feel free to contact our team — we're ready to assist.</p>
@@ -97,7 +97,7 @@
                 <div
                     class="col-sm-12 col-md-8 col-lg-12 col-xl-8 offset-xl-2 d-flex flex-wrap justify-content-between align-items-center">
                     <div class="footer__copyrights">
-                        <span class="fz-14">&copy; 2025 All Tech Alliance (ATA). All Rights Reserved.</span>
+                        <span class="fz-14">&copy; 2025 Innovinetec Solutions. All Rights Reserved.</span>
                     </div>
                     <nav>
                         <ul class="list-unstyled footer__copyright-links d-flex flex-wrap mb-0">

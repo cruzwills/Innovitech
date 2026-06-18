@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('content')
 <!-- ========================
        page title 
@@ -162,12 +162,6 @@
                   </p>
                   <div class="video-banner-layout1 mb-60">
                     <img src="assets/images/about/3.jpg" alt="video img">
-                    <a class="video__btn video__btn-white popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                      <div class="video__player">
-                        <i class="fa fa-play"></i>
-                      </div>
-                      <span class="video__title color-white">Watch Our Intro!</span>
-                    </a>
                   </div><!-- /.video-banner -->
                   <p class="heading__desc mb-40">We will design, install, maintain and upgrade solutions to meet
                     businesses' specific needs

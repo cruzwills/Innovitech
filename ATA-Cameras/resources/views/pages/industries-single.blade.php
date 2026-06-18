@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('content')
     <section class="page-title-layout2 page-title-light bg-overlay">
         <div class="bg-img"><img src="assets/images/page-titles/14.jpg" alt="background"></div>
@@ -82,12 +82,6 @@
                 <div class="col-sm-12 col-md-12 col-lg-8">
                     <div class="video-banner-layout3 bg-overlay mb-50">
                         <img src="assets/images/banners/7.jpg" alt="banner">
-                        <a class="video__btn video__btn-white popup-video"
-                            href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                            <div class="video__player">
-                                <i class="fa fa-play"></i>
-                            </div>
-                        </a>
                     </div><!-- /.video-banner -->
                     <div class="text-block mb-40">
                         <p class="text-block__desc mb-20">You can quickly set up or delete access for employees, get
@@ -415,13 +409,6 @@
                             </p>
                             <div class="video-banner-layout1 mb-60">
                                 <img src="assets/images/about/3.jpg" alt="video img">
-                                <a class="video__btn video__btn-white popup-video"
-                                    href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                                    <div class="video__player">
-                                        <i class="fa fa-play"></i>
-                                    </div>
-                                    <span class="video__title color-white">Watch Our Intro!</span>
-                                </a>
                             </div><!-- /.video-banner -->
                             <p class="heading__desc mb-40">We will design, install, maintain and upgrade solutions to meet
                                 businesses' specific needs

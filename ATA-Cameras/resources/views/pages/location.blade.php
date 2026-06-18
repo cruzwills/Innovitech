@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('content')
     <section class="page-title-layout1 page-title-light bg-overlay text-center">
         <div class="bg-img"><img src="assets/images/page-titles/7.jpg" alt="background"></div>
