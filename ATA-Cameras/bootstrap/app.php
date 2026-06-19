@@ -24,9 +24,10 @@ $app = Application::configure(basePath: dirname(__DIR__))
         });
     })->create();
 
-// On Vercel serverless, redirect writable storage to /tmp
+// On Vercel serverless, redirect writable paths to /tmp
 if (getenv('VERCEL')) {
     $app->useStoragePath('/tmp/storage');
+    $app->useBootstrapPath('/tmp/bootstrap');
 }
 
 return $app;
