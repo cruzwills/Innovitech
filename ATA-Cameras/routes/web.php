@@ -13,29 +13,9 @@ Route::get('/about', function () {
 Route::get('/index', function () {
     return view('pages.index');
 })->name('index');
-Route::get('/howitworks', function () {
-    return view('pages.how-it-works');
-})->name('howitworks');
-
-Route::get('/pricing', function () {
-    return view('pages.pricing');
-})->name('pricing');
-
-Route::get('/awards', function () {
-    return view('pages.awards');
-})->name('awards');
-
 Route::get('/review', function () {
     return view('pages.review');
 })->name('review');
-
-Route::get('/location', function () {
-    return view('pages.location');
-})->name('location');
-
-Route::get('/faq', function () {
-    return view('pages.faq');
-})->name('faq');
 
 Route::get('/gallery', function () {
     return view('pages.gallery');
@@ -44,15 +24,11 @@ Route::get('/gallery', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
+
 Route::get('/services', function () {
     return view('pages.services');
 })->name('services');
-Route::get('/industries', function () {
-    return view('pages.industries');
-})->name('industries');
-Route::get('/industriessingle', function () {
-    return view('pages.industriessingle');
-})->name('industriessingle');
+
 Route::get('/servicessingle', function () {
     return view('pages.servicessingle');
 })->name('servicessingle');

@@ -316,8 +316,8 @@
                         to internet connectivity, computer support, and office equipment maintenance. Our certified
                         technicians deliver fast, reliable service so your operations never miss a beat.</p>
                     <div class="d-flex flex-wrap align-items-center mt-30">
-                        <a href="{{route('howitworks')}}" class="btn btn__secondary btn__xl my-1 mr-30">
-                            <span>How Does It Work?</span>
+                        <a href="{{route('services')}}" class="btn btn__secondary btn__xl my-1 mr-30">
+                            <span>Our Services</span>
                             <i class="icon-arrow-right"></i>
                         </a>
                         <a href="{{route('services')}}" class="btn btn__secondary btn__link my-1">

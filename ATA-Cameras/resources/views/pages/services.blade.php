@@ -10,8 +10,8 @@
                         repairs, printers, and office equipment maintenance — Innovinetec Solutions delivers every IT service your home or
                         business needs.</p>
                     <div class="d-flex flex-wrap align-items-center">
-                        <a href="{{route('pricing')}}" class="btn btn__white my-2 mr-30">
-                            <span>See Packages &amp; Pricing</span>
+                        <a href="{{route('contact')}}" class="btn btn__white my-2 mr-30">
+                            <span>Get A Free Quote</span>
                             <i class="icon-arrow-right"></i>
                         </a>
                         <a href="{{route('contact')}}" class="btn btn__white btn__outlined my-2">
@@ -28,7 +28,7 @@
                 <div class="col-12">
                     <nav>
                         <ol class="breadcrumb  mb-0">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Services</li>
                         </ol>
                     </nav>
@@ -36,6 +36,37 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </div><!-- /.breadcrumb-area -->
+
+    <style>
+        /* Equal-height service cards with aligned images */
+        .services-layout1 .row > [class*="col-"] {
+            display: flex;
+        }
+        .service-item {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+        .service__body {
+            flex: 1;
+        }
+        .service__img {
+            height: 220px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .service__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .service-item:hover .service__img img {
+            transform: scale(1.05);
+        }
+    </style>
 
     <!-- ========================
           Services Layout 1
@@ -63,7 +94,7 @@
                             </p>
                             
                         </div>
-                        <div class="service__img"><img src="assets/images/services/1.jpg" alt="service"></div>
+                        <div class="service__img"><img src="assets/images/gallery/9.jpg" alt="CCTV & Video Surveillance"></div>
                     </div>
                 </div>
                 <!-- service item #2 -->
@@ -77,7 +108,7 @@
                             </p>
                             
                         </div>
-                        <div class="service__img"><img src="assets/images/services/2.jpg" alt="service"></div>
+                        <div class="service__img"><img src="assets/images/gallery/8.jpg" alt="Access Control & Alarm Systems"></div>
                     </div>
                 </div>
                 <!-- service item #3 -->
@@ -91,7 +122,7 @@
                             </p>
                             
                         </div>
-                        <div class="service__img"><img src="assets/images/services/3.jpg" alt="service"></div>
+                        <div class="service__img"><img src="starlink.jpg" alt="Starlink Installation"></div>
                     </div>
                 </div>
                 <!-- service item #4 -->
@@ -105,7 +136,7 @@
                             </p>
                             
                         </div>
-                        <div class="service__img"><img src="assets/images/services/4.jpg" alt="service"></div>
+                        <div class="service__img"><img src="network.png" alt="Networking & Wi-Fi Installation"></div>
                     </div>
                 </div>
                 <!-- service item #5 -->
@@ -119,7 +150,7 @@
                             </p>
                             
                         </div>
-                        <div class="service__img"><img src="assets/images/services/5.jpg" alt="service"></div>
+                        <div class="service__img"><img src="assets/images/gallery/6.jpg" alt="Computer & IT Support"></div>
                     </div>
                 </div>
                 <!-- service item #6 -->
@@ -133,7 +164,7 @@
                             </p>
                             
                         </div>
-                        <div class="service__img"><img src="assets/images/services/6.jpg" alt="service"></div>
+                        <div class="service__img"><img src="assets/images/gallery/3.jpg" alt="Printers & Office Equipment"></div>
                     </div>
                 </div>
             </div><!-- /.row -->
@@ -325,219 +356,6 @@
         </div><!-- /.container -->
     </section><!-- /.Clients -->
 
-    <!-- ===========================
-        portfolio layout2
-      ============================= -->
-    <section class="portfolio-layout2">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-                    <div class="heading text-center mb-40">
-                        <h2 class="heading__subtitle">Analytics That Give Meaning To Security Data</h2>
-                        <h3 class="heading__title">Explore Our Case Studies & Latest Sucess Stories.</h3>
-                    </div><!-- /.heading -->
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-            <div class="row">
-                <!-- portfolio item #1 -->
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/1.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Detection</a><a href="#">Fire Alarms</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Getting The Right Fire Alarm Detection
-                                        System Online</a></h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-                <!-- portfolio item #2 -->
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/2.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Security</a><a href="#">CCTV</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Helping Manufacturers With Workplace
-                                        Essential Safety</a>
-                                </h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-                <!-- portfolio item #3 -->
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/3.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Resources</a><a href="#">Security</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Vendors With Resources To Deliver Safety &
-                                        Security</a></h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-                <!-- portfolio item #4 -->
-                <div class="col-sm-6 col-md-6 col-lg-4 portfolio-hidden">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/4.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Detection</a><a href="#">Fire Alarms</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Home Security For The Front And Back Of
-                                        Your House</a></h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-                <!-- portfolio item #5 -->
-                <div class="col-sm-6 col-md-6 col-lg-4 portfolio-hidden">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/5.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Detection</a><a href="#">Fire Alarms</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Expert's Guide To Security For Rental
-                                        Properties</a></h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-                <!-- portfolio item #6 -->
-                <div class="col-sm-6 col-md-6 col-lg-4 portfolio-hidden">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/6.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Resources</a><a href="#">Security</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Getting The Right Fire Alarm Detection
-                                        System Online</a></h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-            <div class="row">
-                <div class="col-12 text-center">
-                    <button class="btn btn__secondary btn__link btn__loadMore loadMoreportfolio">
-                        <i class="icon-horizontal-dots"></i>
-                        <span>Explore All Cases</span>
-                    </button>
-                </div><!-- /.col-12 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.portfolio layout2 -->
-
     <!-- ==========================
           contact layout 3
       =========================== -->
@@ -691,12 +509,8 @@
                                             </ul>
                                         </div><!-- /.package__body -->
                                         <div class="package__footer">
-                                            <div class="package__price">
-                                                <span class="package__currency">$</span><span>59</span><span
-                                                    class="package__period">/Month</span>
-                                            </div>
-                                            <a href="#" class="btn btn__secondary btn__xl">
-                                                <span>Get Started Now</span>
+                                            <a href="{{route('contact')}}" class="btn btn__secondary btn__xl">
+                                                <span>Get A Free Quote</span>
                                                 <i class="icon-arrow-right"></i>
                                             </a>
                                         </div><!-- /.package__footer -->
@@ -729,12 +543,8 @@
                                             </ul>
                                         </div><!-- /.package__body -->
                                         <div class="package__footer">
-                                            <div class="package__price">
-                                                <span class="package__currency">$</span><span>159</span><span
-                                                    class="package__period">/Month</span>
-                                            </div>
-                                            <a href="#" class="btn btn__primary btn__xl">
-                                                <span>Get Started Now</span>
+                                            <a href="{{route('contact')}}" class="btn btn__primary btn__xl">
+                                                <span>Get A Free Quote</span>
                                                 <i class="icon-arrow-right"></i>
                                             </a>
                                         </div><!-- /.package__footer -->
@@ -769,12 +579,8 @@
                                             </ul>
                                         </div><!-- /.package__body -->
                                         <div class="package__footer">
-                                            <div class="package__price">
-                                                <span class="package__currency">$</span><span>259</span><span
-                                                    class="package__period">/Month</span>
-                                            </div>
-                                            <a href="#" class="btn btn__secondary btn__xl">
-                                                <span>Get Started Now</span>
+                                            <a href="{{route('contact')}}" class="btn btn__secondary btn__xl">
+                                                <span>Get A Free Quote</span>
                                                 <i class="icon-arrow-right"></i>
                                             </a>
                                         </div><!-- /.package__footer -->

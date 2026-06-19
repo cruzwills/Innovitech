@@ -1,4 +1,57 @@
-﻿<footer class="footer">
+﻿<style>
+    /* ── Footer typography ── */
+    .footer {
+        font-family: inherit;
+    }
+    .footer-widget__title {
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.08em !important;
+        text-transform: uppercase !important;
+        margin-bottom: 20px !important;
+    }
+    .footer-widget-nav nav ul li {
+        margin-bottom: 10px !important;
+    }
+    .footer-widget-nav nav ul li a {
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 1.6 !important;
+        letter-spacing: 0 !important;
+        text-transform: none !important;
+        transition: color 0.25s ease, padding-left 0.25s ease !important;
+    }
+    .footer-widget-nav nav ul li a:hover {
+        padding-left: 5px !important;
+    }
+    .footer-widget-contact p,
+    .footer-widget-contact .contact__list li,
+    .footer-widget-contact .contact__list li a {
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 1.7 !important;
+        letter-spacing: 0 !important;
+    }
+    .footer-widget-social .btn {
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.03em !important;
+    }
+    .footer__copyrights span {
+        font-size: 13px !important;
+        font-weight: 400 !important;
+        letter-spacing: 0 !important;
+    }
+    .footer__copyright-links li a {
+        font-size: 13px !important;
+        font-weight: 400 !important;
+        letter-spacing: 0 !important;
+    }
+    .contact__icon {
+        margin-right: 8px !important;
+    }
+</style>
+<footer class="footer">
     <div class="footer-primary">
         <div class="container">
             <div class="row">
@@ -11,8 +64,8 @@
                         <p>If you have any questions or need help, feel free to contact our team — we're ready to assist.</p>
                         <ul class="contact__list list-unstyled">
                             <li>
-                                <a href="mailto:info@allteachalliance.co.zw">
-                                    <i class="contact__icon icon-email"></i> <span>info@allteachalliance.co.zw</span>
+                                <a href="mailto:info@innovinetec.co.zw">
+                                    <i class="contact__icon icon-email"></i> <span>info@innovinetec.co.zw</span>
                                 </a>
                             </li>
                             <li>
@@ -33,8 +86,6 @@
                         <nav>
                             <ul class="list-unstyled">
                                 <li><a href="{{route('about')}}">About Us</a></li>
-                                <li><a href="{{route('howitworks')}}">How It Works</a></li>
-                                <li><a href="{{route('awards')}}">Awards & Recognition</a></li>
                                 <li><a href="{{route('review')}}">Customer Reviews</a></li>
                                 <li><a href="{{route('gallery')}}">Our Gallery</a></li>
                             </ul>
@@ -61,8 +112,6 @@
                         <h6 class="footer-widget__title">Help</h6>
                         <nav>
                             <ul class="list-unstyled">
-                                <li><a href="{{route('faq')}}">FAQs</a></li>
-                                <li><a href="{{route('pricing')}}">Packages & Pricing</a></li>
                                 <li><a href="#">Terms &amp; Conditions</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="{{route('contact')}}">Contact Us</a></li>
