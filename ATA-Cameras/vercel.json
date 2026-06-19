@@ -19,7 +19,7 @@
     ],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "true",
+        "APP_DEBUG": "false",
         "VERCEL": "1",
         "SESSION_DRIVER": "cookie",
         "CACHE_STORE": "array",

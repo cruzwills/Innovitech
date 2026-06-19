@@ -13,7 +13,7 @@ if ($uri !== '/' && file_exists(__DIR__ . '/../public' . $uri)) {
 $envOverrides = [
     'VERCEL'                 => '1',
     'APP_ENV'                => 'production',
-    'APP_DEBUG'              => 'true',
+    'APP_DEBUG'              => 'false',
     'APP_KEY'                => 'base64:pvRE80ao6tWoVgwcDlpoc5/dVeHwM906jxhFveiGLl0=',
     'SESSION_DRIVER'         => 'cookie',
     'SESSION_SECURE_COOKIE'  => 'false',
@@ -43,13 +43,4 @@ foreach ([
     }
 }
 
-// Catch any boot exception and show it plainly for diagnosis
-try {
-    require __DIR__ . '/../public/index.php';
-} catch (\Throwable $e) {
-    http_response_code(500);
-    header('Content-Type: text/plain; charset=utf-8');
-    echo get_class($e) . ': ' . $e->getMessage() . "\n\n";
-    echo $e->getFile() . ':' . $e->getLine() . "\n\n";
-    echo $e->getTraceAsString();
-}
+require __DIR__ . '/../public/index.php';
