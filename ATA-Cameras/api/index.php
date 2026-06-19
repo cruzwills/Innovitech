@@ -4,36 +4,51 @@ $uri = urldecode(
     parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?? '/'
 );
 
-// Serve static files directly from public/
+// Serve existing static files directly from public/
 if ($uri !== '/' && file_exists(__DIR__ . '/../public' . $uri)) {
     return false;
 }
 
+// Force env vars before Laravel boots
+$envOverrides = [
+    'VERCEL'                 => '1',
+    'APP_ENV'                => 'production',
+    'APP_KEY'                => 'base64:pvRE80ao6tWoVgwcDlpoc5/dVeHwM906jxhFveiGLl0=',
+    'SESSION_DRIVER'         => 'cookie',
+    'SESSION_SECURE_COOKIE'  => 'false',
+    'CACHE_STORE'            => 'array',
+    'LOG_CHANNEL'            => 'stderr',
+    'DB_CONNECTION'          => 'sqlite',
+    'DB_DATABASE'            => ':memory:',
+];
+
+foreach ($envOverrides as $key => $value) {
+    putenv("{$key}={$value}");
+    $_ENV[$key]    = $value;
+    $_SERVER[$key] = $value;
+}
+
 // Create writable directories in /tmp for Vercel serverless environment
-$writableDirs = [
+foreach ([
     '/tmp/storage/app/public',
     '/tmp/storage/framework/cache/data',
     '/tmp/storage/framework/sessions',
     '/tmp/storage/framework/views',
     '/tmp/storage/logs',
     '/tmp/bootstrap/cache',
-];
-
-foreach ($writableDirs as $dir) {
+] as $dir) {
     if (!is_dir($dir)) {
         mkdir($dir, 0755, true);
     }
 }
 
-// Bootstrap Laravel with /tmp as writable storage path
-require __DIR__ . '/../vendor/autoload.php';
-
-$app = require __DIR__ . '/../bootstrap/app.php';
-$app->useStoragePath('/tmp/storage');
-
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
-$response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
-);
-$response->send();
-$kernel->terminate($request, $response);
+// Catch any boot exception and show it plainly for diagnosis
+try {
+    require __DIR__ . '/../public/index.php';
+} catch (\Throwable $e) {
+    http_response_code(500);
+    header('Content-Type: text/plain; charset=utf-8');
+    echo get_class($e) . ': ' . $e->getMessage() . "\n\n";
+    echo $e->getFile() . ':' . $e->getLine() . "\n\n";
+    echo $e->getTraceAsString();
+}
