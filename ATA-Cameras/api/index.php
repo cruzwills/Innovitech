@@ -13,6 +13,7 @@ if ($uri !== '/' && file_exists(__DIR__ . '/../public' . $uri)) {
 $envOverrides = [
     'VERCEL'                 => '1',
     'APP_ENV'                => 'production',
+    'APP_DEBUG'              => 'true',
     'APP_KEY'                => 'base64:pvRE80ao6tWoVgwcDlpoc5/dVeHwM906jxhFveiGLl0=',
     'SESSION_DRIVER'         => 'cookie',
     'SESSION_SECURE_COOKIE'  => 'false',
