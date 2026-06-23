@@ -530,58 +530,6 @@
         </div><!-- /.container -->
     </section><!-- /.About Layout 3 -->
 
-    <!-- ========================
-        About Layout 4
-      =========================== -->
-    <section class="about-layout4 bg-dark pt-0 pb-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
-                    <div class="about__img">
-                        <img src="assets/images/about/itperson.jpeg" alt="about">
-                        <div class="cta-banner cta-banner-primary">
-                            <h3 class="cta__subtitle">Leave The Tech To Us.</h3>
-                            <h4 class="cta__title">We Handle Everything — So You Can Focus On Your Business!</h4>
-                            <ul class="list-items-layout5 list-unstyled mb-0">
-                                <li class="list__item">On-site technician support</li>
-                                <li class="list__item">Same-day response available</li>
-                                <li class="list__item">Preventive maintenance plans</li>
-                            </ul>
-                        </div>
-                    </div><!-- /.about__img -->
-                </div><!-- /.col-xl-5 -->
-                <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6 offset-xl-1">
-                    <div class="about__text">
-                        <div class="heading-layout1 heading-light mb-60">
-                            <h2 class="heading__subtitle color-primary">Products &amp; Equipment Supplied Nationwide</h2>
-                            <h3 class=" heading__title mb-40">Trusted Technology Products That Deliver Real Results.</h3>
-                            <p class="heading__desc mb-30">We supply and install a comprehensive range of IT products
-                                including computers, laptops, printers, photocopiers, networking equipment, Starlink kits,
-                                CCTV systems, access control hardware, alarms, vehicle security devices, drones, and all
-                                associated accessories.</p>
-                            <p class="heading__desc mb-30">Our team of certified engineers handles projects of all sizes —
-                                from a single office setup to multi-site enterprise deployments across Zimbabwe.</p>
-                        </div><!-- /heading -->
-                        <blockquote class="blockquote mb-0">
-                            <h3 class="quote__title color-white">Innovinetec Solutions transformed our office network and security
-                                infrastructure in under a week. Excellent service from a truly professional team.
-                            </h3>
-                            <div class="d-flex align-items-center">
-                                <div class="quote__rate mr-20">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <strong class="quote__author color-white">Business Client, Harare</strong>
-                            </div>
-                        </blockquote>
-                    </div>
-                </div><!-- /.col-xl-6 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.About Layout 4 -->
 
     <!-- ========================
         About Layout 5

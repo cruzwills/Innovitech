@@ -20,114 +20,223 @@
            MOBILE RESPONSIVE OVERRIDES — Innovinetec Solutions
            ============================================================ */
 
+        /* Prevent horizontal scroll on all viewports */
+        html, body, .wrapper { overflow-x: hidden; max-width: 100%; }
+        img { max-width: 100%; height: auto; }
+
         /* ── Tablet (≤ 991px) ── */
         @media (max-width: 991px) {
-            .slide__title         { font-size: 32px !important; line-height: 1.3 !important; }
-            .pagetitle__heading   { font-size: 30px !important; }
+            /* Navbar */
+            .navbar-brand .ata-logo     { max-height: 50px !important; width: auto; }
+
+            /* Typography */
+            .slide__title               { font-size: 30px !important; line-height: 1.3 !important; }
+            .pagetitle__heading         { font-size: 28px !important; }
             h3.heading__title,
-            .heading__title       { font-size: 24px !important; }
-            .nav.nav-tabs         { flex-wrap: wrap; }
-            .nav.nav-tabs .nav__link { flex: 1 1 45%; font-size: 13px; margin-bottom: 4px; }
+            .heading__title             { font-size: 22px !important; }
+            h2.heading__subtitle,
+            .heading__subtitle          { font-size: 13px !important; }
+
+            /* Large margin/padding classes used in template */
+            .mb-140                     { margin-bottom: 70px !important; }
+            .mb-90                      { margin-bottom: 50px !important; }
+            .pb-120                     { padding-bottom: 70px !important; }
+
+            /* Work process tabs */
+            .nav.nav-tabs               { flex-wrap: wrap; }
+            .nav.nav-tabs .nav__link    { flex: 1 1 45%; font-size: 13px; margin-bottom: 4px; }
+
+            /* About images — prevent overflow */
+            .about__img                 { position: relative; overflow: hidden; }
+
+            /* Features section heading */
+            .features-layout2 .heading-layout2.mb-140 { margin-bottom: 50px !important; }
         }
 
         /* ── Mobile (≤ 767px) ── */
         @media (max-width: 767px) {
 
-            /* Hero / Slider */
-            .slide-item           { min-height: 480px; }
-            .slide__subtitle      { font-size: 12px !important; letter-spacing: 0.05em; }
-            .slide__title         { font-size: 22px !important; line-height: 1.3 !important; margin-bottom: 10px !important; }
-            .slide__desc          { font-size: 13px !important; }
-            .slide__content .btn  { margin-right: 0 !important; margin-bottom: 10px; }
+            /* ── Navbar ── */
+            .navbar-brand .ata-logo     { max-height: 42px !important; width: auto; }
+            .navbar                     { padding: 10px 15px !important; }
 
-            /* Page title heroes */
-            .pagetitle__heading   { font-size: 22px !important; line-height: 1.3 !important; }
-            .pagetitle__desc      { font-size: 13px !important; }
+            /* ── Hero / Slider ── */
+            .slide-item                 { min-height: 420px; padding: 60px 0 40px; }
+            .slide__subtitle            { font-size: 11px !important; letter-spacing: 0.04em; }
+            .slide__title               { font-size: 20px !important; line-height: 1.35 !important; margin-bottom: 10px !important; }
+            .slide__desc                { font-size: 13px !important; margin-bottom: 16px !important; }
+            .slide__content .btn        { margin-right: 0 !important; margin-bottom: 10px; }
+            .slide__content             { padding: 0 5px; }
 
-            /* Section padding */
-            .pt-130               { padding-top: 60px !important; }
-            .pb-90                { padding-bottom: 50px !important; }
-            .pt-120               { padding-top: 60px !important; }
-            .pb-80                { padding-bottom: 40px !important; }
-            .pt-60                { padding-top: 40px !important; }
-            .pb-50                { padding-bottom: 30px !important; }
+            /* ── Inner page heroes ── */
+            .page-title-layout2         { padding: 60px 0 40px !important; }
+            .pagetitle__heading         { font-size: 20px !important; line-height: 1.35 !important; }
+            .pagetitle__desc            { font-size: 13px !important; margin-bottom: 16px !important; }
 
-            /* Section headings */
+            /* ── Section padding ── */
+            .pt-130                     { padding-top: 55px !important; }
+            .pt-120                     { padding-top: 55px !important; }
+            .pt-60                      { padding-top: 35px !important; }
+            .pb-120                     { padding-bottom: 55px !important; }
+            .pb-90                      { padding-bottom: 45px !important; }
+            .pb-80                      { padding-bottom: 40px !important; }
+            .pb-50                      { padding-bottom: 30px !important; }
+            .pt-50                      { padding-top: 30px !important; }
+            .pt-0                       { padding-top: 0 !important; }
+            .pb-0                       { padding-bottom: 0 !important; }
+
+            /* ── Large margin overrides ── */
+            .mb-140                     { margin-bottom: 40px !important; }
+            .mb-90                      { margin-bottom: 40px !important; }
+            .mb-70                      { margin-bottom: 35px !important; }
+            .mb-60                      { margin-bottom: 30px !important; }
+            .mb-50                      { margin-bottom: 25px !important; }
+            .mb-40                      { margin-bottom: 20px !important; }
+            .mt--100                    { margin-top: -30px !important; }
+
+            /* ── Typography ── */
             h3.heading__title,
-            .heading__title       { font-size: 20px !important; line-height: 1.4 !important; }
+            .heading__title             { font-size: 19px !important; line-height: 1.4 !important; }
             h2.heading__subtitle,
-            .heading__subtitle    { font-size: 13px !important; }
-            .heading__desc        { font-size: 14px !important; }
+            .heading__subtitle          { font-size: 12px !important; letter-spacing: 0.08em; }
+            .heading__desc              { font-size: 14px !important; line-height: 1.65; }
+            .heading-layout2.heading-light.mb-140,
+            .heading-layout2.mb-140     { margin-bottom: 40px !important; }
+            .heading.mb-70              { margin-bottom: 35px !important; }
+            .heading.mb-60              { margin-bottom: 30px !important; }
+            .heading.text-center.mb-40  { margin-bottom: 20px !important; }
 
-            /* Buttons */
-            .btn__xl              { padding: 12px 20px !important; font-size: 13px !important; }
+            /* ── Buttons ── */
+            .btn__xl                    { padding: 11px 20px !important; font-size: 13px !important; }
+            .mr-30                      { margin-right: 0 !important; margin-bottom: 10px; }
 
-            /* Contact panel: stack info + form */
-            .contact-panel                { flex-direction: column !important; }
+            /* ── Feature items (icon strip) ── */
+            .feature-item               { padding: 20px 15px !important; }
+            .feature__title             { font-size: 14px !important; }
+
+            /* ── About sections ── */
+            .about__img                 { margin-bottom: 30px; position: relative; overflow: visible; }
+            .about__img img             { border-radius: 10px; width: 100%; }
+            .about__img .cta-banner     { position: relative !important; bottom: auto !important;
+                                          right: auto !important; left: auto !important;
+                                          margin-top: 16px; border-radius: 8px; }
+            .about-layout3              { padding-bottom: 50px !important; }
+            .about-layout5              { padding-bottom: 40px !important; }
+            .video-banner-layout3       { margin-bottom: 30px !important; }
+
+            /* ── Services icon grid (homepage) ── */
+            .service-item .service__body { padding: 28px 20px 22px !important; }
+            .service__title             { font-size: 15px !important; }
+            .service__desc              { font-size: 13px !important; }
+
+            /* ── Service image cards (services page) ── */
+            .service__img               { height: 180px !important; }
+
+            /* ── CTA bar (Get A Free Quote strip) ── */
+            .cta-layout3                { flex-direction: column !important; align-items: flex-start !important;
+                                          padding: 28px 20px !important; }
+            .cta-layout3 .d-flex        { flex-wrap: wrap; }
+            .cta-layout3 .btn           { margin-top: 16px; }
+
+            /* ── Download brochure button ── */
+            .btn__download              { flex-direction: column !important; align-items: center !important;
+                                          text-align: center; padding: 14px 20px !important; }
+            .btn__download .text-right  { text-align: center !important; margin: 0 0 10px !important; }
+
+            /* ── Homepage quick-quote section ── */
+            .contact-layout3            { padding: 50px 0 !important; }
+            .contact-panel__form        { padding: 30px 20px !important; }
+            .contact-panel__title       { font-size: 18px !important; }
+            .contact-panel__desc        { font-size: 13px !important; }
+            .packages-wrapper           { margin-top: 30px; }
+            .pricing-package            { padding: 28px 20px !important; }
+            .package__title             { font-size: 16px !important; }
+            .package__desc              { font-size: 13px !important; }
+
+            /* ── Contact panel (contact page) ── */
+            .contact-panel              { flex-direction: column !important; }
             .contact-panel__info,
-            .contact-panel__form          { width: 100% !important; min-width: 100% !important; }
-            .mt--100                      { margin-top: -40px !important; }
+            .contact-panel__form        { width: 100% !important; min-width: 100% !important; }
+            .contact-panel__info        { padding: 40px 20px !important; }
+            .contact-card               { padding: 24px 16px !important; margin-bottom: 16px; }
 
-            /* Gallery */
-            .gallery-img                  { height: 180px !important; }
+            /* ── Gallery ── */
+            .gallery-img                { height: 170px !important; }
 
-            /* Service cards */
-            .service__img                 { height: 180px !important; }
+            /* ── Blog grid ── */
+            .post-item                  { margin-bottom: 30px; }
+            .post__title                { font-size: 15px !important; }
+            .post__desc                 { font-size: 13px !important; }
 
-            /* Review bar — stack */
-            .categories-list              { flex-direction: column !important; gap: 20px; }
-            .cat__item                    { width: 100%; justify-content: flex-start !important; }
+            /* ── Clients strip ── */
+            .clients                    { padding: 35px 0 !important; }
+            .clients .col-lg-4          { margin-bottom: 16px; }
+            .clients .font-weight-bold  { font-size: 14px !important; }
 
-            /* Testimonials */
-            .testimonial-item             { padding: 20px 15px !important; }
-            .testimonial__title           { font-size: 15px !important; }
-            .testimonial__meta            { flex-wrap: wrap; gap: 4px; }
+            /* ── Widget categories (tag cloud) ── */
+            .widget-categories .widget-content ul { flex-wrap: wrap; gap: 8px; }
+            .widget-categories .widget-content ul li { margin: 0 !important; }
+            .widget-categories .widget-content ul li a { font-size: 12px !important; padding: 5px 10px !important; }
 
-            /* Work process tabs */
-            .nav.nav-tabs                 { flex-direction: column !important; }
-            .nav.nav-tabs .nav__link      { width: 100%; border-bottom: 1px solid rgba(255,255,255,0.15); }
-            .process-item.row             { flex-direction: column !important; }
-            .process__img                 { margin-top: 20px; }
+            /* ── Review / ratings bar ── */
+            .categories-list            { flex-direction: column !important; gap: 16px; }
+            .cat__item                  { width: 100%; justify-content: flex-start !important; }
 
-            /* Contact info cards */
-            .contact-card                 { padding: 28px 18px 22px !important; margin-bottom: 20px; }
+            /* ── Testimonials ── */
+            .testimonial-item           { padding: 20px 15px !important; }
+            .testimonial__title         { font-size: 15px !important; }
+            .testimonial__meta          { flex-wrap: wrap; gap: 4px; }
+            .testimonial__rating        { font-size: 12px !important; }
 
-            /* Footer social */
-            .footer-widget-social         { text-align: left !important; }
-            .social-icons                 { justify-content: flex-start !important; }
+            /* ── Work process tabs ── */
+            .nav.nav-tabs               { flex-direction: column !important; }
+            .nav.nav-tabs .nav__link    { width: 100%; border-bottom: 1px solid rgba(255,255,255,0.15); }
+            .process-item.row           { flex-direction: column !important; }
+            .process__img               { margin-top: 20px; }
 
-            /* Breadcrumbs */
-            .breadcrumb                   { font-size: 13px; }
+            /* ── Blockquote ── */
+            .blockquote .quote__title   { font-size: 15px !important; }
 
-            /* Feature list */
-            .list__item                   { font-size: 13px !important; }
+            /* ── List items ── */
+            .list__item                 { font-size: 13px !important; }
+            .package__list .list__item  { font-size: 13px !important; }
 
-            /* Clients section */
-            .clients .font-weight-bold    { font-size: 14px !important; }
+            /* ── Breadcrumbs ── */
+            .breadcrumb                 { font-size: 12px; flex-wrap: wrap; padding: 10px 0 !important; }
+
+            /* ── Footer ── */
+            .footer-primary             { padding: 50px 0 30px !important; }
+            .footer-widget              { margin-bottom: 35px !important; }
+            .footer__copyrights         { text-align: center; }
+            .footer__copyright-links    { justify-content: center !important; flex-wrap: wrap; }
+            .footer-widget-social       { text-align: left !important; }
+            .social-icons               { justify-content: flex-start !important; }
         }
 
         /* ── Small phones (≤ 480px) ── */
         @media (max-width: 480px) {
-            .slide__title         { font-size: 18px !important; }
-            .pagetitle__heading   { font-size: 18px !important; }
+            /* Typography */
+            .slide__title               { font-size: 17px !important; }
+            .pagetitle__heading         { font-size: 17px !important; }
             h3.heading__title,
-            .heading__title       { font-size: 18px !important; }
+            .heading__title             { font-size: 17px !important; }
 
-            /* Single-column gallery */
-            .gallery .col-sm-6    { flex: 0 0 100% !important; max-width: 100% !important; }
-            .gallery-img          { height: 220px !important; }
-
-            /* Stack hero buttons */
-            .slide__content .d-flex.flex-wrap,
-            .page-title-layout2 .d-flex.flex-wrap { flex-direction: column !important; align-items: flex-start !important; }
+            /* Full-width hero buttons, stacked */
+            .slide__content .d-flex,
+            .page-title-layout2 .d-flex { flex-direction: column !important; align-items: flex-start !important; }
             .slide__content .btn,
-            .page-title-layout2 .btn { width: 100%; max-width: 280px; margin-right: 0 !important; }
+            .page-title-layout2 .btn    { width: 100%; max-width: 280px; margin-right: 0 !important; margin-bottom: 10px; }
 
-            /* Contact form full-width inputs */
-            .contact-panel__form .col-sm-6 { flex: 0 0 100% !important; max-width: 100% !important; }
+            /* Gallery: 1 column */
+            .col-sm-6.gallery-col       { flex: 0 0 100% !important; max-width: 100% !important; }
+            .gallery-img                { height: 210px !important; }
 
-            /* Services request form */
-            .contact-layout3 .col-sm-6 { flex: 0 0 100% !important; max-width: 100% !important; }
+            /* Contact form: full-width fields */
+            .contact-panel__form .col-sm-6,
+            .contact-layout3 .col-sm-6  { flex: 0 0 100% !important; max-width: 100% !important; }
+
+            /* Services page heading */
+            .services-layout1 .heading.text-center { padding: 0 5px; }
         }
     </style>
 </head>
