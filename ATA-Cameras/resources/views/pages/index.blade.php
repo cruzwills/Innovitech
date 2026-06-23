@@ -572,7 +572,7 @@
                 </div><!-- /.col-xl-6 -->
                 <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1">
                     <div class="video-banner-layout3 mb-50">
-                        <img src="assets/images/about/6.jpg" alt="about">
+                        <img src="assets/images/about/itperson.jpeg" alt="about">
                     </div> <!-- /.video-banner -->
                 </div><!-- /.col-xl-5 -->
             </div><!-- /.row -->
