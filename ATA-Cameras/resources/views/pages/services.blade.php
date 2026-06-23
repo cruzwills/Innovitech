@@ -1,4 +1,6 @@
 ﻿@extends('layouts.app')
+@section('title', 'Our IT Services | Innovinetec Solutions — Starlink, CCTV, Networking & More')
+@section('meta_description', 'Complete IT services in Zimbabwe: Starlink installation, CCTV & surveillance, access control, networking, Wi-Fi, computer repairs, printers and office equipment maintenance.')
 @section('content')
     <section class="page-title-layout2 page-title-light bg-overlay">
         <div class="bg-img"><img src="assets/images/page-titles/11.jpg" alt="background"></div>
@@ -122,7 +124,7 @@
                             </p>
                             
                         </div>
-                        <div class="service__img"><img src="starlink.jpg" alt="Starlink Installation"></div>
+                        <div class="service__img"><img src="assets/images/sliders/starlink.jpg" alt="Starlink Installation"></div>
                     </div>
                 </div>
                 <!-- service item #4 -->
@@ -134,9 +136,9 @@
                             <p class="service__desc">Structured cabling, LAN/WAN configuration, managed Wi-Fi, router and
                                 switch setup for offices, warehouses, schools and commercial buildings.
                             </p>
-                            
+
                         </div>
-                        <div class="service__img"><img src="network.png" alt="Networking & Wi-Fi Installation"></div>
+                        <div class="service__img"><img src="assets/images/sliders/network.png" alt="Networking & Wi-Fi Installation"></div>
                     </div>
                 </div>
                 <!-- service item #5 -->
@@ -365,23 +367,21 @@
             <div class="contact-panel p-0">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-7">
-                        <form class="contact-panel__form" method="post"
-                            action="https://7oroof.com/demos/sekure/assets/php/contact.php" id="contactForm">
+                        <form class="contact-panel__form" method="post" action="#" id="contactForm">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <h4 class="contact-panel__title">Request A Quote</h4>
-                                    <p class="contact-panel__desc mb-30">Please complete the form below, to request a
-                                        quote, and we'll
-                                        be in touch. Or you can call us <strong
-                                            class="color-secondary">01061245741</strong> and our
-                                        specialists will provide the
-                                        necessary help!
+                                    <p class="contact-panel__desc mb-30">Complete the form and we'll get back to you
+                                        promptly. Or call us on
+                                        <strong class="color-secondary">+263 773 625 107</strong> and our specialists
+                                        will assist you right away!
                                     </p>
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group float-label">
-                                        <label for="homeBussiness">Home Or Business?</label>
-                                        <select id="homeBussiness" class="form-control">
+                                        <label for="homeBusiness">Home Or Business?</label>
+                                        <select id="homeBusiness" class="form-control" aria-label="Select home or business">
+                                            <option value="">Select one</option>
                                             <option>For Home</option>
                                             <option>For Business</option>
                                         </select>
@@ -389,93 +389,88 @@
                                 </div><!-- /.col-lg-6 -->
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group float-label">
-                                        <label for="Industry">Industry:</label>
-                                        <select id="Industry" class="form-control">
-                                            <option>Commercial Buildings</option>
-                                            <option>Commercial Buildings</option>
-                                        </select>
-                                    </div>
-                                </div><!-- /.col-lg-6 -->
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group float-label">
-                                        <label for="size">System Size:</label>
-                                        <select id="size" class="form-control">
-                                            <option>Small (1-5 locations)</option>
-                                            <option>large (6-10 locations)</option>
-                                        </select>
-                                    </div>
-                                </div><!-- /.col-lg-6 -->
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group float-label">
-                                        <label for="own">Own Or Rent?</label>
-                                        <select id="own" class="form-control">
-                                            <option>I'm representing occupant</option>
-                                            <option>other</option>
+                                        <label for="industrySelect">Industry:</label>
+                                        <select id="industrySelect" class="form-control" aria-label="Select your industry">
+                                            <option value="">Select industry</option>
+                                            <option>Corporate &amp; Office</option>
+                                            <option>Retail &amp; Commercial</option>
+                                            <option>Healthcare &amp; Medical</option>
+                                            <option>Education &amp; Schools</option>
+                                            <option>Manufacturing &amp; Logistics</option>
+                                            <option>Agriculture &amp; Farming</option>
+                                            <option>Residential</option>
+                                            <option>Other</option>
                                         </select>
                                     </div>
                                 </div><!-- /.col-lg-6 -->
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="First Name">
+                                        <label for="svcFirstName" class="sr-only">First Name</label>
+                                        <input type="text" id="svcFirstName" class="form-control" placeholder="First Name" required>
                                     </div>
-                                </div><!-- /.col-lg-4 -->
+                                </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Last Name">
+                                        <label for="svcLastName" class="sr-only">Last Name</label>
+                                        <input type="text" id="svcLastName" class="form-control" placeholder="Last Name" required>
                                     </div>
-                                </div><!-- /.col-lg-4 -->
+                                </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email Address">
+                                        <label for="svcEmail" class="sr-only">Email Address</label>
+                                        <input type="email" id="svcEmail" class="form-control" placeholder="Email Address" required>
                                     </div>
-                                </div><!-- /.col-lg-4 -->
+                                </div>
                                 <div class="col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                        <label for="svcPhone" class="sr-only">Phone Number</label>
+                                        <input type="tel" id="svcPhone" class="form-control" placeholder="Phone Number" required>
                                     </div>
-                                </div><!-- /.col-lg-4 -->
+                                </div>
                                 <div class="col-12">
                                     <div class="form-group mb-10">
-                                        <label>System Of Interest:</label>
+                                        <label>Service Of Interest:</label>
                                         <div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Intrusion">
-                                                <label class="custom-control-label" for="Intrusion">Intrusion
-                                                    Detection</label>
+                                                <input type="checkbox" class="custom-control-input" id="svcCCTV">
+                                                <label class="custom-control-label" for="svcCCTV">CCTV &amp; Surveillance</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Surveillance">
-                                                <label class="custom-control-label" for="Surveillance">Video
-                                                    Surveillance</label>
+                                                <input type="checkbox" class="custom-control-input" id="svcAccess">
+                                                <label class="custom-control-label" for="svcAccess">Access Control &amp; Alarms</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Integration">
-                                                <label class="custom-control-label" for="Integration">System
-                                                    Integration</label>
+                                                <input type="checkbox" class="custom-control-input" id="svcStarlink">
+                                                <label class="custom-control-label" for="svcStarlink">Starlink Installation</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Monitoring">
-                                                <label class="custom-control-label" for="Monitoring">Monitoring</label>
+                                                <input type="checkbox" class="custom-control-input" id="svcNetwork">
+                                                <label class="custom-control-label" for="svcNetwork">Networking &amp; Wi-Fi</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="fire">
-                                                <label class="custom-control-label" for="fire">Fire Detection</label>
+                                                <input type="checkbox" class="custom-control-input" id="svcComputers">
+                                                <label class="custom-control-label" for="svcComputers">Computers &amp; IT Support</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Control">
-                                                <label class="custom-control-label" for="Control">Access Control</label>
+                                                <input type="checkbox" class="custom-control-input" id="svcPrinters">
+                                                <label class="custom-control-label" for="svcPrinters">Printers &amp; Photocopiers</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Other">
-                                                <label class="custom-control-label" for="Other">Other</label>
+                                                <input type="checkbox" class="custom-control-input" id="svcMaintenance">
+                                                <label class="custom-control-label" for="svcMaintenance">Office Equipment Maintenance</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
+                                                <input type="checkbox" class="custom-control-input" id="svcOther">
+                                                <label class="custom-control-label" for="svcOther">Other</label>
                                             </div>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn__secondary btn__xl">
-                                        <i class="icon-arrow-right icon-filled"></i> <span>Submit Request</span>
+                                        <i class="icon-arrow-right icon-filled" aria-hidden="true"></i>
+                                        <span>Submit Request</span>
                                     </button>
-                                    <div class="contact-result"></div>
-                                </div><!-- /.col-lg-12 -->
+                                    <div class="contact-result" role="alert" aria-live="polite"></div>
+                                </div>
                             </div><!-- /.row -->
                         </form>
                     </div><!-- /.col-lg-7 -->
@@ -483,111 +478,89 @@
                         <div class="packages-wrapper">
                             <div class="slick-carousel m-slides-0"
                                 data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows": false, "dots": true, "autoplay": true}'>
-                                <!-- pricing item #1-->
+                                <!-- package item #1-->
                                 <div class="h-100">
                                     <div class="pricing-package">
                                         <div class="package__body">
-                                            <h4 class="package__title">Starter Plan</h4>
-                                            <p class="package__desc">Our highly trained technicians will set-up your
-                                                security system so you
-                                                don't
-                                                have to. They show you how to work your equipment.</p>
+                                            <h4 class="package__title">Basic IT Package</h4>
+                                            <p class="package__desc">Perfect for small businesses and home offices
+                                                needing reliable connectivity, basic security, and equipment support.</p>
                                             <div class="d-flex mb-40">
-                                                <div class="package__icon">
-                                                    <i class="icon-burglar"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-intrusion"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-door-lock"></i>
-                                                </div><!-- /.package__icon -->
+                                                <div class="package__icon"><i class="icon-intrusion"></i></div>
+                                                <div class="package__icon"><i class="icon-home-automation"></i></div>
+                                                <div class="package__icon"><i class="icon-detector"></i></div>
                                             </div>
                                             <ul class="package__list list-items-layout4 list-unstyled">
-                                                <li class="list__item">Enterprise Network Video Recorders</li>
-                                                <li class="list__item">Streaming video network or Internet</li>
+                                                <li class="list__item">Starlink or networking setup</li>
+                                                <li class="list__item">Basic CCTV installation (up to 4 cameras)</li>
+                                                <li class="list__item">Computer &amp; printer support</li>
                                             </ul>
-                                        </div><!-- /.package__body -->
+                                        </div>
                                         <div class="package__footer">
                                             <a href="{{route('contact')}}" class="btn btn__secondary btn__xl">
-                                                <span>Get A Free Quote</span>
+                                                <span>Get A Quote</span>
                                                 <i class="icon-arrow-right"></i>
                                             </a>
-                                        </div><!-- /.package__footer -->
-                                    </div><!-- /.pricing-package -->
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- pricing item #2-->
+                                <!-- package item #2-->
                                 <div class="h-100">
                                     <div class="pricing-package">
                                         <div class="package__body">
-                                            <h4 class="package__title">Professional Plan</h4>
-                                            <p class="package__desc">Our highly trained technicians will set-up your
-                                                security system so you
-                                                don't
-                                                have to. They show you how to work your equipment.</p>
+                                            <h4 class="package__title">Business IT Package</h4>
+                                            <p class="package__desc">Ideal for growing businesses needing comprehensive
+                                                IT infrastructure, security, and reliable support coverage.</p>
                                             <div class="d-flex mb-40">
-                                                <div class="package__icon">
-                                                    <i class="icon-home-automation"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-detector"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-surveillance"></i>
-                                                </div><!-- /.package__icon -->
+                                                <div class="package__icon"><i class="icon-cctv-camera2"></i></div>
+                                                <div class="package__icon"><i class="icon-smart-control"></i></div>
+                                                <div class="package__icon"><i class="icon-surveillance"></i></div>
                                             </div>
                                             <ul class="package__list list-items-layout4 list-unstyled">
-                                                <li class="list__item">Enterprise Network Video Recorders</li>
-                                                <li class="list__item">Streaming video network or Internet</li>
-                                                <li class="list__item">Intelligent video technology storage</li>
+                                                <li class="list__item">Full CCTV &amp; access control system</li>
+                                                <li class="list__item">Enterprise networking setup</li>
+                                                <li class="list__item">Computer fleet support</li>
+                                                <li class="list__item">Printer &amp; equipment maintenance</li>
                                             </ul>
-                                        </div><!-- /.package__body -->
+                                        </div>
                                         <div class="package__footer">
                                             <a href="{{route('contact')}}" class="btn btn__primary btn__xl">
-                                                <span>Get A Free Quote</span>
+                                                <span>Get A Quote</span>
                                                 <i class="icon-arrow-right"></i>
                                             </a>
-                                        </div><!-- /.package__footer -->
-                                    </div><!-- /.pricing-package -->
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- pricing item #3-->
+                                <!-- package item #3-->
                                 <div class="h-100">
                                     <div class="pricing-package">
                                         <div class="package__body">
-                                            <h4 class="package__title">Business Plan</h4>
-                                            <p class="package__desc">Our highly trained technicians will set-up your
-                                                security system so you
-                                                don't
-                                                have to. They show you how to work your equipment.</p>
+                                            <h4 class="package__title">Enterprise IT Package</h4>
+                                            <p class="package__desc">Full-scope managed IT solutions for large
+                                                organisations, multi-site deployments, and enterprise-level security.</p>
                                             <div class="d-flex mb-40">
-                                                <div class="package__icon">
-                                                    <i class="icon-notification"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-surveillance2"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-smart-control"></i>
-                                                </div><!-- /.package__icon -->
+                                                <div class="package__icon"><i class="icon-notification"></i></div>
+                                                <div class="package__icon"><i class="icon-surveillance2"></i></div>
+                                                <div class="package__icon"><i class="icon-burglar"></i></div>
                                             </div>
                                             <ul class="package__list list-items-layout4 list-unstyled">
-                                                <li class="list__item">Enterprise Network Video Recorders</li>
-                                                <li class="list__item">Streaming video network or Internet</li>
-                                                <li class="list__item">Intelligent video technology storage</li>
-                                                <li class="list__item">Networked with distributed video</li>
-                                                <li class="list__item">Advanced management software</li>
+                                                <li class="list__item">Multi-site CCTV &amp; access control</li>
+                                                <li class="list__item">Starlink &amp; enterprise networking</li>
+                                                <li class="list__item">Computer &amp; printer fleet management</li>
+                                                <li class="list__item">Dedicated support &amp; maintenance plan</li>
+                                                <li class="list__item">Vehicle &amp; drone security solutions</li>
                                             </ul>
-                                        </div><!-- /.package__body -->
+                                        </div>
                                         <div class="package__footer">
                                             <a href="{{route('contact')}}" class="btn btn__secondary btn__xl">
-                                                <span>Get A Free Quote</span>
+                                                <span>Get A Quote</span>
                                                 <i class="icon-arrow-right"></i>
                                             </a>
-                                        </div><!-- /.package__footer -->
-                                    </div><!-- /.pricing-package -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div><!-- /.carousel-->
-                        </div><!-- /.packages-rapper -->
+                        </div><!-- /.packages-wrapper -->
                     </div><!-- /.col-lg-5 -->
                 </div><!-- /.contact-panel -->
             </div><!-- /.row -->

@@ -1,7 +1,9 @@
 ﻿@extends('layouts.app')
+@section('title', 'Gallery | Innovinetec Solutions — Our Work in Zimbabwe')
+@section('meta_description', 'Browse our gallery of IT installations across Zimbabwe — CCTV systems, Starlink setups, network infrastructure, access control and more completed by Innovinetec Solutions.')
 @section('content')
 <!-- ========================
-       page title 
+       page title
     =========================== -->
     <section class="page-title-layout1 page-title-light bg-overlay text-center">
         <div class="bg-img"><img src="assets/images/page-titles/9.jpg" alt="background"></div>

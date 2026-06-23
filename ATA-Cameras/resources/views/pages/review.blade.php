@@ -1,11 +1,13 @@
 @extends('layouts.app')
+@section('title', 'Client Reviews | Innovinetec Solutions — Rated 5 Stars in Zimbabwe')
+@section('meta_description', 'Read what our clients say about Innovinetec Solutions. 5-star reviews for Starlink installation, CCTV, networking, computer repairs and IT support across Zimbabwe.')
 @section('content')
 
     <!-- ========================
          Page Title
     =========================== -->
     <section class="page-title-layout1 page-title-light bg-overlay text-center">
-        <div class="bg-img"><img src="assets/images/page-titles/5.jpg" alt="Client Reviews"></div>
+        <div class="bg-img"><img src="assets/images/page-titles/5.jpg" alt="Innovinetec Solutions Client Reviews"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12">

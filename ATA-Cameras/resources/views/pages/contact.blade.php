@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@section('title', 'Contact Us | Innovinetec Solutions — Get A Free IT Quote')
+@section('meta_description', 'Contact Innovinetec Solutions for a free IT services quote. Call +263 773 625 107 or email info@innovinetec.co.zw. Same-day response for Starlink, CCTV, networking and computer support.')
 @section('content')
 
     <!-- ========================

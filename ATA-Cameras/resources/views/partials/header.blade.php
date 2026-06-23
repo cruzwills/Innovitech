@@ -1,13 +1,4 @@
-﻿<style>
-    .phone__number .phone__icon {
-        box-shadow: 0 0 0 2px rgba(46,48,143,0.5) !important;
-    }
-    .phone__number .phone__icon::before {
-        box-shadow: 0 0 0 2px rgba(46,48,143,0.5) !important;
-        animation: none !important;
-    }
-</style>
-<header class="header header-transparent header-layout1">
+﻿<header class="header header-transparent header-layout1">
     <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{route('index')}}">

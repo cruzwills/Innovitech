@@ -124,10 +124,10 @@
                         <h6 class="footer-widget__title">Have A Project?</h6>
                         <a href="{{route('contact')}}" class="btn btn__primary mb-40">Get A Free Quote</a>
                         <ul class="social-icons list-unstyled justify-content-end mb-0">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://wa.me/263773625107" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
                         </ul><!-- /.social-icons -->
                     </div><!-- /.footer-widget-social -->
                 </div><!-- /.col-lg-2 -->

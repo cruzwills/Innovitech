@@ -1,4 +1,6 @@
 ﻿@extends('layouts.app')
+@section('title', 'Innovinetec Solutions | IT Services Zimbabwe — Starlink, CCTV, Networking & More')
+@section('meta_description', 'Zimbabwe\'s trusted IT services provider. Starlink installation, CCTV surveillance, access control, networking, computer repairs and office equipment maintenance in Harare and beyond.')
 @section('content')
     <section class="slider">
         <div class="slick-carousel carousel-arrows-light carousel-dots-light m-slides-0"

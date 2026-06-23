@@ -1,7 +1,9 @@
 @extends('layouts.app')
+@section('title', 'About Us | Innovinetec Solutions — Zimbabwe\'s Trusted IT Partner')
+@section('meta_description', 'Learn about Innovinetec Solutions — Harare-based IT experts delivering Starlink installation, CCTV, networking, computer repairs and office equipment support across Zimbabwe.')
 @section('content')
     <section class="page-title-layout1 page-title-light bg-overlay text-center">
-        <div class="bg-img"><img src="assets/images/page-titles/1.jpg" alt="background"></div>
+        <div class="bg-img"><img src="assets/images/page-titles/1.jpg" alt="About Innovinetec Solutions"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12">

@@ -1,1004 +1,442 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
+@section('title', 'CCTV & Surveillance Systems | Innovinetec Solutions Zimbabwe')
+@section('meta_description', 'Professional CCTV & video surveillance installation in Zimbabwe. Innovinetec Solutions supplies and installs IP cameras, DVR/NVR systems and remote monitoring for homes, offices and commercial properties.')
 @section('content')
+
+    <!-- ========================
+         Page Title
+    =========================== -->
     <section class="page-title-layout2 page-title-light bg-overlay">
-        <div class="bg-img"><img src="assets/images/page-titles/6.jpg" alt="background"></div>
+        <div class="bg-img"><img src="assets/images/page-titles/6.jpg" alt="CCTV & Surveillance Systems — Innovinetec Solutions"></div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
-                    <h1 class="pagetitle__heading">Smarter Business Security Solutions</h1>
-                    <p class="pagetitle__desc">We provide security requirements of residential, commercial and other clients,
-                        with the largest assortment of security cameras and alarm systems installation.</p>
+                    <h1 class="pagetitle__heading">CCTV &amp; Video Surveillance Systems</h1>
+                    <p class="pagetitle__desc">Professional supply, installation and maintenance of CCTV cameras, DVRs,
+                        NVRs and full video surveillance systems for homes, offices and commercial properties across Zimbabwe.</p>
                     <div class="d-flex flex-wrap align-items-center">
-                        <a href="pricing.html" class="btn btn__primary mr-30">
-                            <span>Protect My Home</span>
+                        <a href="{{route('contact')}}" class="btn btn__primary mr-30">
+                            <span>Get A Free Quote</span>
                             <i class="icon-arrow-right"></i>
                         </a>
+                        <a href="tel:+263773625107" class="btn btn__white btn__outlined">
+                            Call +263 773 625 107
+                        </a>
                     </div>
-                </div><!-- /.col-xl-6 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.page-title -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="breadcrumb-area border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav>
-                        <ol class="breadcrumb  mb-0">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="services.html">services</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Smarter Business Security </li>
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('services')}}">Services</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">CCTV &amp; Surveillance</li>
                         </ol>
                     </nav>
-                </div><!-- /.col-12 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.breadcrumb-area -->
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section class="pb-80">
+    <style>
+        .gallery-img {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            height: 220px;
+        }
+        .gallery-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .gallery-img:hover img { transform: scale(1.06); }
+        .gallery-img a.popup-gallery-item {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(46, 48, 143, 0.55);
+            opacity: 0;
+            transition: opacity 0.35s ease;
+            z-index: 2;
+        }
+        .gallery-img:hover a.popup-gallery-item { opacity: 1; }
+        .gallery-img a.popup-gallery-item i { color: #fff; font-size: 26px; }
+    </style>
+
+    <!-- ========================
+         Main Content + Sidebar
+    =========================== -->
+    <section class="pb-80 pt-80">
         <div class="container">
             <div class="row">
+
+                <!-- Sidebar -->
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <aside class="sidebar has-marign-right sticky-top mb-30">
+
+                        <!-- Services Nav -->
                         <div class="widget widget-categories">
-                            <h5 class="widget__title">Services</h5>
+                            <h5 class="widget__title">Our Services</h5>
                             <div class="widget-content">
                                 <ul class="list-unstyled mb-0">
-                                    <li><a href="#"><span>Pharmaceutic & Biotech </span><i
-                                                class="icon-arrow-right"></i></a></li>
-                                    <li><a href="#"><span>Manufacturing & Logistics</span><i
-                                                class="icon-arrow-right"></i></a></li>
-                                    <li><a href="#"><span>Healthcare Buildings</span><i
-                                                class="icon-arrow-right"></i></a></li>
-                                    <li><a href="#"><span>Commercial Buildings</span><i
-                                                class="icon-arrow-right"></i></a></li>
-                                    <li><a href="#"><span>Finance & Banking</span><i class="icon-arrow-right"></i></a>
+                                    <li class="active">
+                                        <a href="{{route('servicessingle')}}">
+                                            <span>CCTV &amp; Surveillance</span>
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('services')}}">
+                                            <span>Access Control &amp; Alarms</span>
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('services')}}">
+                                            <span>Starlink Installation</span>
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('services')}}">
+                                            <span>Networking &amp; Wi-Fi</span>
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('services')}}">
+                                            <span>Computers &amp; IT Support</span>
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('services')}}">
+                                            <span>Printers &amp; Office Equipment</span>
+                                            <i class="icon-arrow-right"></i>
+                                        </a>
                                     </li>
                                 </ul>
-                            </div><!-- /.widget-content -->
-                        </div><!-- /.widget-categories -->
+                            </div>
+                        </div>
+
+                        <!-- Help Widget -->
                         <div class="widget widget-help bg-overlay bg-overlay-primary">
                             <div class="bg-img"><img src="assets/images/banners/5.jpg" alt="background"></div>
                             <div class="widget-content">
-                                <h4 class="widget__title">Tailored Solutions For Your Security Priorities</h4>
-                                <p class="widget__desc mb-50">We will design, install, and upgrade solutions to meet
-                                    business specific needs and budgets from large.
-                                </p>
-                                <a href="tel:+201061245741" class="phone__number">
-                                    <i class="icon-phone"></i> <span>002 01061245741</span>
+                                <h4 class="widget__title">Need A Custom CCTV Solution?</h4>
+                                <p class="widget__desc mb-50">Our technicians will assess your site, recommend the right
+                                    cameras and system, and install everything professionally. No obligation, no hidden fees.</p>
+                                <a href="tel:+263773625107" class="phone__number">
+                                    <i class="icon-phone"></i> <span>+263 773 625 107</span>
                                 </a>
-                                <a href="#" class="btn btn__white btn__xl btn__block justify-content-between">
-                                    <span>Get Started Now</span>
+                                <a href="{{route('contact')}}" class="btn btn__white btn__xl btn__block justify-content-between">
+                                    <span>Get A Free Quote</span>
                                     <i class="icon-arrow-right"></i>
                                 </a>
-                            </div><!-- /.widget-content -->
-                        </div><!-- /.widget-help -->
+                            </div>
+                        </div>
+
+                        <!-- Contact Quick-Info -->
                         <div class="widget widget-download">
                             <div class="widget-content">
-                                <h4 class="widget__title">Download Brochure</h4>
-                                <a href="#" class="btn btn__secondary btn__block mb-20">
-                                    <i class="icon-download"></i>
-                                    <span>Company Report 2022</span>
+                                <h4 class="widget__title">Contact Us</h4>
+                                <ul class="contact__list list-unstyled mb-20">
+                                    <li><i class="icon-phone"></i> <a href="tel:+263773625107">+263 773 625 107</a></li>
+                                    <li><i class="icon-email"></i> <a href="mailto:info@innovinetec.co.zw">info@innovinetec.co.zw</a></li>
+                                    <li><i class="icon-location"></i> <span>Harare, Zimbabwe</span></li>
+                                    <li><i class="icon-clock"></i> <span>Mon – Fri: 8am – 6pm</span></li>
+                                </ul>
+                                <a href="{{route('contact')}}" class="btn btn__secondary btn__block">
+                                    <i class="icon-arrow-right"></i>
+                                    <span>Send An Enquiry</span>
                                 </a>
-                                <a href="#" class="btn btn__primary btn__block">
-                                    <i class="icon-download"></i>
-                                    <span>Company Brochure</span>
-                                </a>
-                            </div><!-- /.widget-content -->
-                        </div><!-- /.widget-download -->
-                    </aside><!-- /.sidebar -->
-                </div><!-- /.col-lg-4 -->
+                            </div>
+                        </div>
+
+                    </aside>
+                </div>
+
+                <!-- Main Content -->
                 <div class="col-sm-12 col-md-12 col-lg-8">
+
+                    <!-- Overview -->
                     <div class="text-block mb-50">
-                        <h5 class="text-block__title">Overview</h5>
-                        <p class="text-block__desc mb-20">With more than 35 years getting to know every kind of client, from
-                            homeowners to facility & property managers to healthcare decision-makers. Our relentless passion
-                            for
-                            excellence and customer service means we invest in continuously improving our processes. Sanera
-                            is a
-                            leading provider of cleaning and restoration services in both the residential and commercial
-                            markets,
-                            operating through an extensive service network.</p>
-                        <p class="text-block__desc mb-20">Business owners and property managers are key to keeping patrons,
-                            guests, patients and visitors safe. They are responsible for taking every step to ensure the
-                            health and
-                            safety of their communities. Whether a large retail shop,we have the disinfection know-how to
-                            customize
-                            a cleaning plan for your needs.</p>
-                    </div><!-- /.text-block -->
+                        <h5 class="text-block__title">Service Overview</h5>
+                        <p class="text-block__desc mb-20">Innovinetec Solutions provides end-to-end CCTV and video surveillance
+                            services across Zimbabwe. Whether you need a single camera for your home entrance or a multi-site
+                            enterprise system covering dozens of locations, our certified technicians design, supply, install,
+                            and commission the right solution for your specific needs.</p>
+                        <p class="text-block__desc mb-20">We work with leading CCTV brands to deliver crystal-clear HD and 4K
+                            footage, night-vision capability, and remote viewing via your smartphone or computer — so you always
+                            know what's happening at your property, wherever you are. All installations are completed to the
+                            highest professional standard with neat cable management and full system testing before handover.</p>
+                    </div>
 
-                    <div class="video-banner-layout3 mb-50">
-                        <img src="assets/images/banners/8.jpg" alt="banner">
-                    </div><!-- /.video-banner -->
+                    <!-- Gallery -->
+                    <section class="gallery py-0 mb-50">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="gallery-img">
+                                    <a class="popup-gallery-item" href="assets/images/gallery/4.jpg"><i class="fas fa-plus"></i></a>
+                                    <img src="assets/images/gallery/4.jpg" alt="CCTV Installation Zimbabwe">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="gallery-img">
+                                    <a class="popup-gallery-item" href="assets/images/gallery/5.jpg"><i class="fas fa-plus"></i></a>
+                                    <img src="assets/images/gallery/5.jpg" alt="Security Camera Setup">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
+                    <!-- What We Offer -->
                     <div class="text-block mb-40">
-                        <p class="text-block__desc mb-20">We pride ourselves on going above and beyond for the customer on
-                            every
-                            project we take on. Whether you’re looking for a surveillance camera installation or an access
-                            control
-                            system installation, it’s important that the security system installer you choose has the
-                            experience and
-                            vision to help you achieve your security goals. Our commercial security services are about more
-                            than
-                            surveillance system installation or alarm system installation. It’s our commitment to customer
-                            success
-                            before and after the project that sets us apart from our competitors. When we tackle a project
-                            that
-                            integrates a security system, we take a wholistic approach to installing business security
-                            cameras,
-                            Access Control Systems, commercial alarm systems, or cctv cameras.
-                        </p>
-                        <p class="text-block__desc mb-20">From the engineering process to the final customer training, we
-                            treat
-                            our customers like our partner because that’s the Safe and Sound Security way. When it comes to
-                            providing the best security system services for the enterprise sector, no one knows the
-                            landscape better
-                            than security. We’ve worked with national level enterprises to local businesses and everything
-                            in
-                            between.
-                        </p>
-                    </div><!-- /.text-block -->
-
-                    <section class="gallery py-0">
+                        <h5 class="text-block__title">What We Install &amp; Supply</h5>
+                        <p class="text-block__desc mb-20">Our CCTV service covers a comprehensive range of surveillance
+                            technologies — from basic entry-level systems for small homes to advanced enterprise-grade
+                            IP networks for large commercial properties:</p>
                         <div class="row">
-                            <div class="col-sm-6">
-                                <div class="gallery-img">
-                                    <a class="popup-gallery-item" href="assets/images/gallery/4.jpg"><i
-                                            class="fas fa-plus"></i></a>
-                                    <img src="assets/images/gallery/4.jpg" alt="gallery img">
-                                </div><!-- /.gallery-img -->
-                            </div><!-- /.col-6 -->
-                            <div class="col-sm-6">
-                                <div class="gallery-img">
-                                    <a class="popup-gallery-item" href="assets/images/gallery/5.jpg"><i
-                                            class="fas fa-plus"></i></a>
-                                    <img src="assets/images/gallery/5.jpg" alt="gallery img">
-                                </div><!-- /.gallery-img -->
-                            </div><!-- /.col-6 -->
-                        </div><!-- /.row -->
-                    </section><!-- /.gallery -->
-
-                    <div class="text-block mb-50">
-                        <h5 class="text-block__title">Key Benifits</h5>
-                        <p class="text-block__desc mb-20">Reliable, professional monitoring ensures your business, inventory
-                            and
-                            equipment are always protected. Combined with STANLEY Security systems, you have security that
-                            goes the
-                            extra mile.</p>
-                        <div class="accordion" id="accordion1">
-                            <div class="accordion-item">
-                                <div class="accordion-item__header" data-toggle="collapse" data-target="#collapse1">
-                                    <a class="accordion-item__title" href="#">Which Plan Is Right For Me?</a>
-                                </div><!-- /.accordion-item-header -->
-                                <div id="collapse1" class="collapse" data-parent="#accordion1">
-                                    <div class="accordion-item__body">
-                                        <p>With any financial product that you buy, it is important that you know you are
-                                            getting the best
-                                            advice from a reputable company as often</p>
-                                    </div><!-- /.accordion-item-body -->
-                                </div>
-                            </div><!-- /.accordion-item -->
-                            <div class="accordion-item">
-                                <div class="accordion-item__header" data-toggle="collapse" data-target="#collapse2">
-                                    <a class="accordion-item__title" href="#">Do I have to commit to a contract?</a>
-                                </div><!-- /.accordion-item-header -->
-                                <div id="collapse2" class="collapse" data-parent="#accordion1">
-                                    <div class="accordion-item__body">
-                                        <p>With any financial product that you buy, it is important that you know you are
-                                            getting the best
-                                            advice from a reputable company as often</p>
-                                    </div><!-- /.accordion-item-body -->
-                                </div>
-                            </div><!-- /.accordion-item -->
-                            <div class="accordion-item opened">
-                                <div class="accordion-item__header" data-toggle="collapse" data-target="#collapse3">
-                                    <a class="accordion-item__title" href="#">What Payment Methods Are
-                                        Available?</a>
-                                </div><!-- /.accordion-item-header -->
-                                <div id="collapse3" class="collapse show" data-parent="#accordion1">
-                                    <div class="accordion-item__body">
-                                        <p>With any financial product that you buy, it is important that you know you are
-                                            getting the best
-                                            advice from a reputable company as often</p>
-                                    </div><!-- /.accordion-item-body -->
-                                </div>
-                            </div><!-- /.accordion-item -->
-                        </div><!-- /.accordion -->
-                    </div><!-- /.text-block -->
-                    <div class="text-block mb-30">
-                        <h5 class="text-block__title">Stats & Charts</h5>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6 pr-xl-60">
-                                <p class="text-block__desc mb-20">When an employee or patient tests COVID positive, you
-                                    should
-                                    temporarily shut your doors. Our team can help you quickly open up again as our network
-                                    of local
-                                    businesses ensures fast response times and excellent care from a team that is equipped
-                                    with the
-                                    advanced tools and technology in adherence to CDC guidelines to get your facility safely
-                                    open again.
-                                </p>
-                                <p class="text-block__desc mb-20">Switching from after-hours to a daytime cleaning program
-                                    can reduce
-                                    your cleaning costs as well as energy expenses. Since no cleaning staff is required
-                                    on-site after
-                                    hours, there's no need for running lights or building heating/cooling, and your doors
-                                    stay locked at
-                                    the end of the day. </p>
-                                <p class="text-block__desc mb-20">To keep your business running uninterrupted, we offer
-                                    cost effective
-                                    daytime janitorial cleaning services. </p>
-                            </div><!-- /.col-md-6 -->
                             <div class="col-sm-12 col-md-6">
-                                <img src="assets/images/charts/1.png" alt="chart">
-                            </div><!-- /.col-md-6 -->
-                        </div><!-- /.row -->
-                    </div><!-- /.text-block -->
+                                <ul class="list-items-layout1 list-unstyled">
+                                    <li class="list__item">HD &amp; 4K IP CCTV cameras (indoor &amp; outdoor)</li>
+                                    <li class="list__item">DVR &amp; NVR recording systems</li>
+                                    <li class="list__item">PTZ (pan-tilt-zoom) cameras</li>
+                                    <li class="list__item">Night-vision &amp; infrared cameras</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <ul class="list-items-layout1 list-unstyled">
+                                    <li class="list__item">Remote viewing via smartphone &amp; web</li>
+                                    <li class="list__item">Motion detection &amp; smart alerts</li>
+                                    <li class="list__item">Solar-powered &amp; wireless cameras</li>
+                                    <li class="list__item">Maintenance &amp; upgrade of existing systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Accordion -->
+                    <div class="text-block mb-50">
+                        <h5 class="text-block__title">Common Questions</h5>
+                        <div class="accordion" id="cctv-faq">
+                            <div class="accordion-item opened">
+                                <div class="accordion-item__header" data-toggle="collapse" data-target="#faq1">
+                                    <a class="accordion-item__title" href="#">How many cameras do I need?</a>
+                                </div>
+                                <div id="faq1" class="collapse show" data-parent="#cctv-faq">
+                                    <div class="accordion-item__body">
+                                        <p>The number of cameras depends on the size of your property and your security
+                                            priorities. Our technicians will conduct a free site assessment and recommend
+                                            the optimal number and placement of cameras to give you maximum coverage
+                                            with no blind spots.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item__header" data-toggle="collapse" data-target="#faq2">
+                                    <a class="accordion-item__title" href="#">Can I view my cameras remotely?</a>
+                                </div>
+                                <div id="faq2" class="collapse" data-parent="#cctv-faq">
+                                    <div class="accordion-item__body">
+                                        <p>Yes. All modern CCTV systems we install support remote viewing via a
+                                            smartphone app or web browser. As long as your property has internet
+                                            access, you can check your cameras from anywhere in the world in real time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item__header" data-toggle="collapse" data-target="#faq3">
+                                    <a class="accordion-item__title" href="#">How long is footage stored?</a>
+                                </div>
+                                <div id="faq3" class="collapse" data-parent="#cctv-faq">
+                                    <div class="accordion-item__body">
+                                        <p>Storage duration depends on the hard drive size in your DVR/NVR and the
+                                            number of cameras. Most systems we install store between 14 and 30 days of
+                                            continuous recording. We can recommend the right storage capacity for your
+                                            needs and budget during your free consultation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item__header" data-toggle="collapse" data-target="#faq4">
+                                    <a class="accordion-item__title" href="#">Do you service existing CCTV systems?</a>
+                                </div>
+                                <div id="faq4" class="collapse" data-parent="#cctv-faq">
+                                    <div class="accordion-item__body">
+                                        <p>Yes. We repair, upgrade, and maintain existing CCTV systems regardless of
+                                            brand. Whether you need a camera replaced, a hard drive upgraded, or the
+                                            entire system overhauled, our technicians can help.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Choose Innovinetec -->
+                    <div class="text-block mb-30">
+                        <h5 class="text-block__title">Why Choose Innovinetec Solutions</h5>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 pr-xl-30">
+                                <p class="text-block__desc mb-20">Our technicians are certified and experienced across
+                                    all major CCTV brands and system types. We don't take shortcuts — every installation
+                                    is planned carefully, executed neatly, and tested thoroughly before we consider the
+                                    job complete.</p>
+                                <p class="text-block__desc mb-20">We provide honest, transparent quotes with no hidden
+                                    costs. If we visit your site and determine that a smaller or simpler system will
+                                    serve your needs, we'll tell you — because long-term relationships matter more to
+                                    us than one-off sales.</p>
+                                <p class="text-block__desc mb-20">After installation, we remain available for ongoing
+                                    support, maintenance, and upgrades — giving you a single, reliable IT partner you
+                                    can call whenever you need help.</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="gallery-img" style="height:260px;">
+                                    <img src="assets/images/gallery/9.jpg" alt="Professional CCTV Installation">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div><!-- /.col-lg-8 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section>
 
     <!-- ========================
-        About Layout 3
-      =========================== -->
-    <section class="about-layout3 bg-dark pt-130 pb-90">
+         Features Dark Section
+    =========================== -->
+    <section class="about-layout3 bg-dark pt-100 pb-90">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-                    <div class="heading-layout2 heading-light text-center mb-90">
-                        <h2 class="heading__subtitle">Find Peace Of Mind With Smart Home Security System </h2>
-                        <h3 class="heading__title">Integrated Security Solutions & Remote Monitoring 24/7</h3>
-                    </div><!-- /.heading -->
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
+                    <div class="heading-layout2 heading-light text-center mb-70">
+                        <h2 class="heading__subtitle">Complete Security. Total Peace Of Mind.</h2>
+                        <h3 class="heading__title">Professional CCTV Solutions For Homes &amp; Businesses Across Zimbabwe</h3>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
                     <div class="about__text">
                         <div class="heading-layout1 heading-light mb-50">
-                            <h2 class="heading__subtitle color-primary">Total Control Over Securing Your Business</h2>
-                            <h3 class=" heading__title mb-40">Providing The Best Practices for Industry Security Protocols
-                                &
-                                Standardizing Procedures.</h3>
-                            <p class="heading__desc">We can partner with you to design and implement a scalable integrated
-                                security solution that addresses your toughest security challenges, while gaining
-                                efficiencies across
-                                your systems and teams by standardizing platforms and implementing event-driving system
-                                automation and
-                                powerful solutions help</p>
-                        </div><!-- /heading -->
+                            <h2 class="heading__subtitle color-primary">Total Visibility Over Your Property</h2>
+                            <h3 class="heading__title mb-40">Scalable Surveillance Solutions — From A Single Camera To Enterprise-Wide Coverage.</h3>
+                            <p class="heading__desc">Innovinetec Solutions designs and installs CCTV systems that are
+                                tailored to your property, your budget, and your security priorities. We partner with
+                                leading brands to deliver HD and 4K image quality, intelligent motion detection, and
+                                remote access — giving you complete visibility over your home or business at all times.</p>
+                        </div>
                         <ul class="list-items-layout5 list-items-light list-unstyled mb-40">
-                            <li class="list__item">Access control systems - Fire detection alarms</li>
-                            <li class="list__item">Critical equipment condition monitoring systems</li>
-                            <li class="list__item">Video surveillance systems - Carbon sensors</li>
+                            <li class="list__item">HD, 4K and night-vision camera options available</li>
+                            <li class="list__item">Remote viewing on smartphone, tablet and desktop</li>
+                            <li class="list__item">Motion detection with instant smartphone alerts</li>
+                            <li class="list__item">Neat, professional cable management and installation</li>
                         </ul>
-                        <a href="#" class="btn btn__primary btn__primary-style2 btn__xl mb-40">
-                            <span>Meet Our Experts</span>
-                            <i class=" icon-arrow-right"></i>
+                        <a href="{{route('about')}}" class="btn btn__primary btn__primary-style2 btn__xl mb-40">
+                            <span>Meet Our Team</span>
+                            <i class="icon-arrow-right"></i>
                         </a>
                     </div>
-                </div><!-- /.col-xl-6 -->
+                </div>
                 <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1">
                     <div class="about__img">
-                        <img src="assets/images/about/4.jpg" alt="about">
+                        <img src="assets/images/about/4.jpg" alt="Innovinetec CCTV">
                         <div class="cta-banner">
-                            <h3 class="cta__subtitle">Protect Your Home!</h3>
-                            <h4 class="cta__title">All The Essentials To Help Give You Peace Of Mind.</h4>
+                            <h3 class="cta__subtitle">Your Security, Our Priority.</h3>
+                            <h4 class="cta__title">Professional Installation &amp; Ongoing Support — No Shortcuts.</h4>
                             <ul class="list-items-layout5 list-unstyled mb-0">
-                                <li class="list__item">Easy to setup and use</li>
-                                <li class="list__item">Environmental Sensors</li>
-                                <li class="list__item">Touch Screen Panel</li>
+                                <li class="list__item">Free site assessment</li>
+                                <li class="list__item">Transparent, upfront pricing</li>
+                                <li class="list__item">Same-day support available</li>
                             </ul>
                         </div>
-                    </div><!-- /.about__img -->
-                </div><!-- /.col-xl-5 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.About Layout 3 -->
-
-    <!-- ========================
-        About Layout 4
-      =========================== -->
-    <section class="about-layout4 bg-dark pt-0 pb-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
-                    <div class="about__img">
-                        <img src="assets/images/about/5.jpg" alt="about">
-                        <div class="cta-banner cta-banner-primary">
-                            <h3 class="cta__subtitle">Just Don’t Worry.</h3>
-                            <h4 class="cta__title">We Take Care Of Everything For Your Home!</h4>
-                            <ul class="list-items-layout5 list-unstyled mb-0">
-                                <li class="list__item">Easy to setup and use</li>
-                                <li class="list__item">Environmental Sensors</li>
-                                <li class="list__item">Touch Screen Panel</li>
-                            </ul>
-                        </div>
-                    </div><!-- /.about__img -->
-                </div><!-- /.col-xl-5 -->
-                <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6 offset-xl-1">
-                    <div class="about__text">
-                        <div class="heading-layout1 heading-light mb-60">
-                            <h2 class="heading__subtitle color-primary">Convenient System Access By Phone Or Tablet</h2>
-                            <h3 class=" heading__title mb-40">Trusted Analytics that Give Meaning To Security Data.</h3>
-                            <p class="heading__desc mb-30">Our experts have undertaken system projects of all sizes and
-                                scopes,
-                                whether
-                                you need security system integration for your corporate office or retail store, an
-                                enterprise solution
-                                for multiple manufacturing buildings, or a complex integration for a stadium, university,
-                                hospital, or
-                                corporate campus.</p>
-                            <p class="heading__desc mb-30">With over 60 offices across the World, we are leading the
-                                security system
-                                integrators with a global reach and local touch. </p>
-                        </div><!-- /heading -->
-                        <blockquote class="blockquote mb-0">
-                            <h3 class="quote__title color-white">The peace of mind I have now is so comforting, knowing
-                                when I leave
-                                home I can still check in on my husband to make sure all is well.
-                            </h3>
-                            <div class="d-flex align-items-center">
-                                <div class="quote__rate mr-20">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <strong class="quote__author color-white">Martin Qube Jr</strong>
-                            </div>
-                        </blockquote>
                     </div>
-                </div><!-- /.col-xl-6 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.About Layout 4 -->
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ========================
-        About Layout 5
-      =========================== -->
+         Second Dark Section
+    =========================== -->
     <section class="about-layout5 bg-dark pt-0 pb-90">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
                     <div class="about__text">
                         <div class="heading-layout1 heading-light mb-50">
-                            <h2 class="heading__subtitle color-primary">Tailored Solutions For Your Security Priorities
-                            </h2>
-                            <h3 class=" heading__title mb-40">Solutions That Reduce Cost & Increase Business Efficiency.
-                            </h3>
-                            <p class="heading__desc">We will design, install, maintain and upgrade solutions to meet
-                                businesses'
-                                specific needs and budgets, from large enterprises to local business security platforms,
-                                from simple
-                                camera solutions for small offices to complex enterprise-class video surveillance systems
-                                for large
-                                campuses.
-                            </p>
-                        </div><!-- /heading -->
+                            <h2 class="heading__subtitle color-primary">Solutions Tailored To Your Security Needs</h2>
+                            <h3 class="heading__title mb-40">We Serve Homes, Offices, Farms, Schools &amp; Commercial Properties.</h3>
+                            <p class="heading__desc">Every property is different. That's why we conduct a thorough site
+                                visit before recommending any system. We consider entry points, lighting conditions,
+                                coverage requirements, and your budget — then design a solution that delivers maximum
+                                protection without unnecessary expense.</p>
+                        </div>
                         <div class="widget-categories p-0 mb-60">
                             <div class="widget-content">
                                 <ul class="list-unstyled d-flex flex-wrap mb-0">
-                                    <li><a href="#">Security Systems</a></li>
-                                    <li><a href="#">Access Control</a></li>
-                                    <li><a href="#">Monitoring</a></li>
-                                    <li><a href="#">Fire Alarms</a></li>
-                                    <li><a href="#">CCTV Video</a></li>
-                                    <li><a href="#">Global Services</a></li>
+                                    <li><a href="{{route('contact')}}">Residential</a></li>
+                                    <li><a href="{{route('contact')}}">Commercial</a></li>
+                                    <li><a href="{{route('contact')}}">Schools</a></li>
+                                    <li><a href="{{route('contact')}}">Healthcare</a></li>
+                                    <li><a href="{{route('contact')}}">Agriculture</a></li>
+                                    <li><a href="{{route('contact')}}">Enterprise</a></li>
                                 </ul>
-                            </div><!-- /.widget-content -->
-                        </div><!-- /.widget-categories -->
-
+                            </div>
+                        </div>
                         <p class="font-weight-bold color-white">
-                            Our team can also provide security integration services for highly complex facilities and offer
-                            preventative maintenance plans.
-                            <a href="#" class="text-underlined color-primary">Contact Us Now!</a>
+                            Need a CCTV system for a complex or multi-site property? We offer preventive maintenance
+                            plans and long-term support contracts.
+                            <a href="{{route('contact')}}" class="text-underlined color-primary">Contact Us Today</a>
                         </p>
                     </div>
-                </div><!-- /.col-xl-6 -->
+                </div>
                 <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 offset-xl-1">
                     <div class="video-banner-layout3 mb-50">
-                        <img src="assets/images/about/6.jpg" alt="about">
-                    </div> <!-- /.video-banner -->
-                </div><!-- /.col-xl-5 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.About Layout 5 -->
+                        <img src="assets/images/gallery/8.jpg" alt="CCTV Camera Installation Zimbabwe">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ========================
-      cta layout2
-      ========================== -->
-    <section class="cta-layout2 bg-overlay pt-140">
-        <div class="bg-img"><img src="assets/images/banners/9.jpg" alt="banner"></div>
+         CTA Banner
+    =========================== -->
+    <section class="cta-layout1 bg-overlay bg-overlay-primary bg-overlay-primary-gradient text-center pt-120 pb-90">
+        <div class="bg-img"><img src="assets/images/about/itperson.jpeg" alt="banner"></div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
-                    <div class="heading-layout2 heading-light text-center mb-50">
-                        <h3 class="heading__title">Protect Your Home Or Business With Our Unique Solutions
-                        </h3>
-                        <p class="heading__desc">From large enterprises to local business security platforms, from simple
-                            camera
-                            solutions for small offices to complex enterprise class video systems for large campuses.</p>
+                    <div class="heading heading-light mb-40">
+                        <h2 class="heading__subtitle">Ready To Secure Your Property?</h2>
+                        <h3 class="heading__title">Get A Free CCTV Assessment — No Obligation.</h3>
+                        <p class="heading__desc">Call us or fill in the contact form and one of our technicians will
+                            visit your site, assess your security needs, and provide a transparent quote — completely free.</p>
                     </div>
-                    <div class="d-flex flex-wrap justify-content-center align-items-center">
-                        <a href="#" class="btn btn__primary btn__primary-style2 btn__xl mr-30">
-                            <span>Discover More Info</span>
-                            <i class=" icon-arrow-right"></i>
-                        </a>
-                        <div class="phone__number phone__number-light">
-                            <div class="phone__icon">
-                                <i class="icon-phone"></i>
-                            </div>
-                            <div>
-                                <span class="email__link d-block">Call 24HR / 7Days</span>
-                                <a class="phone__link d-block mt-2 mb-0" href="tel:0201061245741">02 01061245741</a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col-lg-8 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.cta layout2 -->
-
-    <!-- ===========================
-        portfolio layout2
-      ============================= -->
-    <section class="portfolio-layout2">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-                    <div class="heading text-center mb-40">
-                        <h2 class="heading__subtitle">Analytics That Give Meaning To Security Data</h2>
-                        <h3 class="heading__title">Explore Our Case Studies & Latest Sucess Stories.</h3>
-                    </div><!-- /.heading -->
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-            <div class="row">
-                <!-- portfolio item #1 -->
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/1.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Detection</a><a href="#">Fire Alarms</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Getting The Right Fire Alarm Detection
-                                        System Online</a></h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-                <!-- portfolio item #2 -->
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/2.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Security</a><a href="#">CCTV</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Helping Manufacturers With Workplace
-                                        Essential Safety</a>
-                                </h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-                <!-- portfolio item #3 -->
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/3.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Resources</a><a href="#">Security</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Vendors With Resources To Deliver Safety &
-                                        Security</a></h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-                <!-- portfolio item #4 -->
-                <div class="col-sm-6 col-md-6 col-lg-4 portfolio-hidden">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/4.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Detection</a><a href="#">Fire Alarms</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Home Security For The Front And Back Of
-                                        Your House</a></h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-                <!-- portfolio item #5 -->
-                <div class="col-sm-6 col-md-6 col-lg-4 portfolio-hidden">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/5.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Detection</a><a href="#">Fire Alarms</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Expert’s Guide To Security For Rental
-                                        Properties</a></h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-                <!-- portfolio item #6 -->
-                <div class="col-sm-6 col-md-6 col-lg-4 portfolio-hidden">
-                    <div class="portfolio-item">
-                        <div class="portfolio__img">
-                            <img src="assets/images/portfolio/grid/6.jpg" alt="portfolio img">
-                        </div><!-- /.portfolio-img -->
-                        <div class="portfolio__body">
-                            <div class="portfolio__cat">
-                                <a href="#">Resources</a><a href="#">Security</a>
-                            </div><!-- /.portfolio-cat -->
-                            <div class="portfolio__info">
-                                <h4 class="portfolio__title"><a href="#">Getting The Right Fire Alarm Detection
-                                        System Online</a></h4>
-                                <p class="portfolio__desc">The systems feature manual call and sounder devices wirelessly
-                                    linked to
-                                    main
-                                    panel. Whilst wireless systems are more expensive than hard wired standard versions,
-                                    they negate
-                                    the...</p>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a href="projects-single-project.html" class="btn btn__secondary">
-                                    <i class="icon-arrow-right"></i>
-                                    <span>Explore More</span>
-                                </a>
-                            </div>
-                        </div><!-- /.portfolio__body -->
-                        <a href="projects-single-project.html" class="portfolio__readmore"> <i
-                                class="icon-arrow-right"></i></a>
-                    </div><!-- /.portfolio-item -->
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-            <div class="row">
-                <div class="col-12 text-center">
-                    <button class="btn btn__secondary btn__link btn__loadMore loadMoreportfolio">
-                        <i class="icon-horizontal-dots"></i>
-                        <span>Explore All Cases</span>
-                    </button>
-                </div><!-- /.col-12 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.portfolio layout2 -->
-
-    <!-- ==========================
-          contact layout 3
-      =========================== -->
-    <section class="contact-layout3 bg-overlay bg-overlay-primary bg-overlay-primary-gradient">
-        <div class="bg-img"><img src="assets/images/banners/5.jpg" alt="banner"></div>
-        <div class="container">
-            <div class="contact-panel p-0">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-7">
-                        <form class="contact-panel__form" method="post"
-                            action="https://7oroof.com/demos/sekure/assets/php/contact.php" id="contactForm">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h4 class="contact-panel__title">Request A Quote</h4>
-                                    <p class="contact-panel__desc mb-30">Please complete the form below, to request a
-                                        quote, and we’ll
-                                        be in touch. Or you can call us <strong
-                                            class="color-secondary">01061245741</strong> and our
-                                        specialists will provide the
-                                        necessary help!
-                                    </p>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group float-label">
-                                        <label for="homeBussiness">Home Or Business?</label>
-                                        <select id="homeBussiness" class="form-control">
-                                            <option>For Home</option>
-                                            <option>For Business</option>
-                                        </select>
-                                    </div>
-                                </div><!-- /.col-lg-6 -->
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group float-label">
-                                        <label for="Industry">Industry:</label>
-                                        <select id="Industry" class="form-control">
-                                            <option>Commercial Buildings</option>
-                                            <option>Commercial Buildings</option>
-                                        </select>
-                                    </div>
-                                </div><!-- /.col-lg-6 -->
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group float-label">
-                                        <label for="size">System Size:</label>
-                                        <select id="size" class="form-control">
-                                            <option>Small (1-5 locations)</option>
-                                            <option>large (6-10 locations)</option>
-                                        </select>
-                                    </div>
-                                </div><!-- /.col-lg-6 -->
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group float-label">
-                                        <label for="own">Own Or Rent?</label>
-                                        <select id="own" class="form-control">
-                                            <option>I'm representing occupant</option>
-                                            <option>other</option>
-                                        </select>
-                                    </div>
-                                </div><!-- /.col-lg-6 -->
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="First Name">
-                                    </div>
-                                </div><!-- /.col-lg-4 -->
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Last Name">
-                                    </div>
-                                </div><!-- /.col-lg-4 -->
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email Address">
-                                    </div>
-                                </div><!-- /.col-lg-4 -->
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Phone Number">
-                                    </div>
-                                </div><!-- /.col-lg-4 -->
-                                <div class="col-12">
-                                    <div class="form-group mb-10">
-                                        <label>System Of Interest:</label>
-                                        <div>
-                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Intrusion">
-                                                <label class="custom-control-label" for="Intrusion">Intrusion
-                                                    Detection</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Surveillance">
-                                                <label class="custom-control-label" for="Surveillance">Video
-                                                    Surveillance</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Integration">
-                                                <label class="custom-control-label" for="Integration">System
-                                                    Integration</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Monitoring">
-                                                <label class="custom-control-label" for="Monitoring">Monitoring</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="fire">
-                                                <label class="custom-control-label" for="fire">Fire Detection</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Control">
-                                                <label class="custom-control-label" for="Control">Access Control</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox custom-control-inline mb-20">
-                                                <input type="checkbox" class="custom-control-input" id="Other">
-                                                <label class="custom-control-label" for="Other">Other</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn btn__secondary btn__xl">
-                                        <i class="icon-arrow-right icon-filled"></i> <span>Submit Request</span>
-                                    </button>
-                                    <div class="contact-result"></div>
-                                </div><!-- /.col-lg-12 -->
-                            </div><!-- /.row -->
-                        </form>
-                    </div><!-- /.col-lg-7 -->
-                    <div class="col-sm-12 col-md-12 col-lg-5">
-                        <div class="packages-wrapper">
-                            <div class="slick-carousel m-slides-0"
-                                data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows": false, "dots": true, "autoplay": true}'>
-                                <!-- pricing item #1-->
-                                <div class="h-100">
-                                    <div class="pricing-package">
-                                        <div class="package__body">
-                                            <h4 class="package__title">Starter Plan</h4>
-                                            <p class="package__desc">Our highly trained technicians will set-up your
-                                                security system so you
-                                                don’t
-                                                have to. They show you how to work your equipment.</p>
-                                            <div class="d-flex mb-40">
-                                                <div class="package__icon">
-                                                    <i class="icon-burglar"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-intrusion"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-door-lock"></i>
-                                                </div><!-- /.package__icon -->
-                                            </div>
-                                            <ul class="package__list list-items-layout4 list-unstyled">
-                                                <li class="list__item">Enterprise Network Video Recorders</li>
-                                                <li class="list__item">Streaming video network or Internet</li>
-                                            </ul>
-                                        </div><!-- /.package__body -->
-                                        <div class="package__footer">
-                                            <div class="package__price">
-                                                <span class="package__currency">$</span><span>59</span><span
-                                                    class="package__period">/Month</span>
-                                            </div>
-                                            <a href="#" class="btn btn__secondary btn__xl">
-                                                <span>Get Started Now</span>
-                                                <i class="icon-arrow-right"></i>
-                                            </a>
-                                        </div><!-- /.package__footer -->
-                                    </div><!-- /.pricing-package -->
-                                </div>
-                                <!-- pricing item #2-->
-                                <div class="h-100">
-                                    <div class="pricing-package">
-                                        <div class="package__body">
-                                            <h4 class="package__title">Professional Plan</h4>
-                                            <p class="package__desc">Our highly trained technicians will set-up your
-                                                security system so you
-                                                don’t
-                                                have to. They show you how to work your equipment.</p>
-                                            <div class="d-flex mb-40">
-                                                <div class="package__icon">
-                                                    <i class="icon-home-automation"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-detector"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-surveillance"></i>
-                                                </div><!-- /.package__icon -->
-                                            </div>
-                                            <ul class="package__list list-items-layout4 list-unstyled">
-                                                <li class="list__item">Enterprise Network Video Recorders</li>
-                                                <li class="list__item">Streaming video network or Internet</li>
-                                                <li class="list__item">Intelligent video technology storage</li>
-                                            </ul>
-                                        </div><!-- /.package__body -->
-                                        <div class="package__footer">
-                                            <div class="package__price">
-                                                <span class="package__currency">$</span><span>159</span><span
-                                                    class="package__period">/Month</span>
-                                            </div>
-                                            <a href="#" class="btn btn__primary btn__xl">
-                                                <span>Get Started Now</span>
-                                                <i class="icon-arrow-right"></i>
-                                            </a>
-                                        </div><!-- /.package__footer -->
-                                    </div><!-- /.pricing-package -->
-                                </div>
-                                <!-- pricing item #3-->
-                                <div class="h-100">
-                                    <div class="pricing-package">
-                                        <div class="package__body">
-                                            <h4 class="package__title">Business Plan</h4>
-                                            <p class="package__desc">Our highly trained technicians will set-up your
-                                                security system so you
-                                                don’t
-                                                have to. They show you how to work your equipment.</p>
-                                            <div class="d-flex mb-40">
-                                                <div class="package__icon">
-                                                    <i class="icon-notification"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-surveillance2"></i>
-                                                </div><!-- /.package__icon -->
-                                                <div class="package__icon">
-                                                    <i class="icon-smart-control"></i>
-                                                </div><!-- /.package__icon -->
-                                            </div>
-                                            <ul class="package__list list-items-layout4 list-unstyled">
-                                                <li class="list__item">Enterprise Network Video Recorders</li>
-                                                <li class="list__item">Streaming video network or Internet</li>
-                                                <li class="list__item">Intelligent video technology storage</li>
-                                                <li class="list__item">Networked with distributed video</li>
-                                                <li class="list__item">Advanced management software</li>
-                                            </ul>
-                                        </div><!-- /.package__body -->
-                                        <div class="package__footer">
-                                            <div class="package__price">
-                                                <span class="package__currency">$</span><span>259</span><span
-                                                    class="package__period">/Month</span>
-                                            </div>
-                                            <a href="#" class="btn btn__secondary btn__xl">
-                                                <span>Get Started Now</span>
-                                                <i class="icon-arrow-right"></i>
-                                            </a>
-                                        </div><!-- /.package__footer -->
-                                    </div><!-- /.pricing-package -->
-                                </div>
-                            </div><!-- /.carousel-->
-                        </div><!-- /.packages-rapper -->
-                    </div><!-- /.col-lg-5 -->
-                </div><!-- /.contact-panel -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.contact layout 3 -->
-
-    <!-- ======================
-        features layout1
-      ========================= -->
-    <section class="features-layout1 pt-120 pb-90">
-        <div class="container">
-            <div class="row heading mb-30">
-                <div class="col-sm-12 col-md-12 col-lg-7">
-                    <h3 class="heading__title">Keep An Eye On Everything <br> With Our Video Security!</h3>
-                    <p class="heading__desc font-weight-bold mb-30">Not only will this reduce the probability of crime
-                        happening
-                        on your
-                        property, it will reduce or eliminate any liability that falls on you if you can show you have
-                        solid,
-                        well-designed commercial building security systems in place.
-                    </p>
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-            <div class="row row-gutter-15 list-items-layout3">
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Alarm Monitoring 24/7
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Security Monitoring Equipment
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Fire Monitor And Detection
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Remote Arm And Disarm
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Smart Home Controls
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Live Stream From Any Mobile
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Alerts, Schedules & Automations
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Record And Save Video Clips
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Lifetime Rate Lock Guarantee
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Lifetime Equipment Warranty
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Easy And Fair Cancellation
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="list__item">
-                        Professional Grade Protection
-                    </div><!-- /.list__item -->
-                </div><!-- /.col-lg-3 -->
-            </div><!-- /.row -->
-            <div class="row align-items-center mt-60">
-                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-7">
-                    <p class="fz-15 font-weight-bold my-3">
-                        For the Security and IT directors ensuring our places of work and leisure are safe. For the Chief
-                        Technology Officers shaping the smart businesses of tomorrow. We delivers powerful and insightful
-                        security
-                        solutions that enable protectors to drive forward. As the leader in home security, we can help you
-                        customize a home security system to meet your safety needs.
-                        <a href="#" class="text-underlined">Schedule A Visit</a>
-                    </p>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-5 d-flex justify-content-lg-end">
-                    <a href="about-us.html" class="btn btn__secondary btn__outlined btn__xl">
-                        Get A Free Quote
+                    <a href="{{route('contact')}}" class="btn btn__white btn__xl mr-20">
+                        <span>Get A Free Quote</span>
+                        <i class="icon-arrow-right"></i>
                     </a>
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.features layout1 -->
+                    <a href="{{route('services')}}" class="btn btn__white btn__outlined btn__xl">
+                        All Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection
