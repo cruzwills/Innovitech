@@ -245,6 +245,32 @@
             box-shadow: 0 0 0 2px rgba(46,48,143,0.5) !important;
             animation: none !important;
         }
+
+        /* ── Navbar: always show dark links on white background ──
+           Template sets bg:#fff but keeps link color:#fff (white-on-white).
+           Override so links are always visible; is-sticky handles scroll state. */
+        .header-transparent .navbar {
+            background-color: #fff !important;
+        }
+        .header-transparent .navbar .logo-light { display: none !important; }
+        .header-transparent .navbar .logo-dark  { display: inline-block !important; }
+        .header-transparent .navbar .navbar-nav > .nav__item > .nav__item-link {
+            color: #222 !important;
+        }
+        .header-transparent .navbar .navbar-nav > .nav__item > .nav__item-link:hover,
+        .header-transparent .navbar .navbar-nav > .nav__item.active > .nav__item-link {
+            color: #2E308F !important;
+        }
+        .header-transparent .action__btn:not(.action__btn-contact) {
+            color: #222 !important;
+        }
+        .header-transparent .phone__link  { color: #282828 !important; }
+        .header-transparent .email__link  { color: #9b9b9b !important; }
+        .header-transparent .navbar .navbar-toggler .menu-lines span,
+        .header-transparent .navbar .navbar-toggler .menu-lines:before,
+        .header-transparent .navbar .navbar-toggler .menu-lines:after {
+            background-color: #222 !important;
+        }
     </style>
 </head>
 
