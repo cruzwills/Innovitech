@@ -297,15 +297,6 @@
         .is-sticky.navbar .navbar-nav > .nav__item > .nav__item-link {
             line-height: 70px !important;
         }
-
-        /* ── Hero slider: ensure content never overlaps the 70px navbar ──
-           With a large content block flex-centered in 100vh, the subtitle
-           can end up at the very top of the viewport, behind the navbar.
-           padding-top shifts the flex center point down so the top of the
-           content block always clears the navbar. */
-        .slider .slide-item {
-            padding-top: 140px !important;
-        }
     </style>
 </head>
 
