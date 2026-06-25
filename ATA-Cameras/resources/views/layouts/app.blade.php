@@ -286,6 +286,11 @@
         .header-transparent .navbar .navbar-toggler .menu-lines:after {
             background-color: #222 !important;
         }
+        /* ── Hero: push flex-center below the 70px navbar ── */
+        .slider .slide-item {
+            padding-top: 70px !important;
+        }
+
         /* Sticky state: keep same compact size */
         .is-sticky.navbar {
             height: 70px !important;
