@@ -246,30 +246,56 @@
             animation: none !important;
         }
 
-        /* ── Navbar: always show dark links on white background ──
-           Template sets bg:#fff but keeps link color:#fff (white-on-white).
-           Override so links are always visible; is-sticky handles scroll state. */
-        .header-transparent .navbar {
+        /* ── Navbar: compact height + always-visible dark links ── */
+        .header-transparent .navbar,
+        .navbar.sticky-navbar {
             background-color: #fff !important;
+            height: 70px !important;
+            max-height: 70px !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07) !important;
         }
-        .header-transparent .navbar .logo-light { display: none !important; }
-        .header-transparent .navbar .logo-dark  { display: inline-block !important; }
+        .header-transparent .navbar > .container,
+        .header-transparent .navbar .container-fluid {
+            height: 70px !important;
+        }
+        /* Logo */
+        .header-transparent .navbar .navbar-brand { line-height: 70px !important; }
+        .header-transparent .navbar .logo-light   { display: none !important; }
+        .header-transparent .navbar .logo-dark    { display: inline-block !important; max-height: 46px !important; }
+        .navbar-brand .ata-logo                   { max-height: 46px !important; width: auto; }
+        /* Nav links */
         .header-transparent .navbar .navbar-nav > .nav__item > .nav__item-link {
             color: #222 !important;
+            line-height: 70px !important;
+            font-size: 14px !important;
         }
         .header-transparent .navbar .navbar-nav > .nav__item > .nav__item-link:hover,
         .header-transparent .navbar .navbar-nav > .nav__item.active > .nav__item-link {
             color: #2E308F !important;
         }
+        /* Right-side actions */
         .header-transparent .action__btn:not(.action__btn-contact) {
             color: #222 !important;
+            line-height: 70px !important;
         }
         .header-transparent .phone__link  { color: #282828 !important; }
         .header-transparent .email__link  { color: #9b9b9b !important; }
+        /* Hamburger */
         .header-transparent .navbar .navbar-toggler .menu-lines span,
         .header-transparent .navbar .navbar-toggler .menu-lines:before,
         .header-transparent .navbar .navbar-toggler .menu-lines:after {
             background-color: #222 !important;
+        }
+        /* Sticky state: keep same compact size */
+        .is-sticky.navbar {
+            height: 70px !important;
+            max-height: 70px !important;
+        }
+        .is-sticky.navbar > .container,
+        .is-sticky.navbar > .container-fluid { height: 70px !important; }
+        .is-sticky.navbar .navbar-brand       { line-height: 70px !important; }
+        .is-sticky.navbar .navbar-nav > .nav__item > .nav__item-link {
+            line-height: 70px !important;
         }
     </style>
 </head>
